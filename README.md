@@ -80,9 +80,13 @@
 ```txt
 > discord ···· lordware1
 > location ··· Lübeck, DE  (53.87°N 10.69°E)
-> availability  open to interesting embedded work
-> response ··· asynchronous, but quickly
 ```
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/visitors.svg" alt="visitors" width="320" height="80" />
+
+</div>
 
 <div align="center">
 

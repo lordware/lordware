@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80" role="img" aria-label="visitors: 6" data-count="6">
+  <defs>
+    <style>
+      .v-bg    { fill: #1A1814; }
+      .v-panel { fill: #221E18; stroke: #3A352C; stroke-width: 1; }
+      .v-label { fill: #A89968; font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 10px; letter-spacing: 2px; }
+      .v-sub   { fill: #A89968; font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 9px; }
+      .v-count { fill: #FFB83D; font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-weight: 700; font-size: 36px; letter-spacing: 1px; }
+      .v-bar   { fill: #FFB83D; }
+    </style>
+  </defs>
+  <rect width="320" height="80" class="v-bg"/>
+  <rect x="6" y="6" width="308" height="68" rx="4" class="v-panel"/>
+  <rect x="6" y="6" width="4" height="68" class="v-bar"/>
+  <text x="20" y="26" class="v-label">VISITORS</text>
+  <text x="20" y="44" class="v-sub">/proc/lordware · hits</text>
+  <g>
+    <circle cx="22" cy="60" r="2.5" fill="#FF5C3A">
+      <animate attributeName="opacity" values="1;0.25;1" dur="1.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="32" y="63" class="v-sub">· live</text>
+  </g>
+  <text x="274" y="54" class="v-count">6</text>
+</svg>
