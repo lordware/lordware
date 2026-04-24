@@ -1,269 +1,105 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 200" width="960" height="200" role="img" aria-label="CANopen bus monitor">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 200" width="960" height="200" role="img" aria-label="CANopen live frame monitor">
   <defs>
-    
-    <clipPath id="canClip"><rect x="0" y="40" width="960" height="160"></rect></clipPath>
+    <style>
+      .c-bg    { fill: #1A1814; }
+      .c-subbg { fill: #221E18; }
+      .c-border{ fill: none; stroke: #3A352C; stroke-width: 1; }
+      .c-head  { font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 11px; fill: #A89968; font-weight: 700; }
+      .c-ink   { font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 11px; fill: #E8DCC4; }
+      .c-dim   { font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 11px; fill: #A89968; }
+      .c-id    { font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 11px; fill: #FFB83D; font-weight: 700; }
+      .c-type  { font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 11px; font-weight: 700; }
+      .c-ascii { font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 11px; fill: #4FD97F; }
+      .c-foot  { font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 11px; fill: #E8DCC4; }
+      .c-foot-dim { font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 11px; fill: #A89968; }
+    </style>
+    <clipPath id="c-clip">
+      <rect x="0" y="24" width="960" height="156"/>
+    </clipPath>
   </defs>
 
-  <rect width="960" height="200" class="can-bg"></rect>
+  <rect class="c-bg" width="960" height="200"/>
+  <rect class="c-border" x="0.5" y="0.5" width="959" height="199"/>
 
-  
-  <rect x="0" y="0" width="960" height="24" class="can-head"></rect>
-  <line x1="0" y1="24" x2="960" y2="24" class="can-border"></line>
-  <g font-family="IBM Plex Mono, monospace" font-size="11" fill="#A89968">
-    <text x="12" y="16">#</text>
-    <text x="60" y="16">timestamp</text>
-    <text x="180" y="16">id</text>
-    <text x="260" y="16">type</text>
-    <text x="340" y="16">len</text>
-    <text x="400" y="16">data</text>
-    <text x="720" y="16">ascii</text>
-    <text x="860" y="16">node</text>
-  </g>
+  <!-- header row -->
+  <rect class="c-subbg" x="0" y="0" width="960" height="24"/>
+  <line x1="0" y1="24" x2="960" y2="24" stroke="#3A352C" stroke-width="1"/>
+  <text class="c-head" x="12"   y="16">#</text>
+  <text class="c-head" x="44"    y="16">timestamp</text>
+  <text class="c-head" x="150"    y="16">id</text>
+  <text class="c-head" x="210"  y="16">type</text>
+  <text class="c-head" x="290"   y="16">len</text>
+  <text class="c-head" x="326"  y="16">data</text>
+  <text class="c-head" x="690" y="16">ascii</text>
+  <text class="c-head" x="820"  y="16">node</text>
 
-  
-  <g transform="translate(12, 182)" font-family="IBM Plex Mono, monospace" font-size="10">
-    <rect x="0" y="-14" width="936" height="18" fill="#221E18"></rect>
-    <circle cx="6" cy="-5" r="3" class="hb"></circle>
-    <text x="14" y="-2" fill="#A89968">bus</text>
-    <text x="34" y="-2" fill="#E8DCC4">CAN 2.0B · 500 kb/s</text>
-    <text x="200" y="-2" fill="#A89968">load</text>
-    <text x="226" y="-2" fill="#E8DCC4">18%</text>
-    <text x="270" y="-2" fill="#A89968">err</text>
-    <text x="292" y="-2" fill="#E8DCC4">0 / 0</text>
-    <text x="360" y="-2" fill="#A89968">node</text>
-    <text x="388" y="-2" fill="#E8DCC4">0x1A @ OPERATIONAL</text>
-    <text x="800" y="-2" fill="#FFB83D">LIVE ● 10ms</text>
-  </g>
-
-  
-  <g clip-path="url(#canClip)">
-    <g class="can-rows" transform="translate(0, 40)">
-      
-      <g font-family="IBM Plex Mono, monospace" font-size="11">
-        <g>
-          <text x="12" y="14" class="can-dim">0001</text>
-          <text x="60" y="14" class="can-dim">0.000</text>
-          <text x="180" y="14" class="can-id">0x000</text>
-          <text x="260" y="14" class="can-pdo">NMT   </text>
-          <text x="340" y="14" class="can-dim">2</text>
-          <text x="400" y="14" class="can-data">01 1A</text>
-          <text x="720" y="14" class="can-ink">..</text>
-          <text x="860" y="14" class="can-ink">0x1A</text>
-        </g>
-        <g transform="translate(0,18)">
-          <text x="12" y="14" class="can-dim">0002</text>
-          <text x="60" y="14" class="can-dim">0.010</text>
-          <text x="180" y="14" class="can-id">0x71A</text>
-          <text x="260" y="14" class="can-pdo">HB    </text>
-          <text x="340" y="14" class="can-dim">1</text>
-          <text x="400" y="14" class="can-data">05</text>
-          <text x="720" y="14" class="can-ink">.</text>
-          <text x="860" y="14" class="can-ink">0x1A</text>
-        </g>
-        <g transform="translate(0,36)">
-          <text x="12" y="14" class="can-dim">0003</text>
-          <text x="60" y="14" class="can-dim">0.020</text>
-          <text x="180" y="14" class="can-id">0x19A</text>
-          <text x="260" y="14" class="can-pdo">TPDO1 </text>
-          <text x="340" y="14" class="can-dim">8</text>
-          <text x="400" y="14" class="can-data">6C 6F 72 64 77 61 72 65</text>
-          <text x="720" y="14" class="can-ink">lordware</text>
-          <text x="860" y="14" class="can-ink">0x1A</text>
-        </g>
-        <g transform="translate(0,54)">
-          <text x="12" y="14" class="can-dim">0004</text>
-          <text x="60" y="14" class="can-dim">0.030</text>
-          <text x="180" y="14" class="can-id">0x29A</text>
-          <text x="260" y="14" class="can-pdo">TPDO2 </text>
-          <text x="340" y="14" class="can-dim">8</text>
-          <text x="400" y="14" class="can-data">41 72 64 75 69 6E 6F 00</text>
-          <text x="720" y="14" class="can-ink">Arduino.</text>
-          <text x="860" y="14" class="can-ink">0x1A</text>
-        </g>
-        <g transform="translate(0,72)">
-          <text x="12" y="14" class="can-dim">0005</text>
-          <text x="60" y="14" class="can-dim">0.040</text>
-          <text x="180" y="14" class="can-id">0x60A</text>
-          <text x="260" y="14" class="can-sdo">SDO.rx</text>
-          <text x="340" y="14" class="can-dim">8</text>
-          <text x="400" y="14" class="can-data">40 18 10 01 00 00 00 00</text>
-          <text x="720" y="14" class="can-ink">@.......</text>
-          <text x="860" y="14" class="can-ink">0x1A</text>
-        </g>
-        <g transform="translate(0,90)">
-          <text x="12" y="14" class="can-dim">0006</text>
-          <text x="60" y="14" class="can-dim">0.051</text>
-          <text x="180" y="14" class="can-id">0x58A</text>
-          <text x="260" y="14" class="can-sdo">SDO.tx</text>
-          <text x="340" y="14" class="can-dim">8</text>
-          <text x="400" y="14" class="can-data">43 18 10 01 6C 6F 72 64</text>
-          <text x="720" y="14" class="can-ink">C...lord</text>
-          <text x="860" y="14" class="can-ink">0x1A</text>
-        </g>
-        <g transform="translate(0,108)">
-          <text x="12" y="14" class="can-dim">0007</text>
-          <text x="60" y="14" class="can-dim">0.062</text>
-          <text x="180" y="14" class="can-id">0x80 </text>
-          <text x="260" y="14" class="can-pdo">SYNC  </text>
-          <text x="340" y="14" class="can-dim">0</text>
-          <text x="400" y="14" class="can-dim">—</text>
-          <text x="720" y="14" class="can-ink"> </text>
-          <text x="860" y="14" class="can-ink">bus</text>
-        </g>
-        <g transform="translate(0,126)">
-          <text x="12" y="14" class="can-dim">0008</text>
-          <text x="60" y="14" class="can-dim">0.073</text>
-          <text x="180" y="14" class="can-id">0x19A</text>
-          <text x="260" y="14" class="can-pdo">TPDO1 </text>
-          <text x="340" y="14" class="can-dim">8</text>
-          <text x="400" y="14" class="can-data">4C C3 BC 62 65 63 6B 00</text>
-          <text x="720" y="14" class="can-ink">Lübeck.</text>
-          <text x="860" y="14" class="can-ink">0x1A</text>
-        </g>
-        <g transform="translate(0,144)">
-          <text x="12" y="14" class="can-dim">0009</text>
-          <text x="60" y="14" class="can-dim">0.084</text>
-          <text x="180" y="14" class="can-id">0x71A</text>
-          <text x="260" y="14" class="can-pdo">HB    </text>
-          <text x="340" y="14" class="can-dim">1</text>
-          <text x="400" y="14" class="can-data">05</text>
-          <text x="720" y="14" class="can-ink">.</text>
-          <text x="860" y="14" class="can-ink">0x1A</text>
-        </g>
-        <g transform="translate(0,162)">
-          <text x="12" y="14" class="can-dim">0010</text>
-          <text x="60" y="14" class="can-dim">0.095</text>
-          <text x="180" y="14" class="can-id">0x19A</text>
-          <text x="260" y="14" class="can-pdo">TPDO1 </text>
-          <text x="340" y="14" class="can-dim">8</text>
-          <text x="400" y="14" class="can-data">43 2B 2B 20 26 20 43 00</text>
-          <text x="720" y="14" class="can-ink">C++ &amp; C.</text>
-          <text x="860" y="14" class="can-ink">0x1A</text>
-        </g>
-        <g transform="translate(0,180)">
-          <text x="12" y="14" class="can-dim">0011</text>
-          <text x="60" y="14" class="can-dim">0.106</text>
-          <text x="180" y="14" class="can-id">0x29A</text>
-          <text x="260" y="14" class="can-pdo">TPDO2 </text>
-          <text x="340" y="14" class="can-dim">8</text>
-          <text x="400" y="14" class="can-data">52 53 32 33 32 20 4F 4B</text>
-          <text x="720" y="14" class="can-ink">RS232 OK</text>
-          <text x="860" y="14" class="can-ink">0x1A</text>
-        </g>
+  <!-- scrolling rows -->
+  <g clip-path="url(#c-clip)">
+    <g transform="translate(0 24)">
+      <animateTransform attributeName="transform" type="translate" from="0 24" to="0 -288" dur="22s" repeatCount="indefinite"/>
+      <g>
+      <text x="12"  y="13" class="c-dim">001</text><text x="44"   y="13" class="c-ink">13:57:23.705</text><text x="150"   y="13" class="c-id">0x080</text><text x="210" y="13" fill="#4FC3FF" class="c-type">SYNC</text><text x="290"  y="13" class="c-dim">3</text><text x="326" y="13" class="c-ink">29 1B 3A</text><text x="690" y="13" class="c-ascii">)·:</text><text x="820" y="13" class="c-dim">0x1A</text>
+      <rect x="0" y="16" width="960" height="13" fill="#2A251E"/><text x="12"  y="26" class="c-dim">002</text><text x="44"   y="26" class="c-ink">13:57:23.737</text><text x="150"   y="26" class="c-id">0x581</text><text x="210" y="26" fill="#FFB83D" class="c-type">SDO-Tx</text><text x="290"  y="26" class="c-dim">2</text><text x="326" y="26" class="c-ink">39 A2</text><text x="690" y="26" class="c-ascii">9·</text><text x="820" y="26" class="c-dim">0x05</text>
+      <text x="12"  y="39" class="c-dim">003</text><text x="44"   y="39" class="c-ink">13:57:23.815</text><text x="150"   y="39" class="c-id">0x301</text><text x="210" y="39" fill="#4FC3FF" class="c-type">PDO2-Rx</text><text x="290"  y="39" class="c-dim">6</text><text x="326" y="39" class="c-ink">65 7B F1 34 A8 71</text><text x="690" y="39" class="c-ascii">e{·4·q</text><text x="820" y="39" class="c-dim">0x11</text>
+      <rect x="0" y="42" width="960" height="13" fill="#2A251E"/><text x="12"  y="52" class="c-dim">004</text><text x="44"   y="52" class="c-ink">13:57:23.898</text><text x="150"   y="52" class="c-id">0x201</text><text x="210" y="52" fill="#4FC3FF" class="c-type">PDO1-Rx</text><text x="290"  y="52" class="c-dim">1</text><text x="326" y="52" class="c-ink">8A</text><text x="690" y="52" class="c-ascii">·</text><text x="820" y="52" class="c-dim">0x02</text>
+      <text x="12"  y="65" class="c-dim">005</text><text x="44"   y="65" class="c-ink">13:57:23.987</text><text x="150"   y="65" class="c-id">0x701</text><text x="210" y="65" fill="#FF5C3A" class="c-type">HB</text><text x="290"  y="65" class="c-dim">7</text><text x="326" y="65" class="c-ink">16 91 92 E6 AE F7 0E</text><text x="690" y="65" class="c-ascii">·······</text><text x="820" y="65" class="c-dim">0x1A</text>
+      <rect x="0" y="68" width="960" height="13" fill="#2A251E"/><text x="12"  y="78" class="c-dim">006</text><text x="44"   y="78" class="c-ink">13:57:24.021</text><text x="150"   y="78" class="c-id">0x181</text><text x="210" y="78" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="78" class="c-dim">3</text><text x="326" y="78" class="c-ink">21 EF 23</text><text x="690" y="78" class="c-ascii">!·#</text><text x="820" y="78" class="c-dim">0x1A</text>
+      <text x="12"  y="91" class="c-dim">007</text><text x="44"   y="91" class="c-ink">13:57:24.091</text><text x="150"   y="91" class="c-id">0x401</text><text x="210" y="91" fill="#4FC3FF" class="c-type">PDO3-Rx</text><text x="290"  y="91" class="c-dim">5</text><text x="326" y="91" class="c-ink">02 C9 12 47 40</text><text x="690" y="91" class="c-ascii">···G@</text><text x="820" y="91" class="c-dim">0x02</text>
+      <rect x="0" y="94" width="960" height="13" fill="#2A251E"/><text x="12"  y="104" class="c-dim">008</text><text x="44"   y="104" class="c-ink">13:57:24.105</text><text x="150"   y="104" class="c-id">0x381</text><text x="210" y="104" fill="#4FD97F" class="c-type">PDO3-Tx</text><text x="290"  y="104" class="c-dim">6</text><text x="326" y="104" class="c-ink">CF 49 EF 5E FB 47</text><text x="690" y="104" class="c-ascii">·I·^·G</text><text x="820" y="104" class="c-dim">0x11</text>
+      <text x="12"  y="117" class="c-dim">009</text><text x="44"   y="117" class="c-ink">13:57:24.129</text><text x="150"   y="117" class="c-id">0x281</text><text x="210" y="117" fill="#4FD97F" class="c-type">PDO2-Tx</text><text x="290"  y="117" class="c-dim">3</text><text x="326" y="117" class="c-ink">83 D6 62</text><text x="690" y="117" class="c-ascii">··b</text><text x="820" y="117" class="c-dim">0x11</text>
+      <rect x="0" y="120" width="960" height="13" fill="#2A251E"/><text x="12"  y="130" class="c-dim">010</text><text x="44"   y="130" class="c-ink">13:57:24.186</text><text x="150"   y="130" class="c-id">0x601</text><text x="210" y="130" fill="#FFB83D" class="c-type">SDO-Rx</text><text x="290"  y="130" class="c-dim">7</text><text x="326" y="130" class="c-ink">26 11 79 1D 84 6C 4C</text><text x="690" y="130" class="c-ascii">.·y··lL</text><text x="820" y="130" class="c-dim">0x11</text>
+      <text x="12"  y="143" class="c-dim">011</text><text x="44"   y="143" class="c-ink">13:57:24.266</text><text x="150"   y="143" class="c-id">0x181</text><text x="210" y="143" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="143" class="c-dim">8</text><text x="326" y="143" class="c-ink">68 65 6C 6C 6F 20 66 72</text><text x="690" y="143" class="c-ascii">hello fr</text><text x="820" y="143" class="c-dim">0x1A</text>
+      <rect x="0" y="146" width="960" height="13" fill="#2A251E"/><text x="12"  y="156" class="c-dim">012</text><text x="44"   y="156" class="c-ink">13:57:24.356</text><text x="150"   y="156" class="c-id">0x181</text><text x="210" y="156" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="156" class="c-dim">8</text><text x="326" y="156" class="c-ink">6F 6D 20 6C 6F 72 64 77</text><text x="690" y="156" class="c-ascii">om lordw</text><text x="820" y="156" class="c-dim">0x02</text>
+      <text x="12"  y="169" class="c-dim">013</text><text x="44"   y="169" class="c-ink">13:57:24.455</text><text x="150"   y="169" class="c-id">0x181</text><text x="210" y="169" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="169" class="c-dim">8</text><text x="326" y="169" class="c-ink">61 72 65 2E 64 65 20 3A</text><text x="690" y="169" class="c-ascii">are.de :</text><text x="820" y="169" class="c-dim">0x1A</text>
+      <rect x="0" y="172" width="960" height="13" fill="#2A251E"/><text x="12"  y="182" class="c-dim">014</text><text x="44"   y="182" class="c-ink">13:57:24.535</text><text x="150"   y="182" class="c-id">0x181</text><text x="210" y="182" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="182" class="c-dim">1</text><text x="326" y="182" class="c-ink">29</text><text x="690" y="182" class="c-ascii">)</text><text x="820" y="182" class="c-dim">0x1A</text>
+      <text x="12"  y="195" class="c-dim">015</text><text x="44"   y="195" class="c-ink">13:57:24.624</text><text x="150"   y="195" class="c-id">0x000</text><text x="210" y="195" fill="#B77FFF" class="c-type">NMT</text><text x="290"  y="195" class="c-dim">7</text><text x="326" y="195" class="c-ink">CC D9 7B 8F 07 63 31</text><text x="690" y="195" class="c-ascii">··{··c1</text><text x="820" y="195" class="c-dim">0x11</text>
+      <rect x="0" y="198" width="960" height="13" fill="#2A251E"/><text x="12"  y="208" class="c-dim">016</text><text x="44"   y="208" class="c-ink">13:57:24.642</text><text x="150"   y="208" class="c-id">0x301</text><text x="210" y="208" fill="#4FC3FF" class="c-type">PDO2-Rx</text><text x="290"  y="208" class="c-dim">5</text><text x="326" y="208" class="c-ink">EC 95 41 DD 92</text><text x="690" y="208" class="c-ascii">··A··</text><text x="820" y="208" class="c-dim">0x1A</text>
+      <text x="12"  y="221" class="c-dim">017</text><text x="44"   y="221" class="c-ink">13:57:24.692</text><text x="150"   y="221" class="c-id">0x381</text><text x="210" y="221" fill="#4FD97F" class="c-type">PDO3-Tx</text><text x="290"  y="221" class="c-dim">7</text><text x="326" y="221" class="c-ink">D1 8B D3 63 DC 28 D0</text><text x="690" y="221" class="c-ascii">···c·(·</text><text x="820" y="221" class="c-dim">0x02</text>
+      <rect x="0" y="224" width="960" height="13" fill="#2A251E"/><text x="12"  y="234" class="c-dim">018</text><text x="44"   y="234" class="c-ink">13:57:24.743</text><text x="150"   y="234" class="c-id">0x601</text><text x="210" y="234" fill="#FFB83D" class="c-type">SDO-Rx</text><text x="290"  y="234" class="c-dim">5</text><text x="326" y="234" class="c-ink">81 92 34 85 77</text><text x="690" y="234" class="c-ascii">··4·w</text><text x="820" y="234" class="c-dim">0x1A</text>
+      <text x="12"  y="247" class="c-dim">019</text><text x="44"   y="247" class="c-ink">13:57:24.840</text><text x="150"   y="247" class="c-id">0x201</text><text x="210" y="247" fill="#4FC3FF" class="c-type">PDO1-Rx</text><text x="290"  y="247" class="c-dim">3</text><text x="326" y="247" class="c-ink">2F 47 79</text><text x="690" y="247" class="c-ascii">/Gy</text><text x="820" y="247" class="c-dim">0x11</text>
+      <rect x="0" y="250" width="960" height="13" fill="#2A251E"/><text x="12"  y="260" class="c-dim">020</text><text x="44"   y="260" class="c-ink">13:57:24.900</text><text x="150"   y="260" class="c-id">0x181</text><text x="210" y="260" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="260" class="c-dim">4</text><text x="326" y="260" class="c-ink">19 8E F8 79</text><text x="690" y="260" class="c-ascii">···y</text><text x="820" y="260" class="c-dim">0x02</text>
+      <text x="12"  y="273" class="c-dim">021</text><text x="44"   y="273" class="c-ink">13:57:24.933</text><text x="150"   y="273" class="c-id">0x201</text><text x="210" y="273" fill="#4FC3FF" class="c-type">PDO1-Rx</text><text x="290"  y="273" class="c-dim">6</text><text x="326" y="273" class="c-ink">35 54 1D 32 09 00</text><text x="690" y="273" class="c-ascii">5T·2··</text><text x="820" y="273" class="c-dim">0x02</text>
+      <rect x="0" y="276" width="960" height="13" fill="#2A251E"/><text x="12"  y="286" class="c-dim">022</text><text x="44"   y="286" class="c-ink">13:57:25.007</text><text x="150"   y="286" class="c-id">0x000</text><text x="210" y="286" fill="#B77FFF" class="c-type">NMT</text><text x="290"  y="286" class="c-dim">8</text><text x="326" y="286" class="c-ink">59 50 09 72 0A B5 3A CF</text><text x="690" y="286" class="c-ascii">YP·r··:·</text><text x="820" y="286" class="c-dim">0x02</text>
+      <text x="12"  y="299" class="c-dim">023</text><text x="44"   y="299" class="c-ink">13:57:25.020</text><text x="150"   y="299" class="c-id">0x181</text><text x="210" y="299" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="299" class="c-dim">8</text><text x="326" y="299" class="c-ink">E3 B3 31 28 14 57 DE 2E</text><text x="690" y="299" class="c-ascii">··1(·W·.</text><text x="820" y="299" class="c-dim">0x1A</text>
+      <rect x="0" y="302" width="960" height="13" fill="#2A251E"/><text x="12"  y="312" class="c-dim">024</text><text x="44"   y="312" class="c-ink">13:57:25.057</text><text x="150"   y="312" class="c-id">0x601</text><text x="210" y="312" fill="#FFB83D" class="c-type">SDO-Rx</text><text x="290"  y="312" class="c-dim">4</text><text x="326" y="312" class="c-ink">33 7C 6B E8</text><text x="690" y="312" class="c-ascii">3|k·</text><text x="820" y="312" class="c-dim">0x1A</text>
       </g>
-      
-      <g font-family="IBM Plex Mono, monospace" font-size="11" transform="translate(0,198)">
-        <g>
-          <text x="12" y="14" class="can-dim">0012</text>
-          <text x="60" y="14" class="can-dim">0.117</text>
-          <text x="180" y="14" class="can-id">0x71A</text>
-          <text x="260" y="14" class="can-pdo">HB    </text>
-          <text x="340" y="14" class="can-dim">1</text>
-          <text x="400" y="14" class="can-data">05</text>
-          <text x="720" y="14" class="can-ink">.</text>
-          <text x="860" y="14" class="can-ink">0x1A</text>
-        </g>
-        <g transform="translate(0,18)">
-          <text x="12" y="14" class="can-dim">0013</text>
-          <text x="60" y="14" class="can-dim">0.128</text>
-          <text x="180" y="14" class="can-id">0x19A</text>
-          <text x="260" y="14" class="can-pdo">TPDO1 </text>
-          <text x="340" y="14" class="can-dim">8</text>
-          <text x="400" y="14" class="can-data">62 61 72 65 20 6D 65 74</text>
-          <text x="720" y="14" class="can-ink">bare met</text>
-          <text x="860" y="14" class="can-ink">0x1A</text>
-        </g>
-        <g transform="translate(0,36)">
-          <text x="12" y="14" class="can-dim">0014</text>
-          <text x="60" y="14" class="can-dim">0.139</text>
-          <text x="180" y="14" class="can-id">0x29A</text>
-          <text x="260" y="14" class="can-pdo">TPDO2 </text>
-          <text x="340" y="14" class="can-dim">8</text>
-          <text x="400" y="14" class="can-data">61 6C 20 3C 33 00 00 00</text>
-          <text x="720" y="14" class="can-ink">al &lt;3...</text>
-          <text x="860" y="14" class="can-ink">0x1A</text>
-        </g>
-        <g transform="translate(0,54)">
-          <text x="12" y="14" class="can-dim">0015</text>
-          <text x="60" y="14" class="can-dim">0.150</text>
-          <text x="180" y="14" class="can-id">0x000</text>
-          <text x="260" y="14" class="can-pdo">NMT   </text>
-          <text x="340" y="14" class="can-dim">2</text>
-          <text x="400" y="14" class="can-data">05 1A</text>
-          <text x="720" y="14" class="can-ink">..</text>
-          <text x="860" y="14" class="can-ink">0x1A</text>
-        </g>
-        <g transform="translate(0,72)">
-          <text x="12" y="14" class="can-dim">0016</text>
-          <text x="60" y="14" class="can-dim">0.161</text>
-          <text x="180" y="14" class="can-id">0x19A</text>
-          <text x="260" y="14" class="can-pdo">TPDO1 </text>
-          <text x="340" y="14" class="can-dim">8</text>
-          <text x="400" y="14" class="can-data">73 68 69 70 70 69 6E 67</text>
-          <text x="720" y="14" class="can-ink">shipping</text>
-          <text x="860" y="14" class="can-ink">0x1A</text>
-        </g>
-        <g transform="translate(0,90)">
-          <text x="12" y="14" class="can-dim">0017</text>
-          <text x="60" y="14" class="can-dim">0.172</text>
-          <text x="180" y="14" class="can-id">0x19A</text>
-          <text x="260" y="14" class="can-pdo">TPDO1 </text>
-          <text x="340" y="14" class="can-dim">8</text>
-          <text x="400" y="14" class="can-data">66 77 2E 20 73 69 6E 63</text>
-          <text x="720" y="14" class="can-ink">fw. sinc</text>
-          <text x="860" y="14" class="can-ink">0x1A</text>
-        </g>
-        <g transform="translate(0,108)">
-          <text x="12" y="14" class="can-dim">0018</text>
-          <text x="60" y="14" class="can-dim">0.183</text>
-          <text x="180" y="14" class="can-id">0x19A</text>
-          <text x="260" y="14" class="can-pdo">TPDO1 </text>
-          <text x="340" y="14" class="can-dim">8</text>
-          <text x="400" y="14" class="can-data">65 20 32 30 31 34 2E 00</text>
-          <text x="720" y="14" class="can-ink">e 2014..</text>
-          <text x="860" y="14" class="can-ink">0x1A</text>
-        </g>
-        <g transform="translate(0,126)">
-          <text x="12" y="14" class="can-dim">0019</text>
-          <text x="60" y="14" class="can-dim">0.194</text>
-          <text x="180" y="14" class="can-id">0x71A</text>
-          <text x="260" y="14" class="can-pdo">HB    </text>
-          <text x="340" y="14" class="can-dim">1</text>
-          <text x="400" y="14" class="can-data">05</text>
-          <text x="720" y="14" class="can-ink">.</text>
-          <text x="860" y="14" class="can-ink">0x1A</text>
-        </g>
-        <g transform="translate(0,144)">
-          <text x="12" y="14" class="can-dim">0020</text>
-          <text x="60" y="14" class="can-dim">0.205</text>
-          <text x="180" y="14" class="can-id">0x19A</text>
-          <text x="260" y="14" class="can-pdo">TPDO1 </text>
-          <text x="340" y="14" class="can-dim">8</text>
-          <text x="400" y="14" class="can-data">6C 6F 72 64 77 61 72 65</text>
-          <text x="720" y="14" class="can-ink">lordware</text>
-          <text x="860" y="14" class="can-ink">0x1A</text>
-        </g>
-        <g transform="translate(0,162)">
-          <text x="12" y="14" class="can-dim">0021</text>
-          <text x="60" y="14" class="can-dim">0.216</text>
-          <text x="180" y="14" class="can-id">0x29A</text>
-          <text x="260" y="14" class="can-pdo">TPDO2 </text>
-          <text x="340" y="14" class="can-dim">8</text>
-          <text x="400" y="14" class="can-data">4C C3 BC 62 65 63 6B 00</text>
-          <text x="720" y="14" class="can-ink">Lübeck.</text>
-          <text x="860" y="14" class="can-ink">0x1A</text>
-        </g>
-        <g transform="translate(0,180)">
-          <text x="12" y="14" class="can-dim">0022</text>
-          <text x="60" y="14" class="can-dim">0.227</text>
-          <text x="180" y="14" class="can-id">0x71A</text>
-          <text x="260" y="14" class="can-pdo">HB    </text>
-          <text x="340" y="14" class="can-dim">1</text>
-          <text x="400" y="14" class="can-data">05</text>
-          <text x="720" y="14" class="can-ink">.</text>
-          <text x="860" y="14" class="can-ink">0x1A</text>
-        </g>
+      <g transform="translate(0 312)">
+      <text x="12"  y="13" class="c-dim">001</text><text x="44"   y="13" class="c-ink">13:57:23.705</text><text x="150"   y="13" class="c-id">0x080</text><text x="210" y="13" fill="#4FC3FF" class="c-type">SYNC</text><text x="290"  y="13" class="c-dim">3</text><text x="326" y="13" class="c-ink">29 1B 3A</text><text x="690" y="13" class="c-ascii">)·:</text><text x="820" y="13" class="c-dim">0x1A</text>
+      <rect x="0" y="16" width="960" height="13" fill="#2A251E"/><text x="12"  y="26" class="c-dim">002</text><text x="44"   y="26" class="c-ink">13:57:23.737</text><text x="150"   y="26" class="c-id">0x581</text><text x="210" y="26" fill="#FFB83D" class="c-type">SDO-Tx</text><text x="290"  y="26" class="c-dim">2</text><text x="326" y="26" class="c-ink">39 A2</text><text x="690" y="26" class="c-ascii">9·</text><text x="820" y="26" class="c-dim">0x05</text>
+      <text x="12"  y="39" class="c-dim">003</text><text x="44"   y="39" class="c-ink">13:57:23.815</text><text x="150"   y="39" class="c-id">0x301</text><text x="210" y="39" fill="#4FC3FF" class="c-type">PDO2-Rx</text><text x="290"  y="39" class="c-dim">6</text><text x="326" y="39" class="c-ink">65 7B F1 34 A8 71</text><text x="690" y="39" class="c-ascii">e{·4·q</text><text x="820" y="39" class="c-dim">0x11</text>
+      <rect x="0" y="42" width="960" height="13" fill="#2A251E"/><text x="12"  y="52" class="c-dim">004</text><text x="44"   y="52" class="c-ink">13:57:23.898</text><text x="150"   y="52" class="c-id">0x201</text><text x="210" y="52" fill="#4FC3FF" class="c-type">PDO1-Rx</text><text x="290"  y="52" class="c-dim">1</text><text x="326" y="52" class="c-ink">8A</text><text x="690" y="52" class="c-ascii">·</text><text x="820" y="52" class="c-dim">0x02</text>
+      <text x="12"  y="65" class="c-dim">005</text><text x="44"   y="65" class="c-ink">13:57:23.987</text><text x="150"   y="65" class="c-id">0x701</text><text x="210" y="65" fill="#FF5C3A" class="c-type">HB</text><text x="290"  y="65" class="c-dim">7</text><text x="326" y="65" class="c-ink">16 91 92 E6 AE F7 0E</text><text x="690" y="65" class="c-ascii">·······</text><text x="820" y="65" class="c-dim">0x1A</text>
+      <rect x="0" y="68" width="960" height="13" fill="#2A251E"/><text x="12"  y="78" class="c-dim">006</text><text x="44"   y="78" class="c-ink">13:57:24.021</text><text x="150"   y="78" class="c-id">0x181</text><text x="210" y="78" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="78" class="c-dim">3</text><text x="326" y="78" class="c-ink">21 EF 23</text><text x="690" y="78" class="c-ascii">!·#</text><text x="820" y="78" class="c-dim">0x1A</text>
+      <text x="12"  y="91" class="c-dim">007</text><text x="44"   y="91" class="c-ink">13:57:24.091</text><text x="150"   y="91" class="c-id">0x401</text><text x="210" y="91" fill="#4FC3FF" class="c-type">PDO3-Rx</text><text x="290"  y="91" class="c-dim">5</text><text x="326" y="91" class="c-ink">02 C9 12 47 40</text><text x="690" y="91" class="c-ascii">···G@</text><text x="820" y="91" class="c-dim">0x02</text>
+      <rect x="0" y="94" width="960" height="13" fill="#2A251E"/><text x="12"  y="104" class="c-dim">008</text><text x="44"   y="104" class="c-ink">13:57:24.105</text><text x="150"   y="104" class="c-id">0x381</text><text x="210" y="104" fill="#4FD97F" class="c-type">PDO3-Tx</text><text x="290"  y="104" class="c-dim">6</text><text x="326" y="104" class="c-ink">CF 49 EF 5E FB 47</text><text x="690" y="104" class="c-ascii">·I·^·G</text><text x="820" y="104" class="c-dim">0x11</text>
+      <text x="12"  y="117" class="c-dim">009</text><text x="44"   y="117" class="c-ink">13:57:24.129</text><text x="150"   y="117" class="c-id">0x281</text><text x="210" y="117" fill="#4FD97F" class="c-type">PDO2-Tx</text><text x="290"  y="117" class="c-dim">3</text><text x="326" y="117" class="c-ink">83 D6 62</text><text x="690" y="117" class="c-ascii">··b</text><text x="820" y="117" class="c-dim">0x11</text>
+      <rect x="0" y="120" width="960" height="13" fill="#2A251E"/><text x="12"  y="130" class="c-dim">010</text><text x="44"   y="130" class="c-ink">13:57:24.186</text><text x="150"   y="130" class="c-id">0x601</text><text x="210" y="130" fill="#FFB83D" class="c-type">SDO-Rx</text><text x="290"  y="130" class="c-dim">7</text><text x="326" y="130" class="c-ink">26 11 79 1D 84 6C 4C</text><text x="690" y="130" class="c-ascii">.·y··lL</text><text x="820" y="130" class="c-dim">0x11</text>
+      <text x="12"  y="143" class="c-dim">011</text><text x="44"   y="143" class="c-ink">13:57:24.266</text><text x="150"   y="143" class="c-id">0x181</text><text x="210" y="143" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="143" class="c-dim">8</text><text x="326" y="143" class="c-ink">68 65 6C 6C 6F 20 66 72</text><text x="690" y="143" class="c-ascii">hello fr</text><text x="820" y="143" class="c-dim">0x1A</text>
+      <rect x="0" y="146" width="960" height="13" fill="#2A251E"/><text x="12"  y="156" class="c-dim">012</text><text x="44"   y="156" class="c-ink">13:57:24.356</text><text x="150"   y="156" class="c-id">0x181</text><text x="210" y="156" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="156" class="c-dim">8</text><text x="326" y="156" class="c-ink">6F 6D 20 6C 6F 72 64 77</text><text x="690" y="156" class="c-ascii">om lordw</text><text x="820" y="156" class="c-dim">0x02</text>
+      <text x="12"  y="169" class="c-dim">013</text><text x="44"   y="169" class="c-ink">13:57:24.455</text><text x="150"   y="169" class="c-id">0x181</text><text x="210" y="169" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="169" class="c-dim">8</text><text x="326" y="169" class="c-ink">61 72 65 2E 64 65 20 3A</text><text x="690" y="169" class="c-ascii">are.de :</text><text x="820" y="169" class="c-dim">0x1A</text>
+      <rect x="0" y="172" width="960" height="13" fill="#2A251E"/><text x="12"  y="182" class="c-dim">014</text><text x="44"   y="182" class="c-ink">13:57:24.535</text><text x="150"   y="182" class="c-id">0x181</text><text x="210" y="182" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="182" class="c-dim">1</text><text x="326" y="182" class="c-ink">29</text><text x="690" y="182" class="c-ascii">)</text><text x="820" y="182" class="c-dim">0x1A</text>
+      <text x="12"  y="195" class="c-dim">015</text><text x="44"   y="195" class="c-ink">13:57:24.624</text><text x="150"   y="195" class="c-id">0x000</text><text x="210" y="195" fill="#B77FFF" class="c-type">NMT</text><text x="290"  y="195" class="c-dim">7</text><text x="326" y="195" class="c-ink">CC D9 7B 8F 07 63 31</text><text x="690" y="195" class="c-ascii">··{··c1</text><text x="820" y="195" class="c-dim">0x11</text>
+      <rect x="0" y="198" width="960" height="13" fill="#2A251E"/><text x="12"  y="208" class="c-dim">016</text><text x="44"   y="208" class="c-ink">13:57:24.642</text><text x="150"   y="208" class="c-id">0x301</text><text x="210" y="208" fill="#4FC3FF" class="c-type">PDO2-Rx</text><text x="290"  y="208" class="c-dim">5</text><text x="326" y="208" class="c-ink">EC 95 41 DD 92</text><text x="690" y="208" class="c-ascii">··A··</text><text x="820" y="208" class="c-dim">0x1A</text>
+      <text x="12"  y="221" class="c-dim">017</text><text x="44"   y="221" class="c-ink">13:57:24.692</text><text x="150"   y="221" class="c-id">0x381</text><text x="210" y="221" fill="#4FD97F" class="c-type">PDO3-Tx</text><text x="290"  y="221" class="c-dim">7</text><text x="326" y="221" class="c-ink">D1 8B D3 63 DC 28 D0</text><text x="690" y="221" class="c-ascii">···c·(·</text><text x="820" y="221" class="c-dim">0x02</text>
+      <rect x="0" y="224" width="960" height="13" fill="#2A251E"/><text x="12"  y="234" class="c-dim">018</text><text x="44"   y="234" class="c-ink">13:57:24.743</text><text x="150"   y="234" class="c-id">0x601</text><text x="210" y="234" fill="#FFB83D" class="c-type">SDO-Rx</text><text x="290"  y="234" class="c-dim">5</text><text x="326" y="234" class="c-ink">81 92 34 85 77</text><text x="690" y="234" class="c-ascii">··4·w</text><text x="820" y="234" class="c-dim">0x1A</text>
+      <text x="12"  y="247" class="c-dim">019</text><text x="44"   y="247" class="c-ink">13:57:24.840</text><text x="150"   y="247" class="c-id">0x201</text><text x="210" y="247" fill="#4FC3FF" class="c-type">PDO1-Rx</text><text x="290"  y="247" class="c-dim">3</text><text x="326" y="247" class="c-ink">2F 47 79</text><text x="690" y="247" class="c-ascii">/Gy</text><text x="820" y="247" class="c-dim">0x11</text>
+      <rect x="0" y="250" width="960" height="13" fill="#2A251E"/><text x="12"  y="260" class="c-dim">020</text><text x="44"   y="260" class="c-ink">13:57:24.900</text><text x="150"   y="260" class="c-id">0x181</text><text x="210" y="260" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="260" class="c-dim">4</text><text x="326" y="260" class="c-ink">19 8E F8 79</text><text x="690" y="260" class="c-ascii">···y</text><text x="820" y="260" class="c-dim">0x02</text>
+      <text x="12"  y="273" class="c-dim">021</text><text x="44"   y="273" class="c-ink">13:57:24.933</text><text x="150"   y="273" class="c-id">0x201</text><text x="210" y="273" fill="#4FC3FF" class="c-type">PDO1-Rx</text><text x="290"  y="273" class="c-dim">6</text><text x="326" y="273" class="c-ink">35 54 1D 32 09 00</text><text x="690" y="273" class="c-ascii">5T·2··</text><text x="820" y="273" class="c-dim">0x02</text>
+      <rect x="0" y="276" width="960" height="13" fill="#2A251E"/><text x="12"  y="286" class="c-dim">022</text><text x="44"   y="286" class="c-ink">13:57:25.007</text><text x="150"   y="286" class="c-id">0x000</text><text x="210" y="286" fill="#B77FFF" class="c-type">NMT</text><text x="290"  y="286" class="c-dim">8</text><text x="326" y="286" class="c-ink">59 50 09 72 0A B5 3A CF</text><text x="690" y="286" class="c-ascii">YP·r··:·</text><text x="820" y="286" class="c-dim">0x02</text>
+      <text x="12"  y="299" class="c-dim">023</text><text x="44"   y="299" class="c-ink">13:57:25.020</text><text x="150"   y="299" class="c-id">0x181</text><text x="210" y="299" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="299" class="c-dim">8</text><text x="326" y="299" class="c-ink">E3 B3 31 28 14 57 DE 2E</text><text x="690" y="299" class="c-ascii">··1(·W·.</text><text x="820" y="299" class="c-dim">0x1A</text>
+      <rect x="0" y="302" width="960" height="13" fill="#2A251E"/><text x="12"  y="312" class="c-dim">024</text><text x="44"   y="312" class="c-ink">13:57:25.057</text><text x="150"   y="312" class="c-id">0x601</text><text x="210" y="312" fill="#FFB83D" class="c-type">SDO-Rx</text><text x="290"  y="312" class="c-dim">4</text><text x="326" y="312" class="c-ink">33 7C 6B E8</text><text x="690" y="312" class="c-ascii">3|k·</text><text x="820" y="312" class="c-dim">0x1A</text>
       </g>
     </g>
   </g>
+
+  <!-- footer -->
+  <line x1="0" y1="180" x2="960" y2="180" stroke="#3A352C" stroke-width="1"/>
+  <rect class="c-subbg" x="0" y="180" width="960" height="20"/>
+  <text class="c-foot-dim" x="12" y="194">CAN 2.0B · 500 kb/s · load 18% · err 0/0 · node 0x1A @ <tspan fill="#4FD97F">OPERATIONAL</tspan> · LIVE</text>
+  <circle cx="870" cy="190" r="3" fill="#FF5C3A">
+    <animate attributeName="r" values="3;5;3" dur="1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.4;1" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  <text class="c-foot" x="882" y="194">10ms</text>
+  <text class="c-foot-dim" x="920" y="194">HB</text>
 </svg>
