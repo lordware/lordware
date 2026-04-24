@@ -44,3 +44,8 @@ scope:
 boot:
   header: "LORDWARE BIOS"
   copyright_year: 2026
+
+hero:
+  # Uptime counter anchor — the hero SVG shows "Ny Md · developing since YYYY".
+  developing_since: "2017-01-01"
+  uptime_label: "developing since 2017"

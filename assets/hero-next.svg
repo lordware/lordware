@@ -48,7 +48,9 @@
     <text x="170" y="172" fill="#E8DCC4">C · C++ · Arduino · RS-232 · CANopen</text>
 
     <text x="84" y="192" fill="#A89968">UPTIME</text>
-    <text x="170" y="192" fill="#E8DCC4">04y 216d <tspan fill="#A89968">· shipping since 2014</tspan></text>
+    <!-- gen_hero_uptime:start -->
+    <text x="170" y="192" fill="#E8DCC4">9y 113d <tspan fill="#A89968">· developing since 2017</tspan></text>
+    <!-- gen_hero_uptime:end -->
   </g>
 
   
