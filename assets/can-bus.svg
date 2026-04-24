@@ -1,0 +1,269 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 200" width="960" height="200" role="img" aria-label="CANopen bus monitor">
+  <defs>
+    
+    <clipPath id="canClip"><rect x="0" y="40" width="960" height="160"></rect></clipPath>
+  </defs>
+
+  <rect width="960" height="200" class="can-bg"></rect>
+
+  
+  <rect x="0" y="0" width="960" height="24" class="can-head"></rect>
+  <line x1="0" y1="24" x2="960" y2="24" class="can-border"></line>
+  <g font-family="IBM Plex Mono, monospace" font-size="11" fill="#A89968">
+    <text x="12" y="16">#</text>
+    <text x="60" y="16">timestamp</text>
+    <text x="180" y="16">id</text>
+    <text x="260" y="16">type</text>
+    <text x="340" y="16">len</text>
+    <text x="400" y="16">data</text>
+    <text x="720" y="16">ascii</text>
+    <text x="860" y="16">node</text>
+  </g>
+
+  
+  <g transform="translate(12, 182)" font-family="IBM Plex Mono, monospace" font-size="10">
+    <rect x="0" y="-14" width="936" height="18" fill="#221E18"></rect>
+    <circle cx="6" cy="-5" r="3" class="hb"></circle>
+    <text x="14" y="-2" fill="#A89968">bus</text>
+    <text x="34" y="-2" fill="#E8DCC4">CAN 2.0B · 500 kb/s</text>
+    <text x="200" y="-2" fill="#A89968">load</text>
+    <text x="226" y="-2" fill="#E8DCC4">18%</text>
+    <text x="270" y="-2" fill="#A89968">err</text>
+    <text x="292" y="-2" fill="#E8DCC4">0 / 0</text>
+    <text x="360" y="-2" fill="#A89968">node</text>
+    <text x="388" y="-2" fill="#E8DCC4">0x1A @ OPERATIONAL</text>
+    <text x="800" y="-2" fill="#FFB83D">LIVE ● 10ms</text>
+  </g>
+
+  
+  <g clip-path="url(#canClip)">
+    <g class="can-rows" transform="translate(0, 40)">
+      
+      <g font-family="IBM Plex Mono, monospace" font-size="11">
+        <g>
+          <text x="12" y="14" class="can-dim">0001</text>
+          <text x="60" y="14" class="can-dim">0.000</text>
+          <text x="180" y="14" class="can-id">0x000</text>
+          <text x="260" y="14" class="can-pdo">NMT   </text>
+          <text x="340" y="14" class="can-dim">2</text>
+          <text x="400" y="14" class="can-data">01 1A</text>
+          <text x="720" y="14" class="can-ink">..</text>
+          <text x="860" y="14" class="can-ink">0x1A</text>
+        </g>
+        <g transform="translate(0,18)">
+          <text x="12" y="14" class="can-dim">0002</text>
+          <text x="60" y="14" class="can-dim">0.010</text>
+          <text x="180" y="14" class="can-id">0x71A</text>
+          <text x="260" y="14" class="can-pdo">HB    </text>
+          <text x="340" y="14" class="can-dim">1</text>
+          <text x="400" y="14" class="can-data">05</text>
+          <text x="720" y="14" class="can-ink">.</text>
+          <text x="860" y="14" class="can-ink">0x1A</text>
+        </g>
+        <g transform="translate(0,36)">
+          <text x="12" y="14" class="can-dim">0003</text>
+          <text x="60" y="14" class="can-dim">0.020</text>
+          <text x="180" y="14" class="can-id">0x19A</text>
+          <text x="260" y="14" class="can-pdo">TPDO1 </text>
+          <text x="340" y="14" class="can-dim">8</text>
+          <text x="400" y="14" class="can-data">6C 6F 72 64 77 61 72 65</text>
+          <text x="720" y="14" class="can-ink">lordware</text>
+          <text x="860" y="14" class="can-ink">0x1A</text>
+        </g>
+        <g transform="translate(0,54)">
+          <text x="12" y="14" class="can-dim">0004</text>
+          <text x="60" y="14" class="can-dim">0.030</text>
+          <text x="180" y="14" class="can-id">0x29A</text>
+          <text x="260" y="14" class="can-pdo">TPDO2 </text>
+          <text x="340" y="14" class="can-dim">8</text>
+          <text x="400" y="14" class="can-data">41 72 64 75 69 6E 6F 00</text>
+          <text x="720" y="14" class="can-ink">Arduino.</text>
+          <text x="860" y="14" class="can-ink">0x1A</text>
+        </g>
+        <g transform="translate(0,72)">
+          <text x="12" y="14" class="can-dim">0005</text>
+          <text x="60" y="14" class="can-dim">0.040</text>
+          <text x="180" y="14" class="can-id">0x60A</text>
+          <text x="260" y="14" class="can-sdo">SDO.rx</text>
+          <text x="340" y="14" class="can-dim">8</text>
+          <text x="400" y="14" class="can-data">40 18 10 01 00 00 00 00</text>
+          <text x="720" y="14" class="can-ink">@.......</text>
+          <text x="860" y="14" class="can-ink">0x1A</text>
+        </g>
+        <g transform="translate(0,90)">
+          <text x="12" y="14" class="can-dim">0006</text>
+          <text x="60" y="14" class="can-dim">0.051</text>
+          <text x="180" y="14" class="can-id">0x58A</text>
+          <text x="260" y="14" class="can-sdo">SDO.tx</text>
+          <text x="340" y="14" class="can-dim">8</text>
+          <text x="400" y="14" class="can-data">43 18 10 01 6C 6F 72 64</text>
+          <text x="720" y="14" class="can-ink">C...lord</text>
+          <text x="860" y="14" class="can-ink">0x1A</text>
+        </g>
+        <g transform="translate(0,108)">
+          <text x="12" y="14" class="can-dim">0007</text>
+          <text x="60" y="14" class="can-dim">0.062</text>
+          <text x="180" y="14" class="can-id">0x80 </text>
+          <text x="260" y="14" class="can-pdo">SYNC  </text>
+          <text x="340" y="14" class="can-dim">0</text>
+          <text x="400" y="14" class="can-dim">—</text>
+          <text x="720" y="14" class="can-ink"> </text>
+          <text x="860" y="14" class="can-ink">bus</text>
+        </g>
+        <g transform="translate(0,126)">
+          <text x="12" y="14" class="can-dim">0008</text>
+          <text x="60" y="14" class="can-dim">0.073</text>
+          <text x="180" y="14" class="can-id">0x19A</text>
+          <text x="260" y="14" class="can-pdo">TPDO1 </text>
+          <text x="340" y="14" class="can-dim">8</text>
+          <text x="400" y="14" class="can-data">4C C3 BC 62 65 63 6B 00</text>
+          <text x="720" y="14" class="can-ink">Lübeck.</text>
+          <text x="860" y="14" class="can-ink">0x1A</text>
+        </g>
+        <g transform="translate(0,144)">
+          <text x="12" y="14" class="can-dim">0009</text>
+          <text x="60" y="14" class="can-dim">0.084</text>
+          <text x="180" y="14" class="can-id">0x71A</text>
+          <text x="260" y="14" class="can-pdo">HB    </text>
+          <text x="340" y="14" class="can-dim">1</text>
+          <text x="400" y="14" class="can-data">05</text>
+          <text x="720" y="14" class="can-ink">.</text>
+          <text x="860" y="14" class="can-ink">0x1A</text>
+        </g>
+        <g transform="translate(0,162)">
+          <text x="12" y="14" class="can-dim">0010</text>
+          <text x="60" y="14" class="can-dim">0.095</text>
+          <text x="180" y="14" class="can-id">0x19A</text>
+          <text x="260" y="14" class="can-pdo">TPDO1 </text>
+          <text x="340" y="14" class="can-dim">8</text>
+          <text x="400" y="14" class="can-data">43 2B 2B 20 26 20 43 00</text>
+          <text x="720" y="14" class="can-ink">C++ &amp; C.</text>
+          <text x="860" y="14" class="can-ink">0x1A</text>
+        </g>
+        <g transform="translate(0,180)">
+          <text x="12" y="14" class="can-dim">0011</text>
+          <text x="60" y="14" class="can-dim">0.106</text>
+          <text x="180" y="14" class="can-id">0x29A</text>
+          <text x="260" y="14" class="can-pdo">TPDO2 </text>
+          <text x="340" y="14" class="can-dim">8</text>
+          <text x="400" y="14" class="can-data">52 53 32 33 32 20 4F 4B</text>
+          <text x="720" y="14" class="can-ink">RS232 OK</text>
+          <text x="860" y="14" class="can-ink">0x1A</text>
+        </g>
+      </g>
+      
+      <g font-family="IBM Plex Mono, monospace" font-size="11" transform="translate(0,198)">
+        <g>
+          <text x="12" y="14" class="can-dim">0012</text>
+          <text x="60" y="14" class="can-dim">0.117</text>
+          <text x="180" y="14" class="can-id">0x71A</text>
+          <text x="260" y="14" class="can-pdo">HB    </text>
+          <text x="340" y="14" class="can-dim">1</text>
+          <text x="400" y="14" class="can-data">05</text>
+          <text x="720" y="14" class="can-ink">.</text>
+          <text x="860" y="14" class="can-ink">0x1A</text>
+        </g>
+        <g transform="translate(0,18)">
+          <text x="12" y="14" class="can-dim">0013</text>
+          <text x="60" y="14" class="can-dim">0.128</text>
+          <text x="180" y="14" class="can-id">0x19A</text>
+          <text x="260" y="14" class="can-pdo">TPDO1 </text>
+          <text x="340" y="14" class="can-dim">8</text>
+          <text x="400" y="14" class="can-data">62 61 72 65 20 6D 65 74</text>
+          <text x="720" y="14" class="can-ink">bare met</text>
+          <text x="860" y="14" class="can-ink">0x1A</text>
+        </g>
+        <g transform="translate(0,36)">
+          <text x="12" y="14" class="can-dim">0014</text>
+          <text x="60" y="14" class="can-dim">0.139</text>
+          <text x="180" y="14" class="can-id">0x29A</text>
+          <text x="260" y="14" class="can-pdo">TPDO2 </text>
+          <text x="340" y="14" class="can-dim">8</text>
+          <text x="400" y="14" class="can-data">61 6C 20 3C 33 00 00 00</text>
+          <text x="720" y="14" class="can-ink">al &lt;3...</text>
+          <text x="860" y="14" class="can-ink">0x1A</text>
+        </g>
+        <g transform="translate(0,54)">
+          <text x="12" y="14" class="can-dim">0015</text>
+          <text x="60" y="14" class="can-dim">0.150</text>
+          <text x="180" y="14" class="can-id">0x000</text>
+          <text x="260" y="14" class="can-pdo">NMT   </text>
+          <text x="340" y="14" class="can-dim">2</text>
+          <text x="400" y="14" class="can-data">05 1A</text>
+          <text x="720" y="14" class="can-ink">..</text>
+          <text x="860" y="14" class="can-ink">0x1A</text>
+        </g>
+        <g transform="translate(0,72)">
+          <text x="12" y="14" class="can-dim">0016</text>
+          <text x="60" y="14" class="can-dim">0.161</text>
+          <text x="180" y="14" class="can-id">0x19A</text>
+          <text x="260" y="14" class="can-pdo">TPDO1 </text>
+          <text x="340" y="14" class="can-dim">8</text>
+          <text x="400" y="14" class="can-data">73 68 69 70 70 69 6E 67</text>
+          <text x="720" y="14" class="can-ink">shipping</text>
+          <text x="860" y="14" class="can-ink">0x1A</text>
+        </g>
+        <g transform="translate(0,90)">
+          <text x="12" y="14" class="can-dim">0017</text>
+          <text x="60" y="14" class="can-dim">0.172</text>
+          <text x="180" y="14" class="can-id">0x19A</text>
+          <text x="260" y="14" class="can-pdo">TPDO1 </text>
+          <text x="340" y="14" class="can-dim">8</text>
+          <text x="400" y="14" class="can-data">66 77 2E 20 73 69 6E 63</text>
+          <text x="720" y="14" class="can-ink">fw. sinc</text>
+          <text x="860" y="14" class="can-ink">0x1A</text>
+        </g>
+        <g transform="translate(0,108)">
+          <text x="12" y="14" class="can-dim">0018</text>
+          <text x="60" y="14" class="can-dim">0.183</text>
+          <text x="180" y="14" class="can-id">0x19A</text>
+          <text x="260" y="14" class="can-pdo">TPDO1 </text>
+          <text x="340" y="14" class="can-dim">8</text>
+          <text x="400" y="14" class="can-data">65 20 32 30 31 34 2E 00</text>
+          <text x="720" y="14" class="can-ink">e 2014..</text>
+          <text x="860" y="14" class="can-ink">0x1A</text>
+        </g>
+        <g transform="translate(0,126)">
+          <text x="12" y="14" class="can-dim">0019</text>
+          <text x="60" y="14" class="can-dim">0.194</text>
+          <text x="180" y="14" class="can-id">0x71A</text>
+          <text x="260" y="14" class="can-pdo">HB    </text>
+          <text x="340" y="14" class="can-dim">1</text>
+          <text x="400" y="14" class="can-data">05</text>
+          <text x="720" y="14" class="can-ink">.</text>
+          <text x="860" y="14" class="can-ink">0x1A</text>
+        </g>
+        <g transform="translate(0,144)">
+          <text x="12" y="14" class="can-dim">0020</text>
+          <text x="60" y="14" class="can-dim">0.205</text>
+          <text x="180" y="14" class="can-id">0x19A</text>
+          <text x="260" y="14" class="can-pdo">TPDO1 </text>
+          <text x="340" y="14" class="can-dim">8</text>
+          <text x="400" y="14" class="can-data">6C 6F 72 64 77 61 72 65</text>
+          <text x="720" y="14" class="can-ink">lordware</text>
+          <text x="860" y="14" class="can-ink">0x1A</text>
+        </g>
+        <g transform="translate(0,162)">
+          <text x="12" y="14" class="can-dim">0021</text>
+          <text x="60" y="14" class="can-dim">0.216</text>
+          <text x="180" y="14" class="can-id">0x29A</text>
+          <text x="260" y="14" class="can-pdo">TPDO2 </text>
+          <text x="340" y="14" class="can-dim">8</text>
+          <text x="400" y="14" class="can-data">4C C3 BC 62 65 63 6B 00</text>
+          <text x="720" y="14" class="can-ink">Lübeck.</text>
+          <text x="860" y="14" class="can-ink">0x1A</text>
+        </g>
+        <g transform="translate(0,180)">
+          <text x="12" y="14" class="can-dim">0022</text>
+          <text x="60" y="14" class="can-dim">0.227</text>
+          <text x="180" y="14" class="can-id">0x71A</text>
+          <text x="260" y="14" class="can-pdo">HB    </text>
+          <text x="340" y="14" class="can-dim">1</text>
+          <text x="400" y="14" class="can-data">05</text>
+          <text x="720" y="14" class="can-ink">.</text>
+          <text x="860" y="14" class="can-ink">0x1A</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

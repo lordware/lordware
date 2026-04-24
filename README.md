@@ -1,59 +1,71 @@
-<!-- Profile README for lordware. See docs/superpowers/specs/ for design. -->
+<!-- Profile README for lordware. Assets in assets/, served raw from github.com/lordware/lordware/main. -->
+<!-- Do not add <style>; GitHub strips it. All motion lives inside the SVGs. -->
 
 <div align="center">
 
-```
- ██╗      ██████╗ ██████╗ ██████╗ ██╗    ██╗ █████╗ ██████╗ ███████╗
- ██║     ██╔═══██╗██╔══██╗██╔══██╗██║    ██║██╔══██╗██╔══██╗██╔════╝
- ██║     ██║   ██║██████╔╝██║  ██║██║ █╗ ██║███████║██████╔╝█████╗
- ██║     ██║   ██║██╔══██╗██║  ██║██║███╗██║██╔══██║██╔══██╗██╔══╝
- ███████╗╚██████╔╝██║  ██║██████╔╝╚███╔███╔╝██║  ██║██║  ██║███████╗
- ╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝  ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝
-```
+<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/mark.svg" alt="lordware" width="140" height="140" />
 
-<a href="https://github.com/lordware">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=600&color=00FF9C&center=true&vCenter=true&width=640&lines=%3E+writing+C%23+at+3am;%3E+most+of+my+work+is+classified;%3E+lordware.exe+is+running;%3E+based+in+L%C3%BCbeck%2C+DE" alt="typing SVG" />
-</a>
+<br/>
+
+<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/hero-next.svg" alt="lordware — firmware / embedded / Lübeck DE" width="960" />
 
 </div>
 
 ## `./whoami`
 
 ```txt
-> Developer based in Lübeck, DE.
-> Most of my work lives in private repos — the stats below count all of it.
-> I write code that other people don't read.
+> Software Developer · Embedded Systems
+> Lübeck, DE
+> stack: C · C++ · Python · C#
 ```
 
-## `./arsenal`
+## `./now`
 
 <div align="center">
 
-![C#](https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=csharp&logoColor=white)
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/ticker.svg" alt="now — shipping, tinkering, learning, reading, dreaming" width="960" />
 
 </div>
 
-## `./stats`
+## `./bus`
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=lordware&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&card_width=440" alt="lordware's GitHub stats" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lordware&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" alt="lordware's top languages" />
+<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/can-bus.svg" alt="CANopen bus monitor" width="960" />
 
 </div>
+
+> Live-ish CANopen trace. Node `0x1A`, 500 kb/s, DS-301. If you squint at the ASCII column you'll see what it's actually saying.
+
+## `./scope`
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/scope.svg" alt="RS-232 oscilloscope trace" width="960" />
+
+</div>
+
+> UART, 9600 8N1, TTL 5V. The bytes decode to exactly what you'd expect.
+
+## `./boot`
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/boot.svg" alt="POST boot sequence" width="960" />
+
+</div>
+
+## `./dump`
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/hexdump.svg" alt="hex dump of lordware.bin" width="960" />
+
+</div>
+
+> `xxd lordware.bin | head`. There's a note hidden in the ASCII column starting at `0x3C`.
 
 ## `./activity`
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com?user=lordware&theme=tokyonight&hide_border=true" alt="lordware's commit streak" />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=lordware&theme=tokyo-night&hide_border=true&area=true" alt="lordware's activity graph" />
-
-</div>
 
 <div align="center">
 
@@ -67,17 +79,19 @@
 
 ## `./connect`
 
-<div align="center">
-
-![Discord](https://img.shields.io/badge/discord-lordware1-5865F2?style=for-the-badge&logo=discord&logoColor=white)
-![Profile views](https://komarev.com/ghpvc/?username=lordware&label=visitors&color=00ff9c&style=for-the-badge)
-
-</div>
-
----
+```txt
+> discord ···· lordware1
+> location ··· Lübeck, DE  (53.87°N 10.69°E)
+> availability  open to interesting embedded work
+> response ··· asynchronous, but quickly
+```
 
 <div align="center">
 
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="random dev quote" />
+<sub>— end of transmission —</sub>
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/mark.svg" alt="" width="40" height="40" />
 
 </div>

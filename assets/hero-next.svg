@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 260" width="960" height="260" role="img" aria-label="lordware — NeXT-style hero">
+  <defs>
+    
+    <linearGradient id="scanGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#E8DCC4" stop-opacity="0"></stop>
+      <stop offset="50%" stop-color="#E8DCC4" stop-opacity="0.08"></stop>
+      <stop offset="100%" stop-color="#E8DCC4" stop-opacity="0"></stop>
+    </linearGradient>
+    <pattern id="dots" width="3" height="3" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.5" fill="#E8DCC4" opacity="0.08"></circle>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="260" fill="#1A1814"></rect>
+  <rect width="960" height="260" fill="url(#dots)"></rect>
+
+  
+  <g transform="translate(40, 40)">
+    <rect x="0" y="0" width="24" height="12" fill="#FF4F4F"></rect>
+    <rect x="0" y="12" width="24" height="12" fill="#FFB83D"></rect>
+    <rect x="0" y="24" width="24" height="12" fill="#FFEB3B"></rect>
+    <rect x="0" y="36" width="24" height="12" fill="#4FD97F"></rect>
+    <rect x="0" y="48" width="24" height="12" fill="#4FC3FF"></rect>
+    <rect x="0" y="60" width="24" height="12" fill="#B77FFF"></rect>
+  </g>
+
+  
+  <g class="flick">
+    <text x="84" y="92" font-size="68" font-weight="700" letter-spacing="-1.4" fill="#E8DCC4" font-family="&#39;IBM Plex Mono&#39;,&#39;Menlo&#39;,&#39;Consolas&#39;,monospace">lordware</text>
+    <rect x="84" y="102" width="380" height="2" fill="#E8DCC4"></rect>
+  </g>
+
+  
+  <g font-family="&#39;IBM Plex Mono&#39;,&#39;Menlo&#39;,&#39;Consolas&#39;,monospace" font-size="13">
+    <text x="84" y="132" fill="#A89968">SYSTEM</text>
+    <text x="170" y="132" fill="#E8DCC4">embedded / firmware</text>
+
+    <text x="84" y="152" fill="#A89968">LOCATION</text>
+    <text x="170" y="152" fill="#E8DCC4">Lübeck, DE · 53.87°N 10.69°E</text>
+
+    <text x="84" y="172" fill="#A89968">STACK</text>
+    <text x="170" y="172" fill="#E8DCC4">C · C++ · Arduino · RS-232 · CANopen</text>
+
+    <text x="84" y="192" fill="#A89968">UPTIME</text>
+    <text x="170" y="192" fill="#E8DCC4">04y 216d <tspan fill="#A89968">· shipping since 2014</tspan></text>
+  </g>
+
+  
+  <g font-family="&#39;IBM Plex Mono&#39;,&#39;Menlo&#39;,&#39;Consolas&#39;,monospace" font-size="14">
+    <text x="84" y="222" fill="#FF5C3A">&gt;</text>
+    <text x="100" y="222" fill="#E8DCC4">./lordware --interactive</text>
+    <rect x="282" y="211" width="8" height="14" fill="#E8DCC4" class="cursor"></rect>
+  </g>
+
+  
+  <g transform="translate(620, 40)" font-family="&#39;IBM Plex Mono&#39;,&#39;Menlo&#39;,&#39;Consolas&#39;,monospace" font-size="11">
+    <rect x="0" y="0" width="300" height="180" fill="none" stroke="#3A352C" stroke-width="1"></rect>
+    <rect x="0" y="0" width="300" height="18" fill="#2A251E"></rect>
+    <text x="8" y="13" fill="#A89968">── status.dat ──────────────── 0x2E</text>
+
+    <text x="8" y="38" fill="#6B6450">bus</text>
+    <text x="80" y="38" fill="#E8DCC4">CAN 2.0B @ 500 kbps</text>
+
+    <text x="8" y="56" fill="#6B6450">node-id</text>
+    <text x="80" y="56" fill="#E8DCC4">0x1A  pre-op → op</text>
+
+    <text x="8" y="74" fill="#6B6450">pdo.tx1</text>
+    <text x="80" y="74" fill="#E8DCC4">0x19A  8 bytes  10ms</text>
+
+    <text x="8" y="92" fill="#6B6450">sdo</text>
+    <text x="80" y="92" fill="#E8DCC4">idle</text>
+
+    <text x="8" y="110" fill="#6B6450">heartbeat</text>
+    <circle cx="78" cy="106" r="3" fill="#3AFFBE" class="hb"></circle>
+    <text x="88" y="110" fill="#E8DCC4">alive · 1000ms</text>
+
+    <text x="8" y="128" fill="#6B6450">temp.mcu</text>
+    <text x="80" y="128" fill="#E8DCC4">41.2 °C</text>
+
+    <text x="8" y="146" fill="#6B6450">rx.errors</text>
+    <text x="80" y="146" fill="#E8DCC4">0</text>
+
+    <text x="8" y="164" fill="#6B6450">tx.errors</text>
+    <text x="80" y="164" fill="#E8DCC4">0</text>
+  </g>
+
+  
+  <rect x="0" y="0" width="960" height="18" fill="url(#scanGrad)" class="scan"></rect>
+</svg>

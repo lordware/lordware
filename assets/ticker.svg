@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 90" width="960" height="90" role="img" aria-label="Now building ticker">
+  <defs>
+    
+    <clipPath id="tickerClip"><rect x="0" y="0" width="960" height="90"></rect></clipPath>
+  </defs>
+
+  <rect width="960" height="90" class="tick-bg"></rect>
+  <rect x="0" y="0" width="960" height="22" fill="#2A251E"></rect>
+  <text x="12" y="16" class="tick-tag">NOW:</text>
+  <text x="56" y="16" class="tick-dim">/proc/lordware · live</text>
+  <text x="860" y="16" class="tick-dim">tx ▌<tspan class="blk">▌</tspan></text>
+
+  <g clip-path="url(#tickerClip)">
+    <g class="marquee" transform="translate(0, 58)">
+      <g font-family="IBM Plex Mono, monospace" font-size="14">
+        <text x="0" y="0" fill="#FF5C3A">[ shipping ]</text>
+        <text x="120" y="0" fill="#E8DCC4">motor controller firmware · CANopen DS402 profile</text>
+        <text x="560" y="0" fill="#A89968">——</text>
+        <text x="620" y="0" fill="#FFB83D">[ tinkering ]</text>
+        <text x="740" y="0" fill="#E8DCC4">ESP32 ↔ legacy RS232 plotter bridge</text>
+        <text x="1080" y="0" fill="#A89968">——</text>
+        <text x="1140" y="0" fill="#4FD97F">[ learning ]</text>
+        <text x="1260" y="0" fill="#E8DCC4">lock-free ring buffers on AVR (yes, really)</text>
+        <text x="1660" y="0" fill="#A89968">——</text>
+        <text x="1720" y="0" fill="#4FC3FF">[ reading ]</text>
+        <text x="1840" y="0" fill="#E8DCC4">Making Embedded Systems, E. White · MISRA C:2012</text>
+        <text x="2260" y="0" fill="#A89968">——</text>
+        <text x="2320" y="0" fill="#B77FFF">[ dreaming ]</text>
+        <text x="2440" y="0" fill="#E8DCC4">a homemade logic analyzer that fits in an Altoids tin</text>
+      </g>
+      <g font-family="IBM Plex Mono, monospace" font-size="14" transform="translate(2900, 0)">
+        <text x="0" y="0" fill="#FF5C3A">[ shipping ]</text>
+        <text x="120" y="0" fill="#E8DCC4">motor controller firmware · CANopen DS402 profile</text>
+        <text x="560" y="0" fill="#A89968">——</text>
+        <text x="620" y="0" fill="#FFB83D">[ tinkering ]</text>
+        <text x="740" y="0" fill="#E8DCC4">ESP32 ↔ legacy RS232 plotter bridge</text>
+        <text x="1080" y="0" fill="#A89968">——</text>
+        <text x="1140" y="0" fill="#4FD97F">[ learning ]</text>
+        <text x="1260" y="0" fill="#E8DCC4">lock-free ring buffers on AVR (yes, really)</text>
+      </g>
+    </g>
+  </g>
+</svg>

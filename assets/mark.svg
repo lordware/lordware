@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img" aria-label="lordware signature mark">
+  <defs>
+    
+  </defs>
+  <rect width="240" height="240" fill="#1A1814"></rect>
+
+  
+  <g class="spin">
+    <circle cx="120" cy="120" r="104" fill="none" stroke="#3A352C" stroke-width="1" stroke-dasharray="2 4"></circle>
+    <circle cx="120" cy="120" r="92" fill="none" stroke="#3A352C" stroke-width="1"></circle>
+    
+    <g fill="#A89968">
+      <rect x="118" y="18" width="4" height="8"></rect>
+      <rect x="118" y="214" width="4" height="8"></rect>
+      <rect x="18" y="118" width="8" height="4"></rect>
+      <rect x="214" y="118" width="8" height="4"></rect>
+    </g>
+    
+    <path d="M 50 50 L 80 80 M 190 50 L 160 80 M 50 190 L 80 160 M 190 190 L 160 160" stroke="#FFB83D" stroke-width="1" opacity="0.5"></path>
+  </g>
+
+  
+  <g>
+    <rect x="60" y="60" width="120" height="120" fill="#221E18" stroke="#A89968" stroke-width="1"></rect>
+    
+    <g fill="#A89968">
+      <rect x="50" y="72" width="10" height="4"></rect>
+      <rect x="50" y="88" width="10" height="4"></rect>
+      <rect x="50" y="104" width="10" height="4"></rect>
+      <rect x="50" y="120" width="10" height="4"></rect>
+      <rect x="50" y="136" width="10" height="4"></rect>
+      <rect x="50" y="152" width="10" height="4"></rect>
+      <rect x="50" y="168" width="10" height="4"></rect>
+
+      <rect x="180" y="72" width="10" height="4"></rect>
+      <rect x="180" y="88" width="10" height="4"></rect>
+      <rect x="180" y="104" width="10" height="4"></rect>
+      <rect x="180" y="120" width="10" height="4"></rect>
+      <rect x="180" y="136" width="10" height="4"></rect>
+      <rect x="180" y="152" width="10" height="4"></rect>
+      <rect x="180" y="168" width="10" height="4"></rect>
+    </g>
+    
+    <circle cx="72" cy="72" r="3" fill="#FF5C3A" class="pin"></circle>
+
+    
+    <text x="120" y="128" font-family="IBM Plex Mono, Menlo, monospace" font-size="46" font-weight="700" fill="#E8DCC4" text-anchor="middle">lw</text>
+    <text x="120" y="158" font-family="IBM Plex Mono, monospace" font-size="9" fill="#A89968" text-anchor="middle">LORDWARE</text>
+    <text x="120" y="170" font-family="IBM Plex Mono, monospace" font-size="8" fill="#6B6450" text-anchor="middle">AVR · 16MHz · DE</text>
+  </g>
+
+  
+  <g transform="translate(60, 220)">
+    <rect x="0" y="0" width="20" height="4" fill="#FF4F4F"></rect>
+    <rect x="20" y="0" width="20" height="4" fill="#FFB83D"></rect>
+    <rect x="40" y="0" width="20" height="4" fill="#FFEB3B"></rect>
+    <rect x="60" y="0" width="20" height="4" fill="#4FD97F"></rect>
+    <rect x="80" y="0" width="20" height="4" fill="#4FC3FF"></rect>
+    <rect x="100" y="0" width="20" height="4" fill="#B77FFF"></rect>
+  </g>
+</svg>

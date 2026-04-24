@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 260" width="960" height="260" role="img" aria-label="Boot POST sequence">
+  <defs>
+    
+  </defs>
+  <rect width="960" height="260" class="boot-bg"></rect>
+
+  <g>
+    <text class="boot-ink" x="16" y="24" opacity="0">
+      LORDWARE BIOS v2.14.07  © 2026 · AVR @ 16 MHz · 8K SRAM
+      
+    </text>
+    <text class="boot-dim" x="16" y="42" opacity="0">
+      ────────────────────────────────────────────────────────────
+      
+    </text>
+    <text class="boot-ink" x="16" y="64" opacity="0">
+      Memory test ....... 8192 bytes
+      
+    </text>
+    <text class="boot-ok" x="580" y="64" opacity="0">
+      [ OK ]
+      
+    </text>
+    <text class="boot-ink" x="16" y="84" opacity="0">
+      Detecting UART0 .. 9600 8N1
+      
+    </text>
+    <text class="boot-ok" x="580" y="84" opacity="0">
+      [ OK ]
+      
+    </text>
+    <text class="boot-ink" x="16" y="104" opacity="0">
+      Detecting MCP2515 .. CAN 500 kb/s
+      
+    </text>
+    <text class="boot-ok" x="580" y="104" opacity="0">
+      [ OK ]
+      
+    </text>
+    <text class="boot-ink" x="16" y="124" opacity="0">
+      CANopen stack ..... node 0x1A
+      
+    </text>
+    <text class="boot-ok" x="580" y="124" opacity="0">
+      [ OK ]
+      
+    </text>
+    <text class="boot-ink" x="16" y="144" opacity="0">
+      Coffee subsystem ..
+      
+    </text>
+    <text class="boot-warn" x="580" y="144" opacity="0">
+      [WARN] low
+      
+    </text>
+    <text class="boot-ink" x="16" y="164" opacity="0">
+      Sleep subsystem ...
+      
+    </text>
+    <text class="boot-warn" x="580" y="164" opacity="0">
+      [FAIL] not found
+      
+    </text>
+    <text class="boot-dim" x="16" y="186" opacity="0">
+      ────────────────────────────────────────────────────────────
+      
+    </text>
+    <text class="boot-ink" x="16" y="208" opacity="0">
+      loading lordware.bin ............................
+      
+    </text>
+    <text class="boot-ok" x="580" y="208" opacity="0">
+      [ OK ]
+      
+    </text>
+    <text x="16" y="238" opacity="0">
+      <tspan class="boot-ok">&gt;</tspan>
+      <tspan class="boot-ink" dx="6">welcome. the lights are green. ship it.</tspan>
+      
+    </text>
+    <rect x="478" y="226" width="8" height="14" class="boot-ink" opacity="0">
+      
+      
+    </rect>
+  </g>
+</svg>

@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 180" width="960" height="180" role="img" aria-label="Hex memory dump of lordware.bin">
+  <defs>
+    
+  </defs>
+
+  <rect width="960" height="180" class="hex-bg"></rect>
+
+  
+  <text class="hex-addr" x="12" y="20">offset(h)  00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F    decoded</text>
+  <line x1="12" y1="28" x2="948" y2="28" stroke="#3A352C" stroke-width="1"></line>
+
+  
+  <g font-family="IBM Plex Mono, monospace" font-size="12">
+    <g>
+      <text class="hex-addr" x="12" y="48">00000000</text>
+      <text class="hex-byte" x="108" y="48">6C</text>
+      <text class="hex-byte" x="132" y="48">6F</text>
+      <text class="hex-byte" x="156" y="48">72</text>
+      <text class="hex-byte" x="180" y="48">64</text>
+      <text class="hex-byte" x="204" y="48">77</text>
+      <text class="hex-byte" x="228" y="48">61</text>
+      <text class="hex-byte" x="252" y="48">72</text>
+      <text class="hex-byte" x="276" y="48">65</text>
+      <text class="hex-byte" x="300" y="48">00</text>
+      <text class="hex-byte" x="324" y="48">66</text>
+      <text class="hex-byte" x="348" y="48">69</text>
+      <text class="hex-byte" x="372" y="48">72</text>
+      <text class="hex-byte" x="396" y="48">6D</text>
+      <text class="hex-byte" x="420" y="48">77</text>
+      <text class="hex-byte" x="444" y="48">61</text>
+      <text class="hex-byte" x="468" y="48">72</text>
+      <text class="hex-ascii" x="540" y="48">lordware.firmwar</text>
+    </g>
+    <g>
+      <text class="hex-addr" x="12" y="66">00000010</text>
+      <text class="hex-byte" x="108" y="66">65</text>
+      <text class="hex-byte" x="132" y="66">00</text>
+      <text class="hex-byte" x="156" y="66">41</text>
+      <text class="hex-byte" x="180" y="66">72</text>
+      <text class="hex-byte" x="204" y="66">64</text>
+      <text class="hex-byte" x="228" y="66">75</text>
+      <text class="hex-byte" x="252" y="66">69</text>
+      <text class="hex-byte" x="276" y="66">6E</text>
+      <text class="hex-byte" x="300" y="66">6F</text>
+      <text class="hex-byte" x="324" y="66">00</text>
+      <text class="hex-byte" x="348" y="66">52</text>
+      <text class="hex-byte" x="372" y="66">53</text>
+      <text class="hex-byte" x="396" y="66">32</text>
+      <text class="hex-byte" x="420" y="66">33</text>
+      <text class="hex-byte" x="444" y="66">32</text>
+      <text class="hex-byte" x="468" y="66">00</text>
+      <text class="hex-ascii" x="540" y="66">e.Arduino.RS232.</text>
+    </g>
+    <g>
+      <text class="hex-addr" x="12" y="84">00000020</text>
+      <text class="hex-byte" x="108" y="84">43</text>
+      <text class="hex-byte" x="132" y="84">41</text>
+      <text class="hex-byte" x="156" y="84">4E</text>
+      <text class="hex-byte" x="180" y="84">6F</text>
+      <text class="hex-byte" x="204" y="84">70</text>
+      <text class="hex-byte" x="228" y="84">65</text>
+      <text class="hex-byte" x="252" y="84">6E</text>
+      <text class="hex-byte" x="276" y="84">00</text>
+      <text class="hex-byte" x="300" y="84">43</text>
+      <text class="hex-byte" x="324" y="84">00</text>
+      <text class="hex-byte" x="348" y="84">43</text>
+      <text class="hex-byte" x="372" y="84">2B</text>
+      <text class="hex-byte" x="396" y="84">2B</text>
+      <text class="hex-byte" x="420" y="84">00</text>
+      <text class="hex-byte" x="444" y="84">4C</text>
+      <text class="hex-byte" x="468" y="84">C3</text>
+      <text class="hex-ascii" x="540" y="84">CANopen.C.C++.L.</text>
+    </g>
+    <g>
+      <text class="hex-addr" x="12" y="102">00000030</text>
+      <text class="hex-byte" x="108" y="102">BC</text>
+      <text class="hex-byte" x="132" y="102">62</text>
+      <text class="hex-byte" x="156" y="102">65</text>
+      <text class="hex-byte" x="180" y="102">63</text>
+      <text class="hex-byte" x="204" y="102">6B</text>
+      <text class="hex-byte" x="228" y="102">00</text>
+      <text class="hex-byte" x="252" y="102">68</text>
+      <text class="hex-byte" x="276" y="102">65</text>
+      <text class="hex-byte" x="300" y="102">79</text>
+      <text class="hex-byte" x="324" y="102">00</text>
+      <text class="hex-byte" x="348" y="102">79</text>
+      <text class="hex-byte" x="372" y="102">6F</text>
+      <text class="hex-byte" x="396" y="102">75</text>
+      <text class="hex-byte" x="420" y="102">00</text>
+      <text class="hex-byte" x="444" y="102">66</text>
+      <text class="hex-byte" x="468" y="102">6F</text>
+      <text class="hex-ascii" x="540" y="102">übeck.hey.you.fo</text>
+    </g>
+    <g>
+      <text class="hex-addr" x="12" y="120">00000040</text>
+      <text class="hex-byte" x="108" y="120">75</text>
+      <text class="hex-byte" x="132" y="120">6E</text>
+      <text class="hex-byte" x="156" y="120">64</text>
+      <text class="hex-byte" x="180" y="120">00</text>
+      <text class="hex-byte" x="204" y="120">61</text>
+      <text class="hex-byte" x="228" y="120">6E</text>
+      <text class="hex-byte" x="252" y="120">20</text>
+      <text class="hex-byte" x="276" y="120">65</text>
+      <text class="hex-byte" x="300" y="120">61</text>
+      <text class="hex-byte" x="324" y="120">73</text>
+      <text class="hex-byte" x="348" y="120">74</text>
+      <text class="hex-byte" x="372" y="120">65</text>
+      <text class="hex-byte" x="396" y="120">72</text>
+      <text class="hex-byte" x="420" y="120">20</text>
+      <text class="hex-byte" x="444" y="120">65</text>
+      <text class="hex-byte" x="468" y="120">67</text>
+      <text class="hex-ascii" x="540" y="120">und.an easter eg</text>
+    </g>
+    <g>
+      <text class="hex-addr" x="12" y="138">00000050</text>
+      <text class="hex-byte" x="108" y="138">67</text>
+      <text class="hex-byte" x="132" y="138">2E</text>
+      <text class="hex-byte" x="156" y="138">20</text>
+      <text class="hex-byte" x="180" y="138">73</text>
+      <text class="hex-byte" x="204" y="138">61</text>
+      <text class="hex-byte" x="228" y="138">79</text>
+      <text class="hex-byte" x="252" y="138">20</text>
+      <text class="hex-byte" x="276" y="138">68</text>
+      <text class="hex-byte" x="300" y="138">69</text>
+      <text class="hex-byte" x="324" y="138">00</text>
+      <text class="hex-byte" x="348" y="138">FF</text>
+      <text class="hex-byte" x="372" y="138">FF</text>
+      <text class="hex-byte" x="396" y="138">FF</text>
+      <text class="hex-byte" x="420" y="138">FF</text>
+      <text class="hex-byte" x="444" y="138">FF</text>
+      <text class="hex-byte" x="468" y="138">FF</text>
+      <text class="hex-ascii" x="540" y="138">g. say hi.......</text>
+    </g>
+  </g>
+
+  
+  <g>
+    <rect x="104" y="34" width="24" height="18" fill="#FFB83D" opacity="0.22">
+      
+      
+    </rect>
+  </g>
+</svg>
