@@ -44,3 +44,13 @@
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lordware&layout=compact&theme=tokyonight&hide_border=true&langs_count=6" alt="lordware's top languages" />
 
 </div>
+
+## `./activity`
+
+<div align="center">
+
+<img src="https://streak-stats.demolab.com?user=lordware&theme=tokyonight&hide_border=true" alt="lordware's commit streak" />
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=lordware&theme=tokyo-night&hide_border=true&area=true" alt="lordware's activity graph" />
+
+</div>
