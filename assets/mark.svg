@@ -6,6 +6,7 @@
 
   
   <g class="spin">
+    <animateTransform attributeName="transform" type="rotate" from="0 120 120" to="360 120 120" dur="60s" repeatCount="indefinite"/>
     <circle cx="120" cy="120" r="104" fill="none" stroke="#3A352C" stroke-width="1" stroke-dasharray="2 4"></circle>
     <circle cx="120" cy="120" r="92" fill="none" stroke="#3A352C" stroke-width="1"></circle>
     
@@ -41,7 +42,9 @@
       <rect x="180" y="168" width="10" height="4"></rect>
     </g>
     
-    <circle cx="72" cy="72" r="3" fill="#FF5C3A" class="pin"></circle>
+    <circle cx="72" cy="72" r="3" fill="#FF5C3A" class="pin">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
 
     
     <text x="120" y="128" font-family="IBM Plex Mono, Menlo, monospace" font-size="46" font-weight="700" fill="#E8DCC4" text-anchor="middle">lw</text>

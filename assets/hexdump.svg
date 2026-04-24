@@ -1,6 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 180" width="960" height="180" role="img" aria-label="Hex memory dump of lordware.bin">
   <defs>
-    
+    <style>
+      .hex-bg    { fill: #1A1814; }
+      .hex-addr  { fill: #A89968; font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 12px; }
+      .hex-byte  { fill: #E8DCC4; font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 12px; }
+      .hex-ascii { fill: #FFB83D; font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 12px; }
+    </style>
   </defs>
 
   <rect width="960" height="180" class="hex-bg"></rect>

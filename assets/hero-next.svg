@@ -1,6 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 260" width="960" height="260" role="img" aria-label="lordware — NeXT-style hero">
   <defs>
-    
+    <style>
+      .flick { }
+      .cursor { }
+      .hb { }
+      .scan { }
+    </style>
     <linearGradient id="scanGrad" x1="0" x2="0" y1="0" y2="1">
       <stop offset="0%" stop-color="#E8DCC4" stop-opacity="0"></stop>
       <stop offset="50%" stop-color="#E8DCC4" stop-opacity="0.08"></stop>
@@ -26,6 +31,7 @@
 
   
   <g class="flick">
+    <animate attributeName="opacity" values="1;0.88;1;0.92;1" dur="4.2s" repeatCount="indefinite"/>
     <text x="84" y="92" font-size="68" font-weight="700" letter-spacing="-1.4" fill="#E8DCC4" font-family="&#39;IBM Plex Mono&#39;,&#39;Menlo&#39;,&#39;Consolas&#39;,monospace">lordware</text>
     <rect x="84" y="102" width="380" height="2" fill="#E8DCC4"></rect>
   </g>
@@ -49,7 +55,9 @@
   <g font-family="&#39;IBM Plex Mono&#39;,&#39;Menlo&#39;,&#39;Consolas&#39;,monospace" font-size="14">
     <text x="84" y="222" fill="#FF5C3A">&gt;</text>
     <text x="100" y="222" fill="#E8DCC4">./lordware --interactive</text>
-    <rect x="282" y="211" width="8" height="14" fill="#E8DCC4" class="cursor"></rect>
+    <rect x="282" y="211" width="8" height="14" fill="#E8DCC4" class="cursor">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
   </g>
 
   
@@ -71,7 +79,9 @@
     <text x="80" y="92" fill="#E8DCC4">idle</text>
 
     <text x="8" y="110" fill="#6B6450">heartbeat</text>
-    <circle cx="78" cy="106" r="3" fill="#3AFFBE" class="hb"></circle>
+    <circle cx="78" cy="106" r="3" fill="#3AFFBE" class="hb">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/>
+    </circle>
     <text x="88" y="110" fill="#E8DCC4">alive · 1000ms</text>
 
     <text x="8" y="128" fill="#6B6450">temp.mcu</text>
