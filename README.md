@@ -75,3 +75,12 @@
 </a>
 
 </div>
+
+## `./connect`
+
+<div align="center">
+
+![Discord](https://img.shields.io/badge/discord-lordware1-5865F2?style=for-the-badge&logo=discord&logoColor=white)
+![Profile views](https://komarev.com/ghpvc/?username=lordware&label=visitors&color=00ff9c&style=for-the-badge)
+
+</div>
