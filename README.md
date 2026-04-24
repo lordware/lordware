@@ -35,7 +35,6 @@
 
 </div>
 
-> Live-ish CANopen trace. Node `0x1A`, 500 kb/s, DS-301. If you squint at the ASCII column you'll see what it's actually saying.
 
 ## `./scope`
 
@@ -45,7 +44,6 @@
 
 </div>
 
-> UART, 9600 8N1, TTL 5V. The bytes decode to exactly what you'd expect.
 
 ## `./boot`
 
@@ -63,7 +61,7 @@
 
 </div>
 
-> `xxd lordware.bin | head`. There's a note hidden in the ASCII column starting at `0x3C`.
+
 
 ## `./activity`
 
