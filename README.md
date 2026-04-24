@@ -16,3 +16,11 @@
 </a>
 
 </div>
+
+## `./whoami`
+
+```txt
+> Developer based in Lübeck, DE.
+> Most of my work lives in private repos — the stats below count all of it.
+> I write code that other people don't read.
+```
