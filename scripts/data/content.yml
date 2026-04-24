@@ -1,0 +1,46 @@
+# Rotating content for dynamic SVGs.
+# Each run of scripts/gen_all.py seeds its RNG from today's UTC date, so
+# the same day produces the same bytes (idempotent) but the content rotates daily.
+
+ticker:
+  - { category: shipping,  message: "motor controller firmware · CANopen DS402 profile" }
+  - { category: tinkering, message: "ESP32 <-> legacy RS232 plotter bridge" }
+  - { category: learning,  message: "lock-free ring buffers on AVR (yes, really)" }
+  - { category: reading,   message: "Making Embedded Systems, E. White · MISRA C:2012" }
+  - { category: dreaming,  message: "a homemade logic analyzer that fits in an Altoids tin" }
+  - { category: shipping,  message: "BLDC commutation tuner for hobby drones" }
+  - { category: tinkering, message: "a pocket-sized J1939 sniffer on a CH32V" }
+  - { category: learning,  message: "deterministic scheduling with rate-monotonic analysis" }
+  - { category: reading,   message: "Programming Embedded Systems, M. Barr · SEI CERT C" }
+  - { category: dreaming,  message: "an open-source replacement for the AD2 logic analyzer" }
+
+canbus:
+  easter_egg: "hello from lordware.de :)"
+  ids:
+    - { id: "0x080", type: "SYNC"    }
+    - { id: "0x181", type: "PDO1-Tx" }
+    - { id: "0x201", type: "PDO1-Rx" }
+    - { id: "0x281", type: "PDO2-Tx" }
+    - { id: "0x301", type: "PDO2-Rx" }
+    - { id: "0x381", type: "PDO3-Tx" }
+    - { id: "0x401", type: "PDO3-Rx" }
+    - { id: "0x581", type: "SDO-Tx" }
+    - { id: "0x601", type: "SDO-Rx" }
+    - { id: "0x701", type: "HB"     }
+    - { id: "0x000", type: "NMT"    }
+  nodes: ["0x1A", "0x1A", "0x1A", "0x1A", "0x02", "0x05", "0x11"]
+
+scope:
+  messages:
+    - "lordware"
+    - "hello world"
+    - "syn ack ok"
+    - "boot ok"
+    - "ping"
+    - "CAN=OK"
+    - "0x1A OP"
+    - "uart 9600"
+
+boot:
+  header: "LORDWARE BIOS"
+  copyright_year: 2026
