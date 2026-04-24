@@ -65,17 +65,6 @@
 
 </div>
 
-## `./now-playing`
-
-<div align="center">
-
-<!-- Replace the src below with your deployed Spotify function URL after completing Task 14. -->
-<a href="https://open.spotify.com/user/lordware1">
-  <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=PLACEHOLDER&cover_image=true&theme=natemoo-re&show_offline=true&background_color=0d1117&interchange=false&bar_color=00ff9c&bar_color_cover=false" alt="Spotify now playing" />
-</a>
-
-</div>
-
 ## `./connect`
 
 <div align="center">
