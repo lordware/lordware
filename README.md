@@ -84,3 +84,13 @@
 ![Profile views](https://komarev.com/ghpvc/?username=lordware&label=visitors&color=00ff9c&style=for-the-badge)
 
 </div>
+
+---
+
+<div align="center">
+
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight" alt="random dev quote" />
+
+<img src="https://github-profile-trophy.vercel.app/?username=lordware&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6&row=1&column=7" alt="trophies" />
+
+</div>
