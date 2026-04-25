@@ -19,6 +19,14 @@
 > stack: C · C++ · Python · C#
 ```
 
+## `./stats`
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/stats.svg" alt="live GitHub stats — stars, repos, followers, commits, streak" width="960" />
+
+</div>
+
 ## `./now`
 
 <div align="center">
@@ -61,6 +69,29 @@
 
 </div>
 
+## `./top`
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/repos.svg" alt="top-style process table of public repos (stars, forks, last push)" width="960" />
+
+</div>
+
+## `./lang`
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/lang.svg" alt="language byte distribution across public repos" width="960" />
+
+</div>
+
+## `./tail`
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/syslog.svg" alt="syslog-style tail of recent public GitHub events" width="960" />
+
+</div>
 
 
 ## `./activity`
