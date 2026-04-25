@@ -31,24 +31,10 @@ PAD = 12
 N_CELLS = 5
 CELL_GAP = 8
 
-
-def _now_utc() -> _dt.datetime:
-    return _dt.datetime.now(_dt.timezone.utc)
-
-
 GRAPHQL_QUERY = """
 query($login: String!) {
   user(login: $login) {
-    followers { totalCount }
-    following { totalCount }
-    repositories(privacy: PUBLIC, first: 100, ownerAffiliations: OWNER, isFork: false) {
-      totalCount
-      nodes { stargazerCount, forkCount }
-    }
     contributionsCollection {
-      totalCommitContributions
-      totalPullRequestContributions
-      totalIssueContributions
       contributionCalendar {
         totalContributions
         weeks {
@@ -62,6 +48,10 @@ query($login: String!) {
   }
 }
 """
+
+
+def _now_utc() -> _dt.datetime:
+    return _dt.datetime.now(_dt.timezone.utc)
 
 
 def _streaks(weeks: list[dict[str, Any]], today: _dt.date) -> tuple[int, int]:
@@ -96,38 +86,73 @@ def _streaks(weeks: list[dict[str, Any]], today: _dt.date) -> tuple[int, int]:
 
 
 def _fetch_stats() -> dict[str, Any]:
-    data = _github.graphql(GRAPHQL_QUERY, {"login": USER})
-    user = (data or {}).get("user") or {}
-    if not user:
-        raise _github.GitHubError("graphql: empty user")
+    print(f"[gen_stats] GET /users/{USER}")
+    user_data = _github.get(f"users/{USER}") or {}
+    print(f"[gen_stats]   followers={user_data.get('followers')} "
+          f"following={user_data.get('following')} "
+          f"public_repos={user_data.get('public_repos')}")
 
-    followers = (user.get("followers") or {}).get("totalCount", 0)
-    following = (user.get("following") or {}).get("totalCount", 0)
-    repos_obj = user.get("repositories") or {}
-    repos_total = repos_obj.get("totalCount", 0)
-    nodes = repos_obj.get("nodes") or []
-    stars_total = sum(int(n.get("stargazerCount", 0) or 0) for n in nodes)
-    forks_total = sum(int(n.get("forkCount", 0) or 0) for n in nodes)
+    print(f"[gen_stats] GET /users/{USER}/repos (paged)")
+    repos = _github.get_paged(f"users/{USER}/repos", sort="updated", per_page=100, max_pages=3)
+    owned = [r for r in repos if not r.get("fork") and not r.get("private")]
+    stars = sum(int(r.get("stargazers_count", 0) or 0) for r in owned)
+    forks = sum(int(r.get("forks_count", 0) or 0) for r in owned)
+    print(f"[gen_stats]   {len(owned)} owned repos · stars={stars} forks={forks}")
 
-    contrib = user.get("contributionsCollection") or {}
-    commits_year = int(contrib.get("totalCommitContributions", 0) or 0)
-    pr_year = int(contrib.get("totalPullRequestContributions", 0) or 0)
-    issues_year = int(contrib.get("totalIssueContributions", 0) or 0)
+    print(f"[gen_stats] GET /users/{USER}/events/public (paged)")
+    try:
+        events = _github.get_paged(f"users/{USER}/events/public", per_page=100, max_pages=3)
+    except _github.GitHubError as e:
+        print(f"[gen_stats]   events fetch failed: {e}")
+        events = []
 
-    cal = contrib.get("contributionCalendar") or {}
-    total_year = int(cal.get("totalContributions", 0) or 0)
-    today = _now_utc().date()
-    current_streak, longest_streak = _streaks(cal.get("weeks", []), today)
+    cutoff = _now_utc() - _dt.timedelta(days=90)
+    commits_90d = 0
+    pr_90d = 0
+    issues_90d = 0
+    for e in events:
+        ts_str = (e.get("created_at") or "").replace("Z", "+00:00")
+        try:
+            ts = _dt.datetime.fromisoformat(ts_str)
+        except Exception:
+            continue
+        if ts < cutoff:
+            continue
+        et = e.get("type")
+        payload = e.get("payload") or {}
+        if et == "PushEvent":
+            commits_90d += int(payload.get("size", 0) or 0)
+        elif et == "PullRequestEvent" and payload.get("action") == "opened":
+            pr_90d += 1
+        elif et == "IssuesEvent" and payload.get("action") == "opened":
+            issues_90d += 1
+    print(f"[gen_stats]   90d window: {commits_90d} commits · {pr_90d} PRs · {issues_90d} issues")
+
+    current_streak: int | None = None
+    longest_streak: int | None = None
+    total_year: int | None = None
+    print(f"[gen_stats] GraphQL contributionsCollection (best-effort, requires read:user)")
+    try:
+        gql = _github.graphql(GRAPHQL_QUERY, {"login": USER})
+        guser = (gql or {}).get("user") or {}
+        cal = ((guser.get("contributionsCollection") or {}).get("contributionCalendar") or {})
+        total_year = int(cal.get("totalContributions", 0) or 0)
+        today = _now_utc().date()
+        current_streak, longest_streak = _streaks(cal.get("weeks", []), today)
+        print(f"[gen_stats]   streak ok: current={current_streak}d longest={longest_streak}d total_year={total_year}")
+    except _github.GitHubError as e:
+        print(f"[gen_stats]   graphql unavailable ({e}); streak will show as N/A")
 
     return {
-        "followers": followers,
-        "following": following,
-        "repos": repos_total,
-        "stars": stars_total,
-        "forks": forks_total,
-        "commits_year": commits_year,
-        "pr_year": pr_year,
-        "issues_year": issues_year,
+        "followers": int(user_data.get("followers", 0) or 0),
+        "following": int(user_data.get("following", 0) or 0),
+        "repos": len(owned),
+        "public_repos": int(user_data.get("public_repos", 0) or 0),
+        "stars": stars,
+        "forks": forks,
+        "commits_90d": commits_90d,
+        "pr_90d": pr_90d,
+        "issues_90d": issues_90d,
         "total_year": total_year,
         "current_streak": current_streak,
         "longest_streak": longest_streak,
@@ -183,25 +208,31 @@ def _render(stats: dict[str, Any], generated_at: _dt.datetime) -> str:
     cell_h = H - HEADER_H - FOOTER_H - PAD
     y = HEADER_H + 4
 
-    cells: list[str] = []
+    streak = stats.get("current_streak")
+    longest = stats.get("longest_streak")
+    streak_value = f"{streak}d" if streak is not None else "—"
+    streak_sub = f"longest {longest}d" if longest is not None else "graphql N/A"
+
     cells_meta = [
-        ("STARS",    _fmt_big(stats.get("stars", 0)),
+        ("STARS",       _fmt_big(stats.get("stars", 0)),
          f"⑂ {_fmt_big(stats.get('forks', 0))} forks", AMBER, AMBER),
-        ("REPOS",    str(stats.get("repos", 0)),
-         "public · owner", BLUE, BLUE),
-        ("FOLLOWERS", _fmt_big(stats.get("followers", 0)),
+        ("REPOS",       str(stats.get("repos", 0)),
+         f"+{max(stats.get('public_repos', 0) - stats.get('repos', 0), 0)} forks/etc", BLUE, BLUE),
+        ("FOLLOWERS",   _fmt_big(stats.get("followers", 0)),
          f"following {_fmt_big(stats.get('following', 0))}", PURPLE, PURPLE),
-        ("COMMITS / 1y", _fmt_big(stats.get("commits_year", 0)),
-         f"PR {_fmt_big(stats.get('pr_year', 0))} · issues {_fmt_big(stats.get('issues_year', 0))}", GREEN, GREEN),
-        ("STREAK", f"{stats.get('current_streak', 0)}d",
-         f"longest {stats.get('longest_streak', 0)}d", HOT, HOT),
+        ("COMMITS / 90d", _fmt_big(stats.get("commits_90d", 0)),
+         f"PR {_fmt_big(stats.get('pr_90d', 0))} · issues {_fmt_big(stats.get('issues_90d', 0))}",
+         GREEN, GREEN),
+        ("STREAK",      streak_value, streak_sub, HOT, HOT),
     ]
+    cells: list[str] = []
     for i, (label, value, sub, color, accent) in enumerate(cells_meta):
         cx = PAD + i * (cell_w + CELL_GAP)
         cells.append(_cell(cx, y, cell_w, cell_h, label, value, sub, color, accent))
 
     when = generated_at.strftime("%Y-%m-%d %H:%M:%SZ")
-    total_year = stats.get("total_year", 0)
+    total_year = stats.get("total_year")
+    contrib_str = f"contrib (1y) {total_year}" if total_year is not None else "events api · 90d window"
     cache_blob = json.dumps(stats, separators=(",", ":"))
 
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-label="lordware live GitHub stats panel">
@@ -224,7 +255,7 @@ def _render(stats: dict[str, Any], generated_at: _dt.datetime) -> str:
   <line x1="0" y1="{HEADER_H}" x2="{W}" y2="{HEADER_H}" stroke="{GRID}" stroke-width="1"/>
   <text class="st-title" x="12" y="18">/sys/lordware/stats</text>
   <text class="st-sub"   x="170" y="18">live · GitHub REST + GraphQL</text>
-  <text class="st-sub"   x="{W - 240}" y="18">contrib (1y) {total_year} · refresh */6h</text>
+  <text class="st-sub"   x="{W - 240}" y="18">{_x(contrib_str)} · refresh */6h</text>
 
   {"".join(cells)}
 
@@ -242,10 +273,10 @@ def _render(stats: dict[str, Any], generated_at: _dt.datetime) -> str:
 
 def _placeholder_stats() -> dict[str, Any]:
     return {
-        "followers": 0, "following": 0, "repos": 0,
+        "followers": 0, "following": 0, "repos": 0, "public_repos": 0,
         "stars": 0, "forks": 0,
-        "commits_year": 0, "pr_year": 0, "issues_year": 0,
-        "total_year": 0, "current_streak": 0, "longest_streak": 0,
+        "commits_90d": 0, "pr_90d": 0, "issues_90d": 0,
+        "total_year": None, "current_streak": None, "longest_streak": None,
     }
 
 
@@ -259,10 +290,10 @@ def generate(out_dir: Path) -> Path:
     except _github.GitHubError as e:
         cache = _load_cache(out_path)
         if cache is None:
-            print(f"[gen_stats] API failed and no cache: {e}; rendering placeholder")
+            print(f"[gen_stats] REST failed and no cache: {e}; rendering placeholder")
             stats = _placeholder_stats()
         else:
-            print(f"[gen_stats] API failed ({e}); using cached stats")
+            print(f"[gen_stats] REST failed ({e}); using cached stats")
             stats = cache
 
     svg = _render(stats, _now_utc())
