@@ -85,6 +85,7 @@
 <div align="center">
 
 <img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/visitors.svg" alt="visitors" width="320" height="80" />
+<img src="https://komarev.com/ghpvc/?username=lordware&label=&color=1A1814&style=flat-square" alt="" width="1" height="1" />
 
 </div>
 
