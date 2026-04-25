@@ -27,6 +27,6 @@
   <circle cx="14" cy="150" r="3" fill="#4FD97F">
     <animate attributeName="opacity" values="1;0.3;1" dur="1.4s" repeatCount="indefinite"/>
   </circle>
-  <text class="st-foot" x="24" y="153">sampled 2026-04-25 08:34:22Z · v3 api · graphql v4</text>
+  <text class="st-foot" x="24" y="153">sampled 2026-04-25 08:36:37Z · v3 api · graphql v4</text>
   <text class="st-foot" x="870" y="153">lordware@gh</text>
 </svg>
