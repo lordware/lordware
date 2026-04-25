@@ -135,12 +135,25 @@ def _fmt_time(iso: str) -> str:
     return dt.strftime("%b %d %H:%M:%S")
 
 
+def _is_noise(e: dict[str, Any]) -> bool:
+    actor_login = ((e.get("actor") or {}).get("login") or "").lower()
+    if actor_login.endswith("[bot]"):
+        return True
+    et = e.get("type")
+    payload = e.get("payload") or {}
+    if et == "PushEvent" and int(payload.get("size", 0) or 0) == 0:
+        return True
+    return False
+
+
 def _fetch_events() -> list[dict[str, Any]]:
-    raw = _github.get_paged(f"users/{USER}/events/public", per_page=100, max_pages=1)
+    raw = _github.get_paged(f"users/{USER}/events/public", per_page=100, max_pages=2)
     out: list[dict[str, Any]] = []
     for e in raw:
         et = e.get("type")
         if et not in EVENT_RENDERERS:
+            continue
+        if _is_noise(e):
             continue
         facility, color, fmt = EVENT_RENDERERS[et]
         try:
