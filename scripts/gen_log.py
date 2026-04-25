@@ -146,8 +146,44 @@ def _is_noise(e: dict[str, Any]) -> bool:
     return False
 
 
+def _owned_repos() -> list[str]:
+    try:
+        repos = _github.get_paged(f"users/{USER}/repos", sort="updated", per_page=100, max_pages=2)
+    except _github.GitHubError as e:
+        print(f"[gen_log] repo list failed ({e})")
+        return []
+    return [
+        r["full_name"] for r in repos
+        if r.get("full_name") and not r.get("fork") and not r.get("private") and not r.get("archived")
+    ]
+
+
 def _fetch_events() -> list[dict[str, Any]]:
-    raw = _github.get_paged(f"users/{USER}/events/public", per_page=100, max_pages=2)
+    raw_by_id: dict[str, dict[str, Any]] = {}
+
+    print(f"[gen_log] GET /users/{USER}/events/public (paged)")
+    try:
+        for e in _github.get_paged(f"users/{USER}/events/public", per_page=100, max_pages=3):
+            eid = e.get("id")
+            if eid:
+                raw_by_id[eid] = e
+    except _github.GitHubError as e:
+        print(f"[gen_log]   user events fetch failed: {e}")
+
+    repos = _owned_repos()
+    print(f"[gen_log] merging events from {len(repos)} owned repos")
+    for full in repos:
+        try:
+            for e in _github.get_paged(f"repos/{full}/events", per_page=100, max_pages=1):
+                eid = e.get("id")
+                if eid and eid not in raw_by_id:
+                    raw_by_id[eid] = e
+        except _github.GitHubError as e:
+            print(f"[gen_log]   {full} events fetch failed: {e}")
+
+    raw = sorted(raw_by_id.values(), key=lambda e: e.get("created_at", ""), reverse=True)
+    print(f"[gen_log] {len(raw)} unique events before filter")
+
     out: list[dict[str, Any]] = []
     for e in raw:
         et = e.get("type")
@@ -166,6 +202,7 @@ def _fetch_events() -> list[dict[str, Any]]:
             "color": color,
             "msg": msg,
         })
+    print(f"[gen_log] {len(out)} events after filter")
     return out
 
 
