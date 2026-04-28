@@ -467,34 +467,20 @@
   <!-- trace: two copies, outer group scrolls L<-R -->
   <g clip-path="url(#s-clip)">
     <g>
-      <animateTransform attributeName="transform" type="translate" from="0 0" to="-2250 0" dur="22s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-864 0" dur="22s" repeatCount="indefinite"/>
       <g>
-        <path class="s-trace" d="M 0 70 L 18 70 L 36 70 L 36 120 L 54 120 L 72 120 L 90 120 L 108 120 L 108 70 L 126 70 L 126 120 L 144 120 L 144 70 L 162 70 L 180 70 L 180 120 L 198 120 L 198 70 L 216 70 L 234 70 L 234 120 L 252 120 L 252 70 L 270 70 L 270 120 L 288 120 L 288 70 L 306 70 L 306 120 L 324 120 L 342 120 L 342 70 L 360 70 L 378 70 L 378 120 L 396 120 L 396 70 L 414 70 L 432 70 L 432 120 L 450 120 L 468 120 L 486 120 L 486 70 L 504 70 L 522 70 L 522 120 L 540 120 L 540 70 L 558 70 L 576 70 L 576 120 L 594 120 L 594 70 L 612 70 L 630 70 L 630 120 L 648 120 L 666 120 L 684 120 L 684 70 L 702 70 L 720 70 L 720 120 L 738 120 L 738 70 L 756 70 L 774 70 L 774 120 L 792 120 L 792 70 L 810 70 L 828 70 L 828 120 L 846 120 L 846 70 L 864 70 L 882 70 L 900 70 L 918 70 L 918 120 L 936 120 L 936 70 L 954 70 L 972 70 L 972 120 L 990 120 L 990 70 L 1008 70 L 1026 70 L 1026 120 L 1044 120 L 1062 120 L 1080 120 L 1098 120 L 1116 120 L 1134 120 L 1134 70 L 1152 70 L 1152 120 L 1170 120 L 1188 120 L 1188 70 L 1206 70 L 1224 70 L 1224 120 L 1242 120 L 1242 70 L 1260 70 L 1278 70 L 1296 70 L 1296 120 L 1314 120 L 1314 70 L 1332 70 L 1350 70 L 1368 70 L 1368 120 L 1386 120 L 1386 70 L 1404 70 L 1422 70 L 1422 120 L 1440 120 L 1440 70 L 1458 70 L 1476 70 L 1494 70 L 1512 70 L 1512 120 L 1530 120 L 1530 70 L 1548 70 L 1566 70 L 1566 120 L 1584 120 L 1584 70 L 1602 70 L 1620 70 L 1620 120 L 1638 120 L 1656 120 L 1656 70 L 1674 70 L 1674 120 L 1692 120 L 1710 120 L 1710 70 L 1728 70 L 1746 70 L 1764 70 L 1764 120 L 1782 120 L 1782 70 L 1800 70 L 1818 70 L 1818 120 L 1836 120 L 1854 120 L 1872 120 L 1872 70 L 1890 70 L 1908 70 L 1908 120 L 1926 120 L 1926 70 L 1944 70 L 1962 70 L 1962 120 L 1980 120 L 1980 70 L 1998 70 L 2016 70 L 2016 120 L 2034 120 L 2052 120 L 2070 120 L 2070 70 L 2088 70 L 2088 120 L 2106 120 L 2124 120 L 2124 70 L 2142 70 L 2160 70 L 2160 120 L 2178 120 L 2178 70 L 2196 70 L 2214 70 L 2232 70 L 2250 70"/>
-        <text x="126" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">h</text>
-      <text x="324" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">e</text>
-      <text x="522" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">l</text>
-      <text x="720" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">l</text>
-      <text x="918" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">o</text>
-      <text x="1116" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii"> </text>
-      <text x="1314" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">w</text>
-      <text x="1512" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">o</text>
-      <text x="1710" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">r</text>
-      <text x="1908" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">l</text>
-      <text x="2106" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">d</text>
+        <path class="s-trace" d="M 0 70 L 18 70 L 36 70 L 36 120 L 54 120 L 72 120 L 90 120 L 108 120 L 126 120 L 126 70 L 144 70 L 162 70 L 180 70 L 180 120 L 198 120 L 198 70 L 216 70 L 234 70 L 234 120 L 252 120 L 252 70 L 270 70 L 270 120 L 288 120 L 306 120 L 306 70 L 324 70 L 324 120 L 342 120 L 342 70 L 360 70 L 378 70 L 378 120 L 396 120 L 396 70 L 414 70 L 432 70 L 432 120 L 450 120 L 468 120 L 468 70 L 486 70 L 504 70 L 522 70 L 522 120 L 540 120 L 540 70 L 558 70 L 576 70 L 576 120 L 594 120 L 594 70 L 612 70 L 630 70 L 630 120 L 648 120 L 648 70 L 666 70 L 684 70 L 702 70 L 702 120 L 720 120 L 738 120 L 738 70 L 756 70 L 774 70 L 774 120 L 792 120 L 792 70 L 810 70 L 828 70 L 846 70 L 864 70"/>
+        <text x="126" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">p</text>
+      <text x="324" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">i</text>
+      <text x="522" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">n</text>
+      <text x="720" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">g</text>
       </g>
-      <g transform="translate(2250 0)">
-        <path class="s-trace" d="M 0 70 L 18 70 L 36 70 L 36 120 L 54 120 L 72 120 L 90 120 L 108 120 L 108 70 L 126 70 L 126 120 L 144 120 L 144 70 L 162 70 L 180 70 L 180 120 L 198 120 L 198 70 L 216 70 L 234 70 L 234 120 L 252 120 L 252 70 L 270 70 L 270 120 L 288 120 L 288 70 L 306 70 L 306 120 L 324 120 L 342 120 L 342 70 L 360 70 L 378 70 L 378 120 L 396 120 L 396 70 L 414 70 L 432 70 L 432 120 L 450 120 L 468 120 L 486 120 L 486 70 L 504 70 L 522 70 L 522 120 L 540 120 L 540 70 L 558 70 L 576 70 L 576 120 L 594 120 L 594 70 L 612 70 L 630 70 L 630 120 L 648 120 L 666 120 L 684 120 L 684 70 L 702 70 L 720 70 L 720 120 L 738 120 L 738 70 L 756 70 L 774 70 L 774 120 L 792 120 L 792 70 L 810 70 L 828 70 L 828 120 L 846 120 L 846 70 L 864 70 L 882 70 L 900 70 L 918 70 L 918 120 L 936 120 L 936 70 L 954 70 L 972 70 L 972 120 L 990 120 L 990 70 L 1008 70 L 1026 70 L 1026 120 L 1044 120 L 1062 120 L 1080 120 L 1098 120 L 1116 120 L 1134 120 L 1134 70 L 1152 70 L 1152 120 L 1170 120 L 1188 120 L 1188 70 L 1206 70 L 1224 70 L 1224 120 L 1242 120 L 1242 70 L 1260 70 L 1278 70 L 1296 70 L 1296 120 L 1314 120 L 1314 70 L 1332 70 L 1350 70 L 1368 70 L 1368 120 L 1386 120 L 1386 70 L 1404 70 L 1422 70 L 1422 120 L 1440 120 L 1440 70 L 1458 70 L 1476 70 L 1494 70 L 1512 70 L 1512 120 L 1530 120 L 1530 70 L 1548 70 L 1566 70 L 1566 120 L 1584 120 L 1584 70 L 1602 70 L 1620 70 L 1620 120 L 1638 120 L 1656 120 L 1656 70 L 1674 70 L 1674 120 L 1692 120 L 1710 120 L 1710 70 L 1728 70 L 1746 70 L 1764 70 L 1764 120 L 1782 120 L 1782 70 L 1800 70 L 1818 70 L 1818 120 L 1836 120 L 1854 120 L 1872 120 L 1872 70 L 1890 70 L 1908 70 L 1908 120 L 1926 120 L 1926 70 L 1944 70 L 1962 70 L 1962 120 L 1980 120 L 1980 70 L 1998 70 L 2016 70 L 2016 120 L 2034 120 L 2052 120 L 2070 120 L 2070 70 L 2088 70 L 2088 120 L 2106 120 L 2124 120 L 2124 70 L 2142 70 L 2160 70 L 2160 120 L 2178 120 L 2178 70 L 2196 70 L 2214 70 L 2232 70 L 2250 70"/>
-        <text x="126" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">h</text>
-      <text x="324" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">e</text>
-      <text x="522" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">l</text>
-      <text x="720" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">l</text>
-      <text x="918" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">o</text>
-      <text x="1116" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii"> </text>
-      <text x="1314" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">w</text>
-      <text x="1512" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">o</text>
-      <text x="1710" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">r</text>
-      <text x="1908" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">l</text>
-      <text x="2106" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">d</text>
+      <g transform="translate(864 0)">
+        <path class="s-trace" d="M 0 70 L 18 70 L 36 70 L 36 120 L 54 120 L 72 120 L 90 120 L 108 120 L 126 120 L 126 70 L 144 70 L 162 70 L 180 70 L 180 120 L 198 120 L 198 70 L 216 70 L 234 70 L 234 120 L 252 120 L 252 70 L 270 70 L 270 120 L 288 120 L 306 120 L 306 70 L 324 70 L 324 120 L 342 120 L 342 70 L 360 70 L 378 70 L 378 120 L 396 120 L 396 70 L 414 70 L 432 70 L 432 120 L 450 120 L 468 120 L 468 70 L 486 70 L 504 70 L 522 70 L 522 120 L 540 120 L 540 70 L 558 70 L 576 70 L 576 120 L 594 120 L 594 70 L 612 70 L 630 70 L 630 120 L 648 120 L 648 70 L 666 70 L 684 70 L 702 70 L 702 120 L 720 120 L 738 120 L 738 70 L 756 70 L 774 70 L 774 120 L 792 120 L 792 70 L 810 70 L 828 70 L 846 70 L 864 70"/>
+        <text x="126" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">p</text>
+      <text x="324" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">i</text>
+      <text x="522" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">n</text>
+      <text x="720" y="155" fill="#FFB83D" text-anchor="middle" class="s-ascii">g</text>
       </g>
     </g>
   </g>
