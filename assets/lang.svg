@@ -32,6 +32,6 @@
   <circle cx="14" cy="310" r="3" fill="#4FD97F">
     <animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/>
   </circle>
-  <text class="l-foot" x="24" y="313">sampled 2026-05-01 06:51:50Z · refresh */6h via gh-actions</text>
+  <text class="l-foot" x="24" y="313">sampled 2026-05-01 12:17:39Z · refresh */6h via gh-actions</text>
   <text class="l-foot" x="850" y="313">[q]uit  [r]efresh</text>
 </svg>
