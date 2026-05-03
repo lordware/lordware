@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80" role="img" aria-label="visitors: 53" data-count="53">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80" role="img" aria-label="visitors: 55" data-count="55">
   <defs>
     <style>
       .v-bg    { fill: #1A1814; }
@@ -20,5 +20,5 @@
     </circle>
     <text x="32" y="63" class="v-sub">· live</text>
   </g>
-  <text x="252" y="54" class="v-count">53</text>
+  <text x="252" y="54" class="v-count">55</text>
 </svg>
