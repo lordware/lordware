@@ -16,7 +16,7 @@
       <rect x="0" y="24" width="960" height="196"/>
     </clipPath>
   </defs>
-  <metadata id="syslog-cache">[{"ts":"2026-04-25T08:40:08Z","facility":"sshd","color":"#4FC3FF","msg":"PullRequestReviewEvent: lordware/lordware #1 created"},{"ts":"2026-04-25T08:40:05Z","facility":"sshd","color":"#4FC3FF","msg":"PRReviewCommentEvent: lordware/lordware created"},{"ts":"2026-04-25T08:40:05Z","facility":"sshd","color":"#4FC3FF","msg":"PRReviewCommentEvent: lordware/lordware created"},{"ts":"2026-04-25T08:40:05Z","facility":"sshd","color":"#4FC3FF","msg":"PRReviewCommentEvent: lordware/lordware created"},{"ts":"2026-04-25T08:40:04Z","facility":"sshd","color":"#4FC3FF","msg":"PRReviewCommentEvent: lordware/lordware created"},{"ts":"2026-04-25T08:40:04Z","facility":"sshd","color":"#4FC3FF","msg":"PRReviewCommentEvent: lordware/lordware created"},{"ts":"2026-04-25T08:40:04Z","facility":"sshd","color":"#4FC3FF","msg":"PRReviewCommentEvent: lordware/lordware created"},{"ts":"2026-04-25T08:40:04Z","facility":"sshd","color":"#4FC3FF","msg":"PRReviewCommentEvent: lordware/lordware created"},{"ts":"2026-04-25T08:40:03Z","facility":"sshd","color":"#4FC3FF","msg":"PRReviewCommentEvent: lordware/lordware created"},{"ts":"2026-04-25T08:40:03Z","facility":"sshd","color":"#4FC3FF","msg":"PRReviewCommentEvent: lordware/lordware created"},{"ts":"2026-04-25T08:36:21Z","facility":"sshd","color":"#4FC3FF","msg":"PullRequestEvent: lordware/lordware #1 merged"},{"ts":"2026-04-25T08:36:14Z","facility":"sshd","color":"#4FC3FF","msg":"PullRequestEvent: lordware/lordware #1 opened"},{"ts":"2026-04-25T08:24:43Z","facility":"init","color":"#4FD97F","msg":"CreateEvent: lordware/lordware branch feat/live-github-data"},{"ts":"2026-04-24T07:17:03Z","facility":"init","color":"#4FD97F","msg":"CreateEvent: lordware/lordware branch main"},{"ts":"2026-04-14T05:46:06Z","facility":"systemd","color":"#FFB83D","msg":"WatchEvent: NawfalMotii79/PLFM_RADAR \u2605 +1"}]</metadata>
+  <metadata id="syslog-cache">[{"ts":"2026-05-04T08:08:55Z","facility":"init","color":"#4FD97F","msg":"CreateEvent: lordware/Arduino-Emulator branch main"},{"ts":"2026-04-25T08:40:08Z","facility":"sshd","color":"#4FC3FF","msg":"PullRequestReviewEvent: lordware/lordware #1 created"},{"ts":"2026-04-25T08:40:05Z","facility":"sshd","color":"#4FC3FF","msg":"PRReviewCommentEvent: lordware/lordware created"},{"ts":"2026-04-25T08:40:05Z","facility":"sshd","color":"#4FC3FF","msg":"PRReviewCommentEvent: lordware/lordware created"},{"ts":"2026-04-25T08:40:05Z","facility":"sshd","color":"#4FC3FF","msg":"PRReviewCommentEvent: lordware/lordware created"},{"ts":"2026-04-25T08:40:04Z","facility":"sshd","color":"#4FC3FF","msg":"PRReviewCommentEvent: lordware/lordware created"},{"ts":"2026-04-25T08:40:04Z","facility":"sshd","color":"#4FC3FF","msg":"PRReviewCommentEvent: lordware/lordware created"},{"ts":"2026-04-25T08:40:04Z","facility":"sshd","color":"#4FC3FF","msg":"PRReviewCommentEvent: lordware/lordware created"},{"ts":"2026-04-25T08:40:04Z","facility":"sshd","color":"#4FC3FF","msg":"PRReviewCommentEvent: lordware/lordware created"},{"ts":"2026-04-25T08:40:03Z","facility":"sshd","color":"#4FC3FF","msg":"PRReviewCommentEvent: lordware/lordware created"},{"ts":"2026-04-25T08:40:03Z","facility":"sshd","color":"#4FC3FF","msg":"PRReviewCommentEvent: lordware/lordware created"},{"ts":"2026-04-25T08:36:21Z","facility":"sshd","color":"#4FC3FF","msg":"PullRequestEvent: lordware/lordware #1 merged"},{"ts":"2026-04-25T08:36:14Z","facility":"sshd","color":"#4FC3FF","msg":"PullRequestEvent: lordware/lordware #1 opened"},{"ts":"2026-04-25T08:24:43Z","facility":"init","color":"#4FD97F","msg":"CreateEvent: lordware/lordware branch feat/live-github-data"},{"ts":"2026-04-24T07:17:03Z","facility":"init","color":"#4FD97F","msg":"CreateEvent: lordware/lordware branch main"},{"ts":"2026-04-14T05:46:06Z","facility":"systemd","color":"#FFB83D","msg":"WatchEvent: NawfalMotii79/PLFM_RADAR \u2605 +1"}]</metadata>
 
   <rect class="s-bg" width="960" height="240"/>
   <rect class="s-border" x="0.5" y="0.5" width="959" height="239"/>
@@ -24,23 +24,23 @@
   <rect class="s-subbg" x="0" y="0" width="960" height="24"/>
   <line x1="0" y1="24" x2="960" y2="24" stroke="#3A352C" stroke-width="1"/>
   <text class="s-head"  x="12"  y="16">$ tail -F /var/log/lordware/github.log</text>
-  <text class="s-headd" x="720" y="16">facility=user · 15 entries · live</text>
+  <text class="s-headd" x="720" y="16">facility=user · 16 entries · live</text>
 
   <g clip-path="url(#s-clip)">
     <g transform="translate(0 24)">
       <animateTransform attributeName="transform" type="translate"
-        from="0 24" to="0 -171"
-        dur="30s" repeatCount="indefinite"/>
+        from="0 24" to="0 -184"
+        dur="32s" repeatCount="indefinite"/>
       <g>
-      <text x="12" y="13" class="s-ts">Apr 25 08:40:08</text>
+      <text x="12" y="13" class="s-ts">May 04 08:08:55</text>
       <text x="120" y="13" class="s-host">lordware-pi</text>
-      <text x="208" y="13" class="s-fac">sshd:</text>
-      <text x="262" y="13" fill="#4FC3FF" class="s-msg">PullRequestReviewEvent: lordware/lordware #1 created</text>
+      <text x="208" y="13" class="s-fac">init:</text>
+      <text x="262" y="13" fill="#4FD97F" class="s-msg">CreateEvent: lordware/Arduino-Emulator branch main</text>
       <rect x="0" y="16" width="960" height="13" fill="#2A251E"/>
-      <text x="12" y="26" class="s-ts">Apr 25 08:40:05</text>
+      <text x="12" y="26" class="s-ts">Apr 25 08:40:08</text>
       <text x="120" y="26" class="s-host">lordware-pi</text>
       <text x="208" y="26" class="s-fac">sshd:</text>
-      <text x="262" y="26" fill="#4FC3FF" class="s-msg">PRReviewCommentEvent: lordware/lordware created</text>
+      <text x="262" y="26" fill="#4FC3FF" class="s-msg">PullRequestReviewEvent: lordware/lordware #1 created</text>
       <text x="12" y="39" class="s-ts">Apr 25 08:40:05</text>
       <text x="120" y="39" class="s-host">lordware-pi</text>
       <text x="208" y="39" class="s-fac">sshd:</text>
@@ -50,7 +50,7 @@
       <text x="120" y="52" class="s-host">lordware-pi</text>
       <text x="208" y="52" class="s-fac">sshd:</text>
       <text x="262" y="52" fill="#4FC3FF" class="s-msg">PRReviewCommentEvent: lordware/lordware created</text>
-      <text x="12" y="65" class="s-ts">Apr 25 08:40:04</text>
+      <text x="12" y="65" class="s-ts">Apr 25 08:40:05</text>
       <text x="120" y="65" class="s-host">lordware-pi</text>
       <text x="208" y="65" class="s-fac">sshd:</text>
       <text x="262" y="65" fill="#4FC3FF" class="s-msg">PRReviewCommentEvent: lordware/lordware created</text>
@@ -68,7 +68,7 @@
       <text x="120" y="104" class="s-host">lordware-pi</text>
       <text x="208" y="104" class="s-fac">sshd:</text>
       <text x="262" y="104" fill="#4FC3FF" class="s-msg">PRReviewCommentEvent: lordware/lordware created</text>
-      <text x="12" y="117" class="s-ts">Apr 25 08:40:03</text>
+      <text x="12" y="117" class="s-ts">Apr 25 08:40:04</text>
       <text x="120" y="117" class="s-host">lordware-pi</text>
       <text x="208" y="117" class="s-fac">sshd:</text>
       <text x="262" y="117" fill="#4FC3FF" class="s-msg">PRReviewCommentEvent: lordware/lordware created</text>
@@ -77,39 +77,44 @@
       <text x="120" y="130" class="s-host">lordware-pi</text>
       <text x="208" y="130" class="s-fac">sshd:</text>
       <text x="262" y="130" fill="#4FC3FF" class="s-msg">PRReviewCommentEvent: lordware/lordware created</text>
-      <text x="12" y="143" class="s-ts">Apr 25 08:36:21</text>
+      <text x="12" y="143" class="s-ts">Apr 25 08:40:03</text>
       <text x="120" y="143" class="s-host">lordware-pi</text>
       <text x="208" y="143" class="s-fac">sshd:</text>
-      <text x="262" y="143" fill="#4FC3FF" class="s-msg">PullRequestEvent: lordware/lordware #1 merged</text>
+      <text x="262" y="143" fill="#4FC3FF" class="s-msg">PRReviewCommentEvent: lordware/lordware created</text>
       <rect x="0" y="146" width="960" height="13" fill="#2A251E"/>
-      <text x="12" y="156" class="s-ts">Apr 25 08:36:14</text>
+      <text x="12" y="156" class="s-ts">Apr 25 08:36:21</text>
       <text x="120" y="156" class="s-host">lordware-pi</text>
       <text x="208" y="156" class="s-fac">sshd:</text>
-      <text x="262" y="156" fill="#4FC3FF" class="s-msg">PullRequestEvent: lordware/lordware #1 opened</text>
-      <text x="12" y="169" class="s-ts">Apr 25 08:24:43</text>
+      <text x="262" y="156" fill="#4FC3FF" class="s-msg">PullRequestEvent: lordware/lordware #1 merged</text>
+      <text x="12" y="169" class="s-ts">Apr 25 08:36:14</text>
       <text x="120" y="169" class="s-host">lordware-pi</text>
-      <text x="208" y="169" class="s-fac">init:</text>
-      <text x="262" y="169" fill="#4FD97F" class="s-msg">CreateEvent: lordware/lordware branch feat/live-github-data</text>
+      <text x="208" y="169" class="s-fac">sshd:</text>
+      <text x="262" y="169" fill="#4FC3FF" class="s-msg">PullRequestEvent: lordware/lordware #1 opened</text>
       <rect x="0" y="172" width="960" height="13" fill="#2A251E"/>
-      <text x="12" y="182" class="s-ts">Apr 24 07:17:03</text>
+      <text x="12" y="182" class="s-ts">Apr 25 08:24:43</text>
       <text x="120" y="182" class="s-host">lordware-pi</text>
       <text x="208" y="182" class="s-fac">init:</text>
-      <text x="262" y="182" fill="#4FD97F" class="s-msg">CreateEvent: lordware/lordware branch main</text>
-      <text x="12" y="195" class="s-ts">Apr 14 05:46:06</text>
+      <text x="262" y="182" fill="#4FD97F" class="s-msg">CreateEvent: lordware/lordware branch feat/live-github-data</text>
+      <text x="12" y="195" class="s-ts">Apr 24 07:17:03</text>
       <text x="120" y="195" class="s-host">lordware-pi</text>
-      <text x="208" y="195" class="s-fac">systemd:</text>
-      <text x="262" y="195" fill="#FFB83D" class="s-msg">WatchEvent: NawfalMotii79/PLFM_RADAR ★ +1</text>
+      <text x="208" y="195" class="s-fac">init:</text>
+      <text x="262" y="195" fill="#4FD97F" class="s-msg">CreateEvent: lordware/lordware branch main</text>
+      <rect x="0" y="198" width="960" height="13" fill="#2A251E"/>
+      <text x="12" y="208" class="s-ts">Apr 14 05:46:06</text>
+      <text x="120" y="208" class="s-host">lordware-pi</text>
+      <text x="208" y="208" class="s-fac">systemd:</text>
+      <text x="262" y="208" fill="#FFB83D" class="s-msg">WatchEvent: NawfalMotii79/PLFM_RADAR ★ +1</text>
       </g>
-      <g transform="translate(0 195)">
-      <text x="12" y="13" class="s-ts">Apr 25 08:40:08</text>
+      <g transform="translate(0 208)">
+      <text x="12" y="13" class="s-ts">May 04 08:08:55</text>
       <text x="120" y="13" class="s-host">lordware-pi</text>
-      <text x="208" y="13" class="s-fac">sshd:</text>
-      <text x="262" y="13" fill="#4FC3FF" class="s-msg">PullRequestReviewEvent: lordware/lordware #1 created</text>
+      <text x="208" y="13" class="s-fac">init:</text>
+      <text x="262" y="13" fill="#4FD97F" class="s-msg">CreateEvent: lordware/Arduino-Emulator branch main</text>
       <rect x="0" y="16" width="960" height="13" fill="#2A251E"/>
-      <text x="12" y="26" class="s-ts">Apr 25 08:40:05</text>
+      <text x="12" y="26" class="s-ts">Apr 25 08:40:08</text>
       <text x="120" y="26" class="s-host">lordware-pi</text>
       <text x="208" y="26" class="s-fac">sshd:</text>
-      <text x="262" y="26" fill="#4FC3FF" class="s-msg">PRReviewCommentEvent: lordware/lordware created</text>
+      <text x="262" y="26" fill="#4FC3FF" class="s-msg">PullRequestReviewEvent: lordware/lordware #1 created</text>
       <text x="12" y="39" class="s-ts">Apr 25 08:40:05</text>
       <text x="120" y="39" class="s-host">lordware-pi</text>
       <text x="208" y="39" class="s-fac">sshd:</text>
@@ -119,7 +124,7 @@
       <text x="120" y="52" class="s-host">lordware-pi</text>
       <text x="208" y="52" class="s-fac">sshd:</text>
       <text x="262" y="52" fill="#4FC3FF" class="s-msg">PRReviewCommentEvent: lordware/lordware created</text>
-      <text x="12" y="65" class="s-ts">Apr 25 08:40:04</text>
+      <text x="12" y="65" class="s-ts">Apr 25 08:40:05</text>
       <text x="120" y="65" class="s-host">lordware-pi</text>
       <text x="208" y="65" class="s-fac">sshd:</text>
       <text x="262" y="65" fill="#4FC3FF" class="s-msg">PRReviewCommentEvent: lordware/lordware created</text>
@@ -137,7 +142,7 @@
       <text x="120" y="104" class="s-host">lordware-pi</text>
       <text x="208" y="104" class="s-fac">sshd:</text>
       <text x="262" y="104" fill="#4FC3FF" class="s-msg">PRReviewCommentEvent: lordware/lordware created</text>
-      <text x="12" y="117" class="s-ts">Apr 25 08:40:03</text>
+      <text x="12" y="117" class="s-ts">Apr 25 08:40:04</text>
       <text x="120" y="117" class="s-host">lordware-pi</text>
       <text x="208" y="117" class="s-fac">sshd:</text>
       <text x="262" y="117" fill="#4FC3FF" class="s-msg">PRReviewCommentEvent: lordware/lordware created</text>
@@ -146,28 +151,33 @@
       <text x="120" y="130" class="s-host">lordware-pi</text>
       <text x="208" y="130" class="s-fac">sshd:</text>
       <text x="262" y="130" fill="#4FC3FF" class="s-msg">PRReviewCommentEvent: lordware/lordware created</text>
-      <text x="12" y="143" class="s-ts">Apr 25 08:36:21</text>
+      <text x="12" y="143" class="s-ts">Apr 25 08:40:03</text>
       <text x="120" y="143" class="s-host">lordware-pi</text>
       <text x="208" y="143" class="s-fac">sshd:</text>
-      <text x="262" y="143" fill="#4FC3FF" class="s-msg">PullRequestEvent: lordware/lordware #1 merged</text>
+      <text x="262" y="143" fill="#4FC3FF" class="s-msg">PRReviewCommentEvent: lordware/lordware created</text>
       <rect x="0" y="146" width="960" height="13" fill="#2A251E"/>
-      <text x="12" y="156" class="s-ts">Apr 25 08:36:14</text>
+      <text x="12" y="156" class="s-ts">Apr 25 08:36:21</text>
       <text x="120" y="156" class="s-host">lordware-pi</text>
       <text x="208" y="156" class="s-fac">sshd:</text>
-      <text x="262" y="156" fill="#4FC3FF" class="s-msg">PullRequestEvent: lordware/lordware #1 opened</text>
-      <text x="12" y="169" class="s-ts">Apr 25 08:24:43</text>
+      <text x="262" y="156" fill="#4FC3FF" class="s-msg">PullRequestEvent: lordware/lordware #1 merged</text>
+      <text x="12" y="169" class="s-ts">Apr 25 08:36:14</text>
       <text x="120" y="169" class="s-host">lordware-pi</text>
-      <text x="208" y="169" class="s-fac">init:</text>
-      <text x="262" y="169" fill="#4FD97F" class="s-msg">CreateEvent: lordware/lordware branch feat/live-github-data</text>
+      <text x="208" y="169" class="s-fac">sshd:</text>
+      <text x="262" y="169" fill="#4FC3FF" class="s-msg">PullRequestEvent: lordware/lordware #1 opened</text>
       <rect x="0" y="172" width="960" height="13" fill="#2A251E"/>
-      <text x="12" y="182" class="s-ts">Apr 24 07:17:03</text>
+      <text x="12" y="182" class="s-ts">Apr 25 08:24:43</text>
       <text x="120" y="182" class="s-host">lordware-pi</text>
       <text x="208" y="182" class="s-fac">init:</text>
-      <text x="262" y="182" fill="#4FD97F" class="s-msg">CreateEvent: lordware/lordware branch main</text>
-      <text x="12" y="195" class="s-ts">Apr 14 05:46:06</text>
+      <text x="262" y="182" fill="#4FD97F" class="s-msg">CreateEvent: lordware/lordware branch feat/live-github-data</text>
+      <text x="12" y="195" class="s-ts">Apr 24 07:17:03</text>
       <text x="120" y="195" class="s-host">lordware-pi</text>
-      <text x="208" y="195" class="s-fac">systemd:</text>
-      <text x="262" y="195" fill="#FFB83D" class="s-msg">WatchEvent: NawfalMotii79/PLFM_RADAR ★ +1</text>
+      <text x="208" y="195" class="s-fac">init:</text>
+      <text x="262" y="195" fill="#4FD97F" class="s-msg">CreateEvent: lordware/lordware branch main</text>
+      <rect x="0" y="198" width="960" height="13" fill="#2A251E"/>
+      <text x="12" y="208" class="s-ts">Apr 14 05:46:06</text>
+      <text x="120" y="208" class="s-host">lordware-pi</text>
+      <text x="208" y="208" class="s-fac">systemd:</text>
+      <text x="262" y="208" fill="#FFB83D" class="s-msg">WatchEvent: NawfalMotii79/PLFM_RADAR ★ +1</text>
       </g>
     </g>
   </g>
