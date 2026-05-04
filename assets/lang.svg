@@ -12,7 +12,7 @@
       .l-foot   { font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 11px; fill: #A89968; }
     </style>
   </defs>
-  <metadata id="lang-cache">{"TypeScript":4047,"Rust":3163,"CSS":973,"JavaScript":2587,"HTML":366,"Python":102461,"Shell":618,"C#":3979}</metadata>
+  <metadata id="lang-cache">{"Python":102461,"Shell":618,"TypeScript":4047,"Rust":3163,"CSS":973,"JavaScript":2587,"HTML":366,"C#":3979}</metadata>
 
   <rect class="l-bg" width="960" height="320"/>
   <rect class="l-border" x="0.5" y="0.5" width="959" height="319"/>
@@ -32,6 +32,6 @@
   <circle cx="14" cy="310" r="3" fill="#4FD97F">
     <animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite"/>
   </circle>
-  <text class="l-foot" x="24" y="313">sampled 2026-05-04 12:30:22Z · refresh */6h via gh-actions</text>
+  <text class="l-foot" x="24" y="313">sampled 2026-05-04 18:29:52Z · refresh */6h via gh-actions</text>
   <text class="l-foot" x="850" y="313">[q]uit  [r]efresh</text>
 </svg>
