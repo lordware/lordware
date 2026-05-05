@@ -49,7 +49,7 @@
 
     <text x="84" y="192" fill="#A89968">UPTIME</text>
     <!-- gen_hero_uptime:start -->
-    <text x="170" y="192" fill="#E8DCC4">9y 123d <tspan fill="#A89968">· developing since 2017</tspan></text>
+    <text x="170" y="192" fill="#E8DCC4">9y 124d <tspan fill="#A89968">· developing since 2017</tspan></text>
     <!-- gen_hero_uptime:end -->
   </g>
 
