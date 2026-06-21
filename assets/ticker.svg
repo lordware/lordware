@@ -33,67 +33,67 @@
     <g>
       <animateTransform attributeName="transform" type="translate" from="0 0" to="-4912 0" dur="122s" repeatCount="indefinite"/>
       <g>
-      <text x="0" y="62" class="t-tag" fill="#B77FFF">[dreaming]</text>
-      <text x="92" y="62" class="t-msg">a homemade logic analyzer that fits in an Altoids tin</text>
-      <text x="522" y="62" class="t-sep">·</text>
-      <text x="544" y="62" class="t-tag" fill="#4FD97F">[learning]</text>
-      <text x="636" y="62" class="t-msg">deterministic scheduling with rate-monotonic analysis</text>
-      <text x="1066" y="62" class="t-sep">·</text>
-      <text x="1088" y="62" class="t-tag" fill="#FF5C3A">[shipping]</text>
-      <text x="1180" y="62" class="t-msg">motor controller firmware · CANopen DS402 profile</text>
-      <text x="1578" y="62" class="t-sep">·</text>
-      <text x="1600" y="62" class="t-tag" fill="#B77FFF">[dreaming]</text>
-      <text x="1692" y="62" class="t-msg">an open-source replacement for the AD2 logic analyzer</text>
-      <text x="2122" y="62" class="t-sep">·</text>
-      <text x="2144" y="62" class="t-tag" fill="#4FD97F">[learning]</text>
-      <text x="2236" y="62" class="t-msg">lock-free ring buffers on AVR (yes, really)</text>
-      <text x="2586" y="62" class="t-sep">·</text>
-      <text x="2608" y="62" class="t-tag" fill="#4FC3FF">[reading]</text>
-      <text x="2692" y="62" class="t-msg">Programming Embedded Systems, M. Barr · SEI CERT C</text>
-      <text x="3098" y="62" class="t-sep">·</text>
-      <text x="3120" y="62" class="t-tag" fill="#FF5C3A">[shipping]</text>
-      <text x="3212" y="62" class="t-msg">BLDC commutation tuner for hobby drones</text>
-      <text x="3530" y="62" class="t-sep">·</text>
-      <text x="3552" y="62" class="t-tag" fill="#4FC3FF">[reading]</text>
-      <text x="3636" y="62" class="t-msg">Making Embedded Systems, E. White · MISRA C:2012</text>
-      <text x="4026" y="62" class="t-sep">·</text>
-      <text x="4048" y="62" class="t-tag" fill="#FFB83D">[tinkering]</text>
-      <text x="4148" y="62" class="t-msg">ESP32 &lt;-&gt; legacy RS232 plotter bridge</text>
-      <text x="4450" y="62" class="t-sep">·</text>
-      <text x="4472" y="62" class="t-tag" fill="#FFB83D">[tinkering]</text>
-      <text x="4572" y="62" class="t-msg">a pocket-sized J1939 sniffer on a CH32V</text>
+      <text x="0" y="62" class="t-tag" fill="#FFB83D">[tinkering]</text>
+      <text x="100" y="62" class="t-msg">ESP32 &lt;-&gt; legacy RS232 plotter bridge</text>
+      <text x="402" y="62" class="t-sep">·</text>
+      <text x="424" y="62" class="t-tag" fill="#B77FFF">[dreaming]</text>
+      <text x="516" y="62" class="t-msg">an open-source replacement for the AD2 logic analyzer</text>
+      <text x="946" y="62" class="t-sep">·</text>
+      <text x="968" y="62" class="t-tag" fill="#4FD97F">[learning]</text>
+      <text x="1060" y="62" class="t-msg">deterministic scheduling with rate-monotonic analysis</text>
+      <text x="1490" y="62" class="t-sep">·</text>
+      <text x="1512" y="62" class="t-tag" fill="#4FC3FF">[reading]</text>
+      <text x="1596" y="62" class="t-msg">Making Embedded Systems, E. White · MISRA C:2012</text>
+      <text x="1986" y="62" class="t-sep">·</text>
+      <text x="2008" y="62" class="t-tag" fill="#FFB83D">[tinkering]</text>
+      <text x="2108" y="62" class="t-msg">a pocket-sized J1939 sniffer on a CH32V</text>
+      <text x="2426" y="62" class="t-sep">·</text>
+      <text x="2448" y="62" class="t-tag" fill="#B77FFF">[dreaming]</text>
+      <text x="2540" y="62" class="t-msg">a homemade logic analyzer that fits in an Altoids tin</text>
+      <text x="2970" y="62" class="t-sep">·</text>
+      <text x="2992" y="62" class="t-tag" fill="#FF5C3A">[shipping]</text>
+      <text x="3084" y="62" class="t-msg">BLDC commutation tuner for hobby drones</text>
+      <text x="3402" y="62" class="t-sep">·</text>
+      <text x="3424" y="62" class="t-tag" fill="#4FC3FF">[reading]</text>
+      <text x="3508" y="62" class="t-msg">Programming Embedded Systems, M. Barr · SEI CERT C</text>
+      <text x="3914" y="62" class="t-sep">·</text>
+      <text x="3936" y="62" class="t-tag" fill="#FF5C3A">[shipping]</text>
+      <text x="4028" y="62" class="t-msg">motor controller firmware · CANopen DS402 profile</text>
+      <text x="4426" y="62" class="t-sep">·</text>
+      <text x="4448" y="62" class="t-tag" fill="#4FD97F">[learning]</text>
+      <text x="4540" y="62" class="t-msg">lock-free ring buffers on AVR (yes, really)</text>
       <text x="4890" y="62" class="t-sep">·</text>
       </g>
       <g transform="translate(4912 0)">
-      <text x="0" y="62" class="t-tag" fill="#B77FFF">[dreaming]</text>
-      <text x="92" y="62" class="t-msg">a homemade logic analyzer that fits in an Altoids tin</text>
-      <text x="522" y="62" class="t-sep">·</text>
-      <text x="544" y="62" class="t-tag" fill="#4FD97F">[learning]</text>
-      <text x="636" y="62" class="t-msg">deterministic scheduling with rate-monotonic analysis</text>
-      <text x="1066" y="62" class="t-sep">·</text>
-      <text x="1088" y="62" class="t-tag" fill="#FF5C3A">[shipping]</text>
-      <text x="1180" y="62" class="t-msg">motor controller firmware · CANopen DS402 profile</text>
-      <text x="1578" y="62" class="t-sep">·</text>
-      <text x="1600" y="62" class="t-tag" fill="#B77FFF">[dreaming]</text>
-      <text x="1692" y="62" class="t-msg">an open-source replacement for the AD2 logic analyzer</text>
-      <text x="2122" y="62" class="t-sep">·</text>
-      <text x="2144" y="62" class="t-tag" fill="#4FD97F">[learning]</text>
-      <text x="2236" y="62" class="t-msg">lock-free ring buffers on AVR (yes, really)</text>
-      <text x="2586" y="62" class="t-sep">·</text>
-      <text x="2608" y="62" class="t-tag" fill="#4FC3FF">[reading]</text>
-      <text x="2692" y="62" class="t-msg">Programming Embedded Systems, M. Barr · SEI CERT C</text>
-      <text x="3098" y="62" class="t-sep">·</text>
-      <text x="3120" y="62" class="t-tag" fill="#FF5C3A">[shipping]</text>
-      <text x="3212" y="62" class="t-msg">BLDC commutation tuner for hobby drones</text>
-      <text x="3530" y="62" class="t-sep">·</text>
-      <text x="3552" y="62" class="t-tag" fill="#4FC3FF">[reading]</text>
-      <text x="3636" y="62" class="t-msg">Making Embedded Systems, E. White · MISRA C:2012</text>
-      <text x="4026" y="62" class="t-sep">·</text>
-      <text x="4048" y="62" class="t-tag" fill="#FFB83D">[tinkering]</text>
-      <text x="4148" y="62" class="t-msg">ESP32 &lt;-&gt; legacy RS232 plotter bridge</text>
-      <text x="4450" y="62" class="t-sep">·</text>
-      <text x="4472" y="62" class="t-tag" fill="#FFB83D">[tinkering]</text>
-      <text x="4572" y="62" class="t-msg">a pocket-sized J1939 sniffer on a CH32V</text>
+      <text x="0" y="62" class="t-tag" fill="#FFB83D">[tinkering]</text>
+      <text x="100" y="62" class="t-msg">ESP32 &lt;-&gt; legacy RS232 plotter bridge</text>
+      <text x="402" y="62" class="t-sep">·</text>
+      <text x="424" y="62" class="t-tag" fill="#B77FFF">[dreaming]</text>
+      <text x="516" y="62" class="t-msg">an open-source replacement for the AD2 logic analyzer</text>
+      <text x="946" y="62" class="t-sep">·</text>
+      <text x="968" y="62" class="t-tag" fill="#4FD97F">[learning]</text>
+      <text x="1060" y="62" class="t-msg">deterministic scheduling with rate-monotonic analysis</text>
+      <text x="1490" y="62" class="t-sep">·</text>
+      <text x="1512" y="62" class="t-tag" fill="#4FC3FF">[reading]</text>
+      <text x="1596" y="62" class="t-msg">Making Embedded Systems, E. White · MISRA C:2012</text>
+      <text x="1986" y="62" class="t-sep">·</text>
+      <text x="2008" y="62" class="t-tag" fill="#FFB83D">[tinkering]</text>
+      <text x="2108" y="62" class="t-msg">a pocket-sized J1939 sniffer on a CH32V</text>
+      <text x="2426" y="62" class="t-sep">·</text>
+      <text x="2448" y="62" class="t-tag" fill="#B77FFF">[dreaming]</text>
+      <text x="2540" y="62" class="t-msg">a homemade logic analyzer that fits in an Altoids tin</text>
+      <text x="2970" y="62" class="t-sep">·</text>
+      <text x="2992" y="62" class="t-tag" fill="#FF5C3A">[shipping]</text>
+      <text x="3084" y="62" class="t-msg">BLDC commutation tuner for hobby drones</text>
+      <text x="3402" y="62" class="t-sep">·</text>
+      <text x="3424" y="62" class="t-tag" fill="#4FC3FF">[reading]</text>
+      <text x="3508" y="62" class="t-msg">Programming Embedded Systems, M. Barr · SEI CERT C</text>
+      <text x="3914" y="62" class="t-sep">·</text>
+      <text x="3936" y="62" class="t-tag" fill="#FF5C3A">[shipping]</text>
+      <text x="4028" y="62" class="t-msg">motor controller firmware · CANopen DS402 profile</text>
+      <text x="4426" y="62" class="t-sep">·</text>
+      <text x="4448" y="62" class="t-tag" fill="#4FD97F">[learning]</text>
+      <text x="4540" y="62" class="t-msg">lock-free ring buffers on AVR (yes, really)</text>
       <text x="4890" y="62" class="t-sep">·</text>
       </g>
     </g>
