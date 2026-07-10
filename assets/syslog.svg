@@ -16,7 +16,7 @@
       <rect x="0" y="24" width="960" height="196"/>
     </clipPath>
   </defs>
-  <metadata id="syslog-cache">[{"ts":"2026-07-10T00:28:50.954646+00:00","facility":"init","color":"#A89968","msg":"no public events visible right now \u2014 try again later"}]</metadata>
+  <metadata id="syslog-cache">[{"ts":"2026-07-10T07:07:43.627356+00:00","facility":"init","color":"#A89968","msg":"no public events visible right now \u2014 try again later"}]</metadata>
 
   <rect class="s-bg" width="960" height="240"/>
   <rect class="s-border" x="0.5" y="0.5" width="959" height="239"/>
@@ -32,13 +32,13 @@
         from="0 24" to="0 11"
         dur="20s" repeatCount="indefinite"/>
       <g>
-      <text x="12" y="13" class="s-ts">Jul 10 00:28:50</text>
+      <text x="12" y="13" class="s-ts">Jul 10 07:07:43</text>
       <text x="120" y="13" class="s-host">lordware-pi</text>
       <text x="208" y="13" class="s-fac">init:</text>
       <text x="262" y="13" fill="#A89968" class="s-msg">no public events visible right now — try again later</text>
       </g>
       <g transform="translate(0 13)">
-      <text x="12" y="13" class="s-ts">Jul 10 00:28:50</text>
+      <text x="12" y="13" class="s-ts">Jul 10 07:07:43</text>
       <text x="120" y="13" class="s-host">lordware-pi</text>
       <text x="208" y="13" class="s-fac">init:</text>
       <text x="262" y="13" fill="#A89968" class="s-msg">no public events visible right now — try again later</text>
