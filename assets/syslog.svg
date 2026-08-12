@@ -16,7 +16,7 @@
       <rect x="0" y="24" width="960" height="196"/>
     </clipPath>
   </defs>
-  <metadata id="syslog-cache">[{"ts":"2026-07-18T18:11:18Z","facility":"systemd","color":"#B77FFF","msg":"ForkEvent: gmh5225/Movement-recorder-cs2-work-in-progress- -> lordware/Movement-recorder-cs2-work-in-progress-"}]</metadata>
+  <metadata id="syslog-cache">[{"ts":"2026-08-12T18:15:43Z","facility":"systemd","color":"#B77FFF","msg":"ForkEvent: anomalyco/opencode -> lordware/opencode"},{"ts":"2026-07-18T18:11:18Z","facility":"systemd","color":"#B77FFF","msg":"ForkEvent: gmh5225/Movement-recorder-cs2-work-in-progress- -> lordware/Movement-recorder-cs2-work-in-progress-"}]</metadata>
 
   <rect class="s-bg" width="960" height="240"/>
   <rect class="s-border" x="0.5" y="0.5" width="959" height="239"/>
@@ -24,24 +24,34 @@
   <rect class="s-subbg" x="0" y="0" width="960" height="24"/>
   <line x1="0" y1="24" x2="960" y2="24" stroke="#3A352C" stroke-width="1"/>
   <text class="s-head"  x="12"  y="16">$ tail -F /var/log/lordware/github.log</text>
-  <text class="s-headd" x="720" y="16">facility=user · 1 entries · live</text>
+  <text class="s-headd" x="720" y="16">facility=user · 2 entries · live</text>
 
   <g clip-path="url(#s-clip)">
     <g transform="translate(0 24)">
       <animateTransform attributeName="transform" type="translate"
-        from="0 24" to="0 11"
+        from="0 24" to="0 -2"
         dur="20s" repeatCount="indefinite"/>
       <g>
-      <text x="12" y="13" class="s-ts">Jul 18 18:11:18</text>
+      <text x="12" y="13" class="s-ts">Aug 12 18:15:43</text>
       <text x="120" y="13" class="s-host">lordware-pi</text>
       <text x="208" y="13" class="s-fac">systemd:</text>
-      <text x="262" y="13" fill="#B77FFF" class="s-msg">ForkEvent: gmh5225/Movement-recorder-cs2-work-in-progress- -&gt; lordware/Movement-recorder-...</text>
+      <text x="262" y="13" fill="#B77FFF" class="s-msg">ForkEvent: anomalyco/opencode -&gt; lordware/opencode</text>
+      <rect x="0" y="16" width="960" height="13" fill="#2A251E"/>
+      <text x="12" y="26" class="s-ts">Jul 18 18:11:18</text>
+      <text x="120" y="26" class="s-host">lordware-pi</text>
+      <text x="208" y="26" class="s-fac">systemd:</text>
+      <text x="262" y="26" fill="#B77FFF" class="s-msg">ForkEvent: gmh5225/Movement-recorder-cs2-work-in-progress- -&gt; lordware/Movement-recorder-...</text>
       </g>
-      <g transform="translate(0 13)">
-      <text x="12" y="13" class="s-ts">Jul 18 18:11:18</text>
+      <g transform="translate(0 26)">
+      <text x="12" y="13" class="s-ts">Aug 12 18:15:43</text>
       <text x="120" y="13" class="s-host">lordware-pi</text>
       <text x="208" y="13" class="s-fac">systemd:</text>
-      <text x="262" y="13" fill="#B77FFF" class="s-msg">ForkEvent: gmh5225/Movement-recorder-cs2-work-in-progress- -&gt; lordware/Movement-recorder-...</text>
+      <text x="262" y="13" fill="#B77FFF" class="s-msg">ForkEvent: anomalyco/opencode -&gt; lordware/opencode</text>
+      <rect x="0" y="16" width="960" height="13" fill="#2A251E"/>
+      <text x="12" y="26" class="s-ts">Jul 18 18:11:18</text>
+      <text x="120" y="26" class="s-host">lordware-pi</text>
+      <text x="208" y="26" class="s-fac">systemd:</text>
+      <text x="262" y="26" fill="#B77FFF" class="s-msg">ForkEvent: gmh5225/Movement-recorder-cs2-work-in-progress- -&gt; lordware/Movement-recorder-...</text>
       </g>
     </g>
   </g>
