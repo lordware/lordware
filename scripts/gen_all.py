@@ -5,6 +5,7 @@ import gen_profile
 import gen_instruments
 import gen_telemetry
 import gen_auxiliary
+from version_readme import update_readme
 
 
 def main():
@@ -20,6 +21,8 @@ def main():
     ]
     for path in panels:
         print(f'[gen_all] {path.name}')
+    if update_readme(out.parent):
+        print('[gen_all] README image versions updated')
     return 0
 
 

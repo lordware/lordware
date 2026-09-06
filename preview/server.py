@@ -59,6 +59,7 @@ class Handler(BaseHTTPRequestHandler):
                     content = content.replace(ORIGINAL_ASSETS, "/before-assets/")
                 else:
                     content = (ROOT / "README.md").read_text(encoding="utf-8-sig")
+                    content = content.replace(ORIGINAL_ASSETS, "/assets/")
                 data = json.dumps({"content": content, "version": version}, ensure_ascii=False).encode("utf-8")
                 self.send_bytes(data, "application/json; charset=utf-8")
                 return
