@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="340" viewBox="0 0 960 340" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="390" viewBox="0 0 480 390" role="img" aria-labelledby="title desc">
 <title id="title">Embedded target POST simulation</title><desc id="desc">Fixed simulated startup diagnostics for an ATmega2560 target. Hardware statuses are demonstration fixtures, not measurements. The descriptor length and CRC32 are computed from the exact fixed byte buffer in the memory inspector.</desc>
 <defs>
 <linearGradient id="mat-face" x1="0" y1="0" x2=".12" y2="1"><stop stop-color="#3c4448"/><stop offset=".025" stop-color="#272f33"/><stop offset=".3" stop-color="#242c30"/><stop offset=".82" stop-color="#1b2226"/><stop offset="1" stop-color="#252d31"/></linearGradient>
@@ -19,71 +19,57 @@
 <filter id="mat-small-bloom" x="-35%" y="-45%" width="170%" height="190%" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation=".75"/></filter>
 
 <style>text{font-family:Consolas,'Liberation Mono',monospace}.scan{animation:scan 8s linear infinite}@keyframes scan{0%,100%{opacity:.12}50%{opacity:.65}}.step-highlight{animation:highlight 18s linear infinite;opacity:0}@keyframes highlight{0%,12%,100%{opacity:0}3%,8%{opacity:.1}}@media(prefers-reduced-motion:reduce){.frames,.scan,.step-highlight{animation:none!important}}</style></defs>
-<rect x="1" y="3" width="958" height="336" rx="6" fill="#05090c"/><rect x=".5" y=".5" width="959" height="338" rx="6" fill="url(#mat-face)" stroke="#070d11"/><rect x="1.5" y="1.5" width="957" height="336" rx="5" fill="none" stroke="url(#mat-edge)"/><rect x="3" y="3" width="954" height="332" rx="4" fill="url(#mat-light)"/><rect x="3" y="3" width="954" height="332" rx="4" fill="url(#mat-brush)"/><rect x="3" y="3" width="954" height="332" rx="4" fill="url(#mat-grain)"/><rect x="4" y="4" width="952" height="30" rx="3" fill="url(#mat-header)"/><path d="M6 35.5H954" stroke="#0d1418"/><path d="M6 36.5H954" stroke="#60696a" stroke-opacity=".32"/><path d="M8 336.5H952" stroke="#68736f" stroke-opacity=".23"/><g transform="translate(11 20)"><circle cy=".65" r="4.3" fill="#060a0d" opacity=".9"/><circle r="3.45" fill="#111a1f" stroke="#4d585d" stroke-width=".45"/><circle r="3" fill="url(#mat-screw)"/><circle r="2.2" fill="none" stroke="#d3d5c9" stroke-opacity=".23" stroke-width=".35"/><polygon points="0.000,-1.380 0.465,-0.805 1.195,-0.690 0.930,0.000 1.195,0.690 0.465,0.805 0.000,1.380 -0.465,0.805 -1.195,0.690 -0.930,0.000 -1.195,-0.690 -0.465,-0.805" fill="#0d171d" stroke="#1b2b33" stroke-width=".5"/><path d="M-1.9500000000000002 -1.7399999999999998Q0 -3.12 1.7999999999999998 -2.04" fill="none" stroke="#f2f0dd" stroke-opacity=".5" stroke-width=".45"/></g><g transform="translate(949 20)"><circle cy=".65" r="4.3" fill="#060a0d" opacity=".9"/><circle r="3.45" fill="#111a1f" stroke="#4d585d" stroke-width=".45"/><circle r="3" fill="url(#mat-screw)"/><circle r="2.2" fill="none" stroke="#d3d5c9" stroke-opacity=".23" stroke-width=".35"/><polygon points="0.000,-1.380 0.465,-0.805 1.195,-0.690 0.930,0.000 1.195,0.690 0.465,0.805 0.000,1.380 -0.465,0.805 -1.195,0.690 -0.930,0.000 -1.195,-0.690 -0.465,-0.805" fill="#0d171d" stroke="#1b2b33" stroke-width=".5"/><path d="M-1.9500000000000002 -1.7399999999999998Q0 -3.12 1.7999999999999998 -2.04" fill="none" stroke="#f2f0dd" stroke-opacity=".5" stroke-width=".45"/></g>
+<rect x="1" y="3" width="478" height="386" rx="6" fill="#05090c"/><rect x=".5" y=".5" width="479" height="388" rx="6" fill="url(#mat-face)" stroke="#070d11"/><rect x="1.5" y="1.5" width="477" height="386" rx="5" fill="none" stroke="url(#mat-edge)"/><rect x="3" y="3" width="474" height="382" rx="4" fill="url(#mat-light)"/><rect x="3" y="3" width="474" height="382" rx="4" fill="url(#mat-brush)"/><rect x="3" y="3" width="474" height="382" rx="4" fill="url(#mat-grain)"/><rect x="4" y="4" width="472" height="30" rx="3" fill="url(#mat-header)"/><path d="M6 35.5H474" stroke="#0d1418"/><path d="M6 36.5H474" stroke="#60696a" stroke-opacity=".32"/><path d="M8 386.5H472" stroke="#68736f" stroke-opacity=".23"/><g transform="translate(11 20)"><circle cy=".65" r="4.3" fill="#060a0d" opacity=".9"/><circle r="3.45" fill="#111a1f" stroke="#4d585d" stroke-width=".45"/><circle r="3" fill="url(#mat-screw)"/><circle r="2.2" fill="none" stroke="#d3d5c9" stroke-opacity=".23" stroke-width=".35"/><polygon points="0.000,-1.380 0.465,-0.805 1.195,-0.690 0.930,0.000 1.195,0.690 0.465,0.805 0.000,1.380 -0.465,0.805 -1.195,0.690 -0.930,0.000 -1.195,-0.690 -0.465,-0.805" fill="#0d171d" stroke="#1b2b33" stroke-width=".5"/><path d="M-1.9500000000000002 -1.7399999999999998Q0 -3.12 1.7999999999999998 -2.04" fill="none" stroke="#f2f0dd" stroke-opacity=".5" stroke-width=".45"/></g><g transform="translate(469 20)"><circle cy=".65" r="4.3" fill="#060a0d" opacity=".9"/><circle r="3.45" fill="#111a1f" stroke="#4d585d" stroke-width=".45"/><circle r="3" fill="url(#mat-screw)"/><circle r="2.2" fill="none" stroke="#d3d5c9" stroke-opacity=".23" stroke-width=".35"/><polygon points="0.000,-1.380 0.465,-0.805 1.195,-0.690 0.930,0.000 1.195,0.690 0.465,0.805 0.000,1.380 -0.465,0.805 -1.195,0.690 -0.930,0.000 -1.195,-0.690 -0.465,-0.805" fill="#0d171d" stroke="#1b2b33" stroke-width=".5"/><path d="M-1.9500000000000002 -1.7399999999999998Q0 -3.12 1.7999999999999998 -2.04" fill="none" stroke="#f2f0dd" stroke-opacity=".5" stroke-width=".45"/></g>
 <text x="24" y="24" font-size="12" fill="#8d979a" text-anchor="start" font-weight="700">05 / STARTUP DIAGNOSTICS</text>
-<text x="936" y="24" font-size="11" fill="#e6ad59" text-anchor="end" font-weight="400">POST SIMULATION</text>
+<text x="456" y="24" font-size="11" fill="#e6ad59" text-anchor="end" font-weight="400">POST SIMULATION</text>
 <text x="24" y="67" font-size="20" fill="#dfddd4" text-anchor="start" font-weight="700">Power-on / self-test</text>
 <text x="24" y="89" font-size="12" fill="#8d979a" text-anchor="start" font-weight="400">LORDWARE  /  AVR2560  /  COLD START</text>
-<rect x="13" y="102" width="592" height="210" rx="5" fill="#080f13" stroke="#34454d" stroke-width=".6"/><rect x="14" y="103" width="590" height="208" rx="4" fill="url(#mat-bezel)"/><rect x="16" y="105" width="586" height="204" rx="3" fill="url(#mat-glass)" stroke="#080f10"/><rect x="16.5" y="105.5" width="585" height="203" rx="3" fill="url(#mat-pixels)"/><path d="M19 106H599" stroke="#03090b" stroke-width="2"/><path d="M17 108V306" stroke="#03090b" stroke-width="1.4"/><path d="M19 310.5H599" stroke="#81908b" stroke-opacity=".32" stroke-width=".7"/><rect x="18" y="107" width="582" height="200" rx="2" fill="url(#mat-reflection)"/>
+<rect x="13" y="102" width="454" height="210" rx="5" fill="#080f13" stroke="#34454d" stroke-width=".6"/><rect x="14" y="103" width="452" height="208" rx="4" fill="url(#mat-bezel)"/><rect x="16" y="105" width="448" height="204" rx="3" fill="url(#mat-glass)" stroke="#080f10"/><rect x="16.5" y="105.5" width="447" height="203" rx="3" fill="url(#mat-pixels)"/><path d="M19 106H461" stroke="#03090b" stroke-width="2"/><path d="M17 108V306" stroke="#03090b" stroke-width="1.4"/><path d="M19 310.5H461" stroke="#81908b" stroke-opacity=".32" stroke-width=".7"/><rect x="18" y="107" width="444" height="200" rx="2" fill="url(#mat-reflection)"/>
 <text x="28" y="126" font-size="10" fill="#8d979a" text-anchor="start" font-weight="700">SEQ</text>
 <text x="71" y="126" font-size="10" fill="#8d979a" text-anchor="start" font-weight="700">STAGE</text>
-<text x="198" y="126" font-size="10" fill="#8d979a" text-anchor="start" font-weight="700">TEST FIXTURE</text>
-<text x="582" y="126" font-size="10" fill="#8d979a" text-anchor="end" font-weight="700">RESULT</text>
-<line x1="17" y1="134" x2="601" y2="134" stroke="#343a3d"/>
-<rect x="18" y="136" width="582" height="24" rx="0" fill="#171b1e"/>
-<rect class="step-highlight" x="18" y="136" width="582" height="24" fill="#e6ad59" style="animation-delay:0.0s"/>
+<text x="164" y="126" font-size="10" fill="#8d979a" text-anchor="start" font-weight="700">TEST FIXTURE</text>
+<text x="449" y="126" font-size="10" fill="#8d979a" text-anchor="end" font-weight="700">RESULT</text>
+<line x1="17" y1="134" x2="463" y2="134" stroke="#343a3d"/>
+<rect x="18" y="136" width="444" height="24" rx="0" fill="#171b1e"/>
+<rect class="step-highlight" x="18" y="136" width="444" height="24" fill="#e6ad59" style="animation-delay:0.0s"/>
 <text x="28" y="153" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">00</text>
 <text x="71" y="153" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">RESET</text>
-<text x="198" y="153" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">POR vector</text>
-<text x="582" y="153" font-size="12" fill="#8d979a" text-anchor="end" font-weight="400">PASS</text>
-<rect class="step-highlight" x="18" y="160" width="582" height="24" fill="#e6ad59" style="animation-delay:1.8s"/>
+<text x="164" y="153" font-size="12" fill="#e6ad59" text-anchor="start" font-weight="400">POR vector</text>
+<text x="449" y="153" font-size="12" fill="#8d979a" text-anchor="end" font-weight="400">PASS</text>
+<rect class="step-highlight" x="18" y="160" width="444" height="24" fill="#e6ad59" style="animation-delay:1.8s"/>
 <text x="28" y="177" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">01</text>
 <text x="71" y="177" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">CLOCK</text>
-<text x="198" y="177" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">16.000 MHz</text>
-<text x="582" y="177" font-size="12" fill="#8d979a" text-anchor="end" font-weight="400">PASS</text>
-<rect x="18" y="184" width="582" height="24" rx="0" fill="#171b1e"/>
-<rect class="step-highlight" x="18" y="184" width="582" height="24" fill="#e6ad59" style="animation-delay:3.6s"/>
+<text x="164" y="177" font-size="12" fill="#e6ad59" text-anchor="start" font-weight="400">16.000 MHz</text>
+<text x="449" y="177" font-size="12" fill="#8d979a" text-anchor="end" font-weight="400">PASS</text>
+<rect x="18" y="184" width="444" height="24" rx="0" fill="#171b1e"/>
+<rect class="step-highlight" x="18" y="184" width="444" height="24" fill="#e6ad59" style="animation-delay:3.6s"/>
 <text x="28" y="201" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">02</text>
 <text x="71" y="201" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">SRAM</text>
-<text x="198" y="201" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">8,192 B / 00-FF</text>
-<text x="582" y="201" font-size="12" fill="#8d979a" text-anchor="end" font-weight="400">PASS</text>
-<rect class="step-highlight" x="18" y="208" width="582" height="24" fill="#e6ad59" style="animation-delay:5.4s"/>
+<text x="164" y="201" font-size="12" fill="#e6ad59" text-anchor="start" font-weight="400">8,192 B / 00-FF</text>
+<text x="449" y="201" font-size="12" fill="#8d979a" text-anchor="end" font-weight="400">PASS</text>
+<rect class="step-highlight" x="18" y="208" width="444" height="24" fill="#e6ad59" style="animation-delay:5.4s"/>
 <text x="28" y="225" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">03</text>
 <text x="71" y="225" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">UART0</text>
-<text x="198" y="225" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">9600 / 8N1</text>
-<text x="582" y="225" font-size="12" fill="#8d979a" text-anchor="end" font-weight="400">PASS</text>
-<rect x="18" y="232" width="582" height="24" rx="0" fill="#171b1e"/>
-<rect class="step-highlight" x="18" y="232" width="582" height="24" fill="#e6ad59" style="animation-delay:7.2s"/>
+<text x="164" y="225" font-size="12" fill="#e6ad59" text-anchor="start" font-weight="400">9600 / 8N1</text>
+<text x="449" y="225" font-size="12" fill="#8d979a" text-anchor="end" font-weight="400">PASS</text>
+<rect x="18" y="232" width="444" height="24" rx="0" fill="#171b1e"/>
+<rect class="step-highlight" x="18" y="232" width="444" height="24" fill="#e6ad59" style="animation-delay:7.2s"/>
 <text x="28" y="249" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">04</text>
 <text x="71" y="249" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">SPI</text>
-<text x="198" y="249" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">MCP2515 / W25Q64</text>
-<text x="582" y="249" font-size="12" fill="#8d979a" text-anchor="end" font-weight="400">PASS</text>
-<rect class="step-highlight" x="18" y="256" width="582" height="24" fill="#e6ad59" style="animation-delay:9.0s"/>
+<text x="164" y="249" font-size="12" fill="#e6ad59" text-anchor="start" font-weight="400">MCP2515 / W25Q64</text>
+<text x="449" y="249" font-size="12" fill="#8d979a" text-anchor="end" font-weight="400">PASS</text>
+<rect class="step-highlight" x="18" y="256" width="444" height="24" fill="#e6ad59" style="animation-delay:9.0s"/>
 <text x="28" y="273" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">05</text>
 <text x="71" y="273" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">CAN</text>
-<text x="198" y="273" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">500 kbit/s</text>
-<text x="582" y="273" font-size="12" fill="#8d979a" text-anchor="end" font-weight="400">PASS</text>
-<rect x="18" y="280" width="582" height="24" rx="0" fill="#171b1e"/>
-<rect class="step-highlight" x="18" y="280" width="582" height="24" fill="#e6ad59" style="animation-delay:10.8s"/>
+<text x="164" y="273" font-size="12" fill="#e6ad59" text-anchor="start" font-weight="400">500 kbit/s</text>
+<text x="449" y="273" font-size="12" fill="#8d979a" text-anchor="end" font-weight="400">PASS</text>
+<rect x="18" y="280" width="444" height="24" rx="0" fill="#171b1e"/>
+<rect class="step-highlight" x="18" y="280" width="444" height="24" fill="#e6ad59" style="animation-delay:10.8s"/>
 <text x="28" y="297" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">06</text>
 <text x="71" y="297" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">ROM CRC</text>
-<text x="198" y="297" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">48228BAE</text>
-<text x="582" y="297" font-size="12" fill="#8d979a" text-anchor="end" font-weight="400">MATCH</text>
-<rect x="620" y="102" width="327" height="210" rx="5" fill="#080f13" stroke="#34454d" stroke-width=".6"/><rect x="621" y="103" width="325" height="208" rx="4" fill="url(#mat-bezel)"/><rect x="623" y="105" width="321" height="204" rx="3" fill="url(#mat-glass)" stroke="#080f10"/><rect x="623.5" y="105.5" width="320" height="203" rx="3" fill="url(#mat-pixels)"/><path d="M626 106H941" stroke="#03090b" stroke-width="2"/><path d="M624 108V306" stroke="#03090b" stroke-width="1.4"/><path d="M626 310.5H941" stroke="#81908b" stroke-opacity=".32" stroke-width=".7"/><rect x="625" y="107" width="317" height="200" rx="2" fill="url(#mat-reflection)"/>
-<text x="640" y="126" font-size="11" fill="#8d979a" text-anchor="start" font-weight="700">TARGET CONFIGURATION</text>
-<text x="640" y="151" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">MCU</text>
-<text x="927" y="151" font-size="13" fill="#dfddd4" text-anchor="end" font-weight="400">ATmega2560</text>
-<text x="640" y="175" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">SRAM</text>
-<text x="927" y="175" font-size="13" fill="#dfddd4" text-anchor="end" font-weight="400">8 KiB</text>
-<text x="640" y="199" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">SPI FLASH</text>
-<text x="927" y="199" font-size="13" fill="#dfddd4" text-anchor="end" font-weight="400">W25Q64 / 8 MiB</text>
-<text x="640" y="223" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">CAN CTRL</text>
-<text x="927" y="223" font-size="13" fill="#dfddd4" text-anchor="end" font-weight="400">MCP2515</text>
-<text x="640" y="247" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">DESCRIPTOR</text>
-<text x="927" y="247" font-size="13" fill="#dfddd4" text-anchor="end" font-weight="400">74 bytes</text>
-<line x1="640" y1="259" x2="927" y2="259" stroke="#343a3d"/>
-<text x="640" y="284" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">CRC32</text>
-<text x="927" y="285" font-size="19" fill="#e6ad59" text-anchor="end" font-weight="700">48228BAE</text>
-<text x="24" y="329" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">FIXTURE COMPLETE  /  07 OF 07</text>
-<text x="934" y="329" font-size="11" fill="#8d979a" text-anchor="end" font-weight="400">ROM / profile descriptor</text>
+<text x="164" y="297" font-size="12" fill="#e6ad59" text-anchor="start" font-weight="400">48228BAE</text>
+<text x="449" y="297" font-size="12" fill="#8d979a" text-anchor="end" font-weight="400">MATCH</text>
+<text x="24" y="335" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">ROM / profile descriptor</text>
+<text x="24" y="355" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">074 bytes  ·  CRC32 48228BAE</text>
+<text x="24" y="377" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">FIXTURE COMPLETE  /  07 OF 07</text>
 </svg>

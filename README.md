@@ -1,131 +1,102 @@
-<!-- Profile README for lordware. Assets in assets/, served raw from github.com/lordware/lordware/main. -->
-<!-- Do not add <style>; GitHub strips it. All motion lives inside the SVGs. -->
+<!-- Image-only GitHub profile. All visible content is rendered in SVG assets. -->
+<p>
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/profile-hero-mobile.svg" />
+    <img src="assets/hero-next.svg" alt="lordware — embedded systems, C, C++, Python, C#, CANopen and RS-232. Lübeck, DE. Since 2017." width="960" />
+  </picture>
+</p>
 
-<div align="center">
+<p>
+  <a href="https://github.com/lordware">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/profile-stats-mobile.svg" />
+    <img src="assets/stats.svg" alt="GitHub statistics snapshot: stars, repositories, followers, commits and streak." width="960" />
+  </picture>
+  </a>
+</p>
 
-<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/mark.svg" alt="lordware" width="140" height="140" />
+<p>
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/profile-ticker-mobile.svg" />
+    <img src="assets/ticker.svg" alt="Rotating embedded firmware work queue." width="960" />
+  </picture>
+</p>
 
-<br/>
+<p>
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/profile-bus-mobile.svg" />
+    <img src="assets/can-bus.svg" alt="CANopen instrument: demo frame capture and protocol decode for node 0x1A." width="960" />
+  </picture>
+</p>
 
-<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/hero-next.svg" alt="lordware — firmware / embedded / Lübeck DE" width="960" />
+<p>
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/profile-scope-mobile.svg" />
+    <img src="assets/scope.svg" alt="UART serial analysis: 9600 baud, 8N1, logic side of RS-232." width="960" />
+  </picture>
+</p>
 
-</div>
+<p>
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/profile-boot-mobile.svg" />
+    <img src="assets/boot.svg" alt="Embedded diagnostics: simulated POST sequence." width="960" />
+  </picture>
+</p>
 
-## `./whoami`
+<p>
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/profile-hexdump-mobile.svg" />
+    <img src="assets/hexdump.svg" alt="Memory inspector: hex and ASCII descriptor with CRC32." width="960" />
+  </picture>
+</p>
 
-```txt
-> Software Developer · Embedded Systems
-> Lübeck, DE
-> stack: C · C++ · Python · C#
-```
+<p>
+  <a href="https://github.com/lordware?tab=repositories">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/profile-repos-mobile.svg" />
+    <img src="assets/repos.svg" alt="Repository monitor: public source repositories." width="960" />
+  </picture>
+  </a>
+</p>
 
-## `./stats`
+<p>
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/profile-lang-mobile.svg" />
+    <img src="assets/lang.svg" alt="Language memory map from public repository byte counts." width="960" />
+  </picture>
+</p>
 
-<div align="center">
+<p>
+  <a href="https://github.com/lordware?tab=overview">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/profile-syslog-mobile.svg" />
+    <img src="assets/syslog.svg" alt="Event log from public GitHub activity." width="960" />
+  </picture>
+  </a>
+</p>
 
-<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/stats.svg" alt="live GitHub stats — stars, repos, followers, commits, streak" width="960" />
+<p>
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/profile-activity-mobile.svg" />
+    <img src="assets/activity.svg" alt="Contribution activity and amber snake animation." width="960" />
+  </picture>
+</p>
 
-</div>
+<p>
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/profile-visitors-mobile.svg" />
+    <img src="assets/visitors.svg" alt="Profile visitor counter, cached between refreshes." width="960" />
+  </picture>
+</p>
 
-## `./now`
+<p>
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/profile-connect-mobile.svg" />
+    <img src="assets/profile-connect.svg" alt="Discord: lordware1. Location: Lübeck, Germany." width="960" />
+  </picture>
+</p>
 
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/ticker.svg" alt="now — shipping, tinkering, learning, reading, dreaming" width="960" />
-
-</div>
-
-## `./bus`
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/can-bus.svg" alt="CANopen bus monitor" width="960" />
-
-</div>
-
-
-## `./scope`
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/scope.svg" alt="RS-232 oscilloscope trace" width="960" />
-
-</div>
-
-
-## `./boot`
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/boot.svg" alt="POST boot sequence" width="960" />
-
-</div>
-
-## `./dump`
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/hexdump.svg" alt="hex dump of lordware.bin" width="960" />
-
-</div>
-
-## `./top`
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/repos.svg" alt="top-style process table of public repos (stars, forks, last push)" width="960" />
-
-</div>
-
-## `./lang`
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/lang.svg" alt="language byte distribution across public repos" width="960" />
-
-</div>
-
-## `./tail`
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/syslog.svg" alt="syslog-style tail of recent public GitHub events" width="960" />
-
-</div>
-
-
-## `./activity`
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/lordware/lordware/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/lordware/lordware/output/github-contribution-grid-snake.svg" />
-  <img alt="contributions snake animation" src="https://raw.githubusercontent.com/lordware/lordware/output/github-contribution-grid-snake.svg" />
-</picture>
-
-</div>
-
-## `./connect`
-
-```txt
-> discord ···· lordware1
-> location ··· Lübeck, DE  (53.87°N 10.69°E)
-```
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/visitors.svg" alt="visitors" width="320" height="80" />
-<img src="https://komarev.com/ghpvc/?username=lordware&label=&color=1A1814&style=flat-square" alt="" width="1" height="1" />
-
-</div>
-
-<div align="center">
-
-<sub>— end of transmission —</sub>
-
-<br/>
-
-<img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/mark.svg" alt="" width="40" height="40" />
-
-</div>
+<p align="center">
+  <img src="assets/mark.svg" alt="lordware instrument monogram" width="88" height="88" />
+</p>
+<img src="https://komarev.com/ghpvc/?username=lordware&amp;label=&amp;color=e6ad59&amp;style=flat-square" alt="" width="1" height="1" />

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>lordware · Profile preview</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="preview-toolbar" aria-label="Local preview controls">
+    <div class="preview-label"><span class="status-dot" aria-hidden="true"></span> LOCAL PREVIEW <span class="preview-name">lordware / README.md</span></div>
+    <div class="preview-controls">
+      <div class="button-group" role="group" aria-label="Profile version">
+        <button type="button" data-version="after" aria-pressed="true">After</button>
+        <button type="button" data-version="before" aria-pressed="false">Before</button>
+      </div>
+      <div class="button-group" role="group" aria-label="Preview width">
+        <button type="button" data-size="desktop" aria-pressed="true">Desktop</button>
+        <button type="button" data-size="mobile" aria-pressed="false">Mobile</button>
+      </div>
+      <div class="button-group" role="group" aria-label="Color theme">
+        <button type="button" data-theme="dark" aria-pressed="true">Dark</button>
+        <button type="button" data-theme="light" aria-pressed="false">Light</button>
+      </div>
+      <button type="button" id="refresh" title="Reload the current README and assets">Refresh</button>
+    </div>
+  </header>
+  <main class="preview-stage">
+    <section class="profile-frame" data-size="desktop" aria-label="GitHub profile README preview">
+      <div class="file-label"><svg aria-hidden="true" viewBox="0 0 16 16" width="16" height="16"><path fill="currentColor" d="M1.75 1A1.75 1.75 0 0 0 0 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0 0 16 13.25V2.75A1.75 1.75 0 0 0 14.25 1Zm-.25 1.75a.25.25 0 0 1 .25-.25H7.5v11H1.75a.25.25 0 0 1-.25-.25Zm7.5-.25h5.25a.25.25 0 0 1 .25.25v10.5a.25.25 0 0 1-.25.25H9Z"/></svg><span>README.md</span></div>
+      <article class="markdown-body" id="readme" aria-busy="true"></article>
+    </section>
+    <p id="preview-status" role="status" aria-live="polite">Loading the local README…</p>
+    <p class="preview-note">Local rendering reference · GitHub may render SVGs and spacing differently.</p>
+  </main>
+</body>
+</html>

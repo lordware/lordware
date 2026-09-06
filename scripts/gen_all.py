@@ -1,41 +1,27 @@
-from __future__ import annotations
-
-import sys
+"""Regenerate every profile panel. Use --offline for deterministic local previews."""
 from pathlib import Path
-
-ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "assets"
-
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-
-import gen_ticker
-import gen_canbus
-import gen_scope
-import gen_boot
-import gen_visitors
-import gen_hero_uptime
-import gen_repos
-import gen_log
-import gen_lang
-import gen_stats
+import argparse
+import gen_profile
+import gen_instruments
+import gen_telemetry
+import gen_auxiliary
 
 
-def main() -> int:
-    mods = (
-        gen_ticker, gen_canbus, gen_scope, gen_boot,
-        gen_visitors, gen_hero_uptime,
-        gen_repos, gen_log, gen_lang, gen_stats,
-    )
-    failures = 0
-    for mod in mods:
-        try:
-            path = mod.generate(OUT)
-            print(f"[gen_all] {mod.__name__} -> {path}")
-        except Exception as e:
-            print(f"[gen_all] {mod.__name__} FAILED: {e}")
-            failures += 1
-    return 0 if failures == 0 else 1
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--offline', action='store_true', help='Use the saved GitHub and visitor snapshots without network requests')
+    args = parser.parse_args()
+    out = Path(__file__).resolve().parent.parent / 'assets'
+    panels = [
+        *gen_profile.generate(out),
+        *gen_instruments.generate(out),
+        *gen_telemetry.generate(out, offline=args.offline),
+        *gen_auxiliary.generate(out, offline=args.offline),
+    ]
+    for path in panels:
+        print(f'[gen_all] {path.name}')
+    return 0
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     raise SystemExit(main())

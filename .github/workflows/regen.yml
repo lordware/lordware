@@ -1,4 +1,4 @@
-name: Regenerate dynamic SVGs
+name: Regenerate profile artwork
 
 on:
   schedule:
@@ -25,10 +25,10 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install dependencies
+      - name: Install content dependency
         run: pip install pyyaml
 
-      - name: Regenerate SVGs
+      - name: Regenerate profile SVGs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/gen_all.py
@@ -37,7 +37,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: regenerate dynamic SVGs [skip ci]"
-          file_pattern: "assets/*.svg"
+          file_pattern: "assets/*.svg scripts/data/activity-source.svg"
           skip_checkout: true
           commit_user_name: "github-actions[bot]"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"

@@ -1,148 +1,148 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 180" width="960" height="180" role="img" aria-label="Hex memory dump of lordware.bin">
-  <defs>
-    <style>
-      .hex-bg    { fill: #1A1814; }
-      .hex-addr  { fill: #A89968; font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 12px; }
-      .hex-byte  { fill: #E8DCC4; font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 12px; }
-      .hex-ascii { fill: #FFB83D; font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 12px; }
-    </style>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="345" viewBox="0 0 960 345" role="img" aria-labelledby="title desc">
+<title id="title">Byte-accurate lordware profile descriptor</title><desc id="desc">Fixed 74 byte ASCII descriptor. Hex and printable ASCII are generated from the same bytes; dots represent NUL or other nonprintable bytes. CRC32 48228BAE.</desc>
+<defs>
+<linearGradient id="mat-face" x1="0" y1="0" x2=".12" y2="1"><stop stop-color="#3c4448"/><stop offset=".025" stop-color="#272f33"/><stop offset=".3" stop-color="#242c30"/><stop offset=".82" stop-color="#1b2226"/><stop offset="1" stop-color="#252d31"/></linearGradient>
+<linearGradient id="mat-edge" x1="0" y1="0" x2=".35" y2="1"><stop stop-color="#9a9d97"/><stop offset=".035" stop-color="#586368"/><stop offset=".45" stop-color="#222c31"/><stop offset="1" stop-color="#080d10"/></linearGradient>
+<linearGradient id="mat-header" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#40494d"/><stop offset=".07" stop-color="#343d41"/><stop offset=".65" stop-color="#282f33"/><stop offset="1" stop-color="#20272b"/></linearGradient>
+<radialGradient id="mat-light" cx=".15" cy="0" r="1.1"><stop stop-color="#9ca6a3" stop-opacity=".07"/><stop offset=".6" stop-color="#9ca6a3" stop-opacity="0"/><stop offset="1" stop-color="#000609" stop-opacity=".14"/></radialGradient>
+<linearGradient id="mat-screw" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#c3c8c3"/><stop offset=".2" stop-color="#737f83"/><stop offset=".45" stop-color="#acb3af"/><stop offset=".7" stop-color="#48575e"/><stop offset="1" stop-color="#26363e"/></linearGradient>
+<linearGradient id="mat-bezel" x1="0" y1="0" x2=".05" y2="1"><stop stop-color="#05090b"/><stop offset=".14" stop-color="#111b20"/><stop offset=".86" stop-color="#19252a"/><stop offset="1" stop-color="#647074"/></linearGradient>
+<linearGradient id="mat-glass" x1="0" y1="0" x2=".12" y2="1"><stop stop-color="#111c1d"/><stop offset=".16" stop-color="#091314"/><stop offset=".7" stop-color="#0a1313"/><stop offset="1" stop-color="#121a17"/></linearGradient>
+<linearGradient id="mat-reflection" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#c4d3cd" stop-opacity=".085"/><stop offset=".3" stop-color="#c4d3cd" stop-opacity=".013"/><stop offset="1" stop-color="#c4d3cd" stop-opacity="0"/></linearGradient>
+<linearGradient id="mat-phosphor" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffe1a0"/><stop offset=".35" stop-color="#e9b666"/><stop offset="1" stop-color="#c48b3c"/></linearGradient>
+<linearGradient id="mat-amber-meter" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4cf8a"/><stop offset=".18" stop-color="#ecbc6f"/><stop offset=".62" stop-color="#d59d47"/><stop offset="1" stop-color="#98612d"/></linearGradient>
+<linearGradient id="mat-counter-drum" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#050a0c"/><stop offset=".22" stop-color="#263031"/><stop offset=".48" stop-color="#1c2627"/><stop offset=".51" stop-color="#111d20"/><stop offset=".77" stop-color="#1b282a"/><stop offset="1" stop-color="#060d10"/></linearGradient>
+<radialGradient id="mat-led"><stop stop-color="#fff2bb"/><stop offset=".22" stop-color="#f3ca76"/><stop offset=".63" stop-color="#d89c3a"/><stop offset="1" stop-color="#6e421e"/></radialGradient>
+<pattern id="mat-brush" width="73" height="6" patternUnits="userSpaceOnUse"><path d="M0 .5H73M9 2.5H42M49 4.5H71" fill="none" stroke="#dae0de" stroke-width=".3" opacity=".075"/><path d="M4 1.5H46M32 5.5H69" stroke="#030608" stroke-width=".4" opacity=".14"/></pattern>
+<pattern id="mat-pixels" width="3" height="3" patternUnits="userSpaceOnUse"><path d="M0 .5H3" stroke="#050809" stroke-width=".45" opacity=".2"/><circle cx="1.5" cy="1.5" r=".22" fill="#a8b7a8" opacity=".085"/></pattern>
+<pattern id="mat-grain" width="59" height="43" patternUnits="userSpaceOnUse"><circle cx="7" cy="11" r="0.16" fill="#040708" opacity="0.2"/><circle cx="24" cy="34" r="0.24" fill="#e2e4dd" opacity="0.09"/><circle cx="41" cy="14" r="0.32" fill="#e2e4dd" opacity="0.09"/><circle cx="58" cy="37" r="0.4" fill="#040708" opacity="0.2"/><circle cx="16" cy="17" r="0.16" fill="#e2e4dd" opacity="0.09"/><circle cx="33" cy="40" r="0.24" fill="#e2e4dd" opacity="0.09"/><circle cx="50" cy="20" r="0.32" fill="#040708" opacity="0.2"/><circle cx="8" cy="0" r="0.4" fill="#e2e4dd" opacity="0.09"/><circle cx="25" cy="23" r="0.16" fill="#e2e4dd" opacity="0.09"/><circle cx="42" cy="3" r="0.24" fill="#040708" opacity="0.2"/><circle cx="0" cy="26" r="0.32" fill="#e2e4dd" opacity="0.09"/><circle cx="17" cy="6" r="0.4" fill="#e2e4dd" opacity="0.09"/><circle cx="34" cy="29" r="0.16" fill="#040708" opacity="0.2"/><circle cx="51" cy="9" r="0.24" fill="#e2e4dd" opacity="0.09"/><circle cx="9" cy="32" r="0.32" fill="#e2e4dd" opacity="0.09"/><circle cx="26" cy="12" r="0.4" fill="#040708" opacity="0.2"/><circle cx="43" cy="35" r="0.16" fill="#e2e4dd" opacity="0.09"/><circle cx="1" cy="15" r="0.24" fill="#e2e4dd" opacity="0.09"/><circle cx="18" cy="38" r="0.32" fill="#040708" opacity="0.2"/><circle cx="35" cy="18" r="0.4" fill="#e2e4dd" opacity="0.09"/><circle cx="52" cy="41" r="0.16" fill="#e2e4dd" opacity="0.09"/><circle cx="10" cy="21" r="0.24" fill="#040708" opacity="0.2"/><circle cx="27" cy="1" r="0.32" fill="#e2e4dd" opacity="0.09"/><circle cx="44" cy="24" r="0.4" fill="#e2e4dd" opacity="0.09"/><circle cx="2" cy="4" r="0.16" fill="#040708" opacity="0.2"/><circle cx="19" cy="27" r="0.24" fill="#e2e4dd" opacity="0.09"/><circle cx="36" cy="7" r="0.32" fill="#e2e4dd" opacity="0.09"/><circle cx="53" cy="30" r="0.4" fill="#040708" opacity="0.2"/><circle cx="11" cy="10" r="0.16" fill="#e2e4dd" opacity="0.09"/><circle cx="28" cy="33" r="0.24" fill="#e2e4dd" opacity="0.09"/><circle cx="45" cy="13" r="0.32" fill="#040708" opacity="0.2"/><circle cx="3" cy="36" r="0.4" fill="#e2e4dd" opacity="0.09"/><circle cx="20" cy="16" r="0.16" fill="#e2e4dd" opacity="0.09"/><circle cx="37" cy="39" r="0.24" fill="#040708" opacity="0.2"/><circle cx="54" cy="19" r="0.32" fill="#e2e4dd" opacity="0.09"/><circle cx="12" cy="42" r="0.4" fill="#e2e4dd" opacity="0.09"/><circle cx="29" cy="22" r="0.16" fill="#040708" opacity="0.2"/><circle cx="46" cy="2" r="0.24" fill="#e2e4dd" opacity="0.09"/><circle cx="4" cy="25" r="0.32" fill="#e2e4dd" opacity="0.09"/><circle cx="21" cy="5" r="0.4" fill="#040708" opacity="0.2"/><circle cx="38" cy="28" r="0.16" fill="#e2e4dd" opacity="0.09"/><circle cx="55" cy="8" r="0.24" fill="#e2e4dd" opacity="0.09"/><circle cx="13" cy="31" r="0.32" fill="#040708" opacity="0.2"/><circle cx="30" cy="11" r="0.4" fill="#e2e4dd" opacity="0.09"/><circle cx="47" cy="34" r="0.16" fill="#e2e4dd" opacity="0.09"/><circle cx="5" cy="14" r="0.24" fill="#040708" opacity="0.2"/><circle cx="22" cy="37" r="0.32" fill="#e2e4dd" opacity="0.09"/><circle cx="39" cy="17" r="0.4" fill="#e2e4dd" opacity="0.09"/></pattern>
+<filter id="mat-small-bloom" x="-35%" y="-45%" width="170%" height="190%" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation=".75"/></filter>
 
-  <rect width="960" height="180" class="hex-bg"></rect>
-
-
-  <text class="hex-addr" x="12" y="20">offset(h)  00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F    decoded</text>
-  <line x1="12" y1="28" x2="948" y2="28" stroke="#3A352C" stroke-width="1"></line>
-
-
-  <g font-family="IBM Plex Mono, monospace" font-size="12">
-    <g>
-      <text class="hex-addr" x="12" y="48">00000000</text>
-      <text class="hex-byte" x="108" y="48">6C</text>
-      <text class="hex-byte" x="132" y="48">6F</text>
-      <text class="hex-byte" x="156" y="48">72</text>
-      <text class="hex-byte" x="180" y="48">64</text>
-      <text class="hex-byte" x="204" y="48">77</text>
-      <text class="hex-byte" x="228" y="48">61</text>
-      <text class="hex-byte" x="252" y="48">72</text>
-      <text class="hex-byte" x="276" y="48">65</text>
-      <text class="hex-byte" x="300" y="48">00</text>
-      <text class="hex-byte" x="324" y="48">66</text>
-      <text class="hex-byte" x="348" y="48">69</text>
-      <text class="hex-byte" x="372" y="48">72</text>
-      <text class="hex-byte" x="396" y="48">6D</text>
-      <text class="hex-byte" x="420" y="48">77</text>
-      <text class="hex-byte" x="444" y="48">61</text>
-      <text class="hex-byte" x="468" y="48">72</text>
-      <text class="hex-ascii" x="540" y="48">lordware.firmwar</text>
-    </g>
-    <g>
-      <text class="hex-addr" x="12" y="66">00000010</text>
-      <text class="hex-byte" x="108" y="66">65</text>
-      <text class="hex-byte" x="132" y="66">00</text>
-      <text class="hex-byte" x="156" y="66">41</text>
-      <text class="hex-byte" x="180" y="66">72</text>
-      <text class="hex-byte" x="204" y="66">64</text>
-      <text class="hex-byte" x="228" y="66">75</text>
-      <text class="hex-byte" x="252" y="66">69</text>
-      <text class="hex-byte" x="276" y="66">6E</text>
-      <text class="hex-byte" x="300" y="66">6F</text>
-      <text class="hex-byte" x="324" y="66">00</text>
-      <text class="hex-byte" x="348" y="66">52</text>
-      <text class="hex-byte" x="372" y="66">53</text>
-      <text class="hex-byte" x="396" y="66">32</text>
-      <text class="hex-byte" x="420" y="66">33</text>
-      <text class="hex-byte" x="444" y="66">32</text>
-      <text class="hex-byte" x="468" y="66">00</text>
-      <text class="hex-ascii" x="540" y="66">e.Arduino.RS232.</text>
-    </g>
-    <g>
-      <text class="hex-addr" x="12" y="84">00000020</text>
-      <text class="hex-byte" x="108" y="84">43</text>
-      <text class="hex-byte" x="132" y="84">41</text>
-      <text class="hex-byte" x="156" y="84">4E</text>
-      <text class="hex-byte" x="180" y="84">6F</text>
-      <text class="hex-byte" x="204" y="84">70</text>
-      <text class="hex-byte" x="228" y="84">65</text>
-      <text class="hex-byte" x="252" y="84">6E</text>
-      <text class="hex-byte" x="276" y="84">00</text>
-      <text class="hex-byte" x="300" y="84">43</text>
-      <text class="hex-byte" x="324" y="84">00</text>
-      <text class="hex-byte" x="348" y="84">43</text>
-      <text class="hex-byte" x="372" y="84">2B</text>
-      <text class="hex-byte" x="396" y="84">2B</text>
-      <text class="hex-byte" x="420" y="84">00</text>
-      <text class="hex-byte" x="444" y="84">4C</text>
-      <text class="hex-byte" x="468" y="84">C3</text>
-      <text class="hex-ascii" x="540" y="84">CANopen.C.C++.L.</text>
-    </g>
-    <g>
-      <text class="hex-addr" x="12" y="102">00000030</text>
-      <text class="hex-byte" x="108" y="102">BC</text>
-      <text class="hex-byte" x="132" y="102">62</text>
-      <text class="hex-byte" x="156" y="102">65</text>
-      <text class="hex-byte" x="180" y="102">63</text>
-      <text class="hex-byte" x="204" y="102">6B</text>
-      <text class="hex-byte" x="228" y="102">2E</text>
-      <text class="hex-byte" x="252" y="102">20</text>
-      <text class="hex-byte" x="276" y="102">6E</text>
-      <text class="hex-byte" x="300" y="102">6F</text>
-      <text class="hex-byte" x="324" y="102">74</text>
-      <text class="hex-byte" x="348" y="102">65</text>
-      <text class="hex-byte" x="372" y="102">3A</text>
-      <text class="hex-byte" x="396" y="102">4D</text>
-      <text class="hex-byte" x="420" y="102">69</text>
-      <text class="hex-byte" x="444" y="102">6D</text>
-      <text class="hex-byte" x="468" y="102">6F</text>
-      <text class="hex-ascii" x="540" y="102">übeck. note:Mimo</text>
-    </g>
-    <g>
-      <text class="hex-addr" x="12" y="120">00000040</text>
-      <text class="hex-byte" x="108" y="120">6E</text>
-      <text class="hex-byte" x="132" y="120">20</text>
-      <text class="hex-byte" x="156" y="120">42</text>
-      <text class="hex-byte" x="180" y="120">61</text>
-      <text class="hex-byte" x="204" y="120">72</text>
-      <text class="hex-byte" x="228" y="120">61</text>
-      <text class="hex-byte" x="252" y="120">6B</text>
-      <text class="hex-byte" x="276" y="120">20</text>
-      <text class="hex-byte" x="300" y="120">77</text>
-      <text class="hex-byte" x="324" y="120">61</text>
-      <text class="hex-byte" x="348" y="120">73</text>
-      <text class="hex-byte" x="372" y="120">20</text>
-      <text class="hex-byte" x="396" y="120">68</text>
-      <text class="hex-byte" x="420" y="120">65</text>
-      <text class="hex-byte" x="444" y="120">72</text>
-      <text class="hex-byte" x="468" y="120">65</text>
-      <text class="hex-ascii" x="540" y="120">n Barak was here</text>
-    </g>
-    <g>
-      <text class="hex-addr" x="12" y="138">00000050</text>
-      <text class="hex-byte" x="108" y="138">00</text>
-      <text class="hex-byte" x="132" y="138">FF</text>
-      <text class="hex-byte" x="156" y="138">FF</text>
-      <text class="hex-byte" x="180" y="138">FF</text>
-      <text class="hex-byte" x="204" y="138">FF</text>
-      <text class="hex-byte" x="228" y="138">FF</text>
-      <text class="hex-byte" x="252" y="138">FF</text>
-      <text class="hex-byte" x="276" y="138">FF</text>
-      <text class="hex-byte" x="300" y="138">FF</text>
-      <text class="hex-byte" x="324" y="138">FF</text>
-      <text class="hex-byte" x="348" y="138">FF</text>
-      <text class="hex-byte" x="372" y="138">FF</text>
-      <text class="hex-byte" x="396" y="138">FF</text>
-      <text class="hex-byte" x="420" y="138">FF</text>
-      <text class="hex-byte" x="444" y="138">FF</text>
-      <text class="hex-byte" x="468" y="138">FF</text>
-      <text class="hex-ascii" x="540" y="138">................</text>
-    </g>
-  </g>
-
-
-  <g>
-    <rect x="104" y="34" width="24" height="18" fill="#FFB83D" opacity="0.22">
-
-
-    </rect>
-  </g>
+<style>text{font-family:Consolas,'Liberation Mono',monospace}.scan{animation:scan 8s linear infinite}@keyframes scan{0%,100%{opacity:.12}50%{opacity:.65}}.step-highlight{animation:highlight 18s linear infinite;opacity:0}@keyframes highlight{0%,12%,100%{opacity:0}3%,8%{opacity:.1}}@media(prefers-reduced-motion:reduce){.frames,.scan,.step-highlight{animation:none!important}}</style></defs>
+<rect x="1" y="3" width="958" height="341" rx="6" fill="#05090c"/><rect x=".5" y=".5" width="959" height="343" rx="6" fill="url(#mat-face)" stroke="#070d11"/><rect x="1.5" y="1.5" width="957" height="341" rx="5" fill="none" stroke="url(#mat-edge)"/><rect x="3" y="3" width="954" height="337" rx="4" fill="url(#mat-light)"/><rect x="3" y="3" width="954" height="337" rx="4" fill="url(#mat-brush)"/><rect x="3" y="3" width="954" height="337" rx="4" fill="url(#mat-grain)"/><rect x="4" y="4" width="952" height="30" rx="3" fill="url(#mat-header)"/><path d="M6 35.5H954" stroke="#0d1418"/><path d="M6 36.5H954" stroke="#60696a" stroke-opacity=".32"/><path d="M8 341.5H952" stroke="#68736f" stroke-opacity=".23"/><g transform="translate(11 20)"><circle cy=".65" r="4.3" fill="#060a0d" opacity=".9"/><circle r="3.45" fill="#111a1f" stroke="#4d585d" stroke-width=".45"/><circle r="3" fill="url(#mat-screw)"/><circle r="2.2" fill="none" stroke="#d3d5c9" stroke-opacity=".23" stroke-width=".35"/><polygon points="0.000,-1.380 0.465,-0.805 1.195,-0.690 0.930,0.000 1.195,0.690 0.465,0.805 0.000,1.380 -0.465,0.805 -1.195,0.690 -0.930,0.000 -1.195,-0.690 -0.465,-0.805" fill="#0d171d" stroke="#1b2b33" stroke-width=".5"/><path d="M-1.9500000000000002 -1.7399999999999998Q0 -3.12 1.7999999999999998 -2.04" fill="none" stroke="#f2f0dd" stroke-opacity=".5" stroke-width=".45"/></g><g transform="translate(949 20)"><circle cy=".65" r="4.3" fill="#060a0d" opacity=".9"/><circle r="3.45" fill="#111a1f" stroke="#4d585d" stroke-width=".45"/><circle r="3" fill="url(#mat-screw)"/><circle r="2.2" fill="none" stroke="#d3d5c9" stroke-opacity=".23" stroke-width=".35"/><polygon points="0.000,-1.380 0.465,-0.805 1.195,-0.690 0.930,0.000 1.195,0.690 0.465,0.805 0.000,1.380 -0.465,0.805 -1.195,0.690 -0.930,0.000 -1.195,-0.690 -0.465,-0.805" fill="#0d171d" stroke="#1b2b33" stroke-width=".5"/><path d="M-1.9500000000000002 -1.7399999999999998Q0 -3.12 1.7999999999999998 -2.04" fill="none" stroke="#f2f0dd" stroke-opacity=".5" stroke-width=".45"/></g>
+<text x="24" y="24" font-size="12" fill="#8d979a" text-anchor="start" font-weight="700">06 / MEMORY INSPECTOR</text>
+<text x="936" y="24" font-size="11" fill="#e6ad59" text-anchor="end" font-weight="400">FIXED DATA</text>
+<text x="24" y="67" font-size="20" fill="#dfddd4" text-anchor="start" font-weight="700">ROM / hex inspector</text>
+<text x="24" y="88" font-size="12" fill="#8d979a" text-anchor="start" font-weight="400">profile.bin  /  ASCII + NUL  /  READ ONLY</text>
+<rect x="13" y="102" width="934" height="175" rx="5" fill="#080f13" stroke="#34454d" stroke-width=".6"/><rect x="14" y="103" width="932" height="173" rx="4" fill="url(#mat-bezel)"/><rect x="16" y="105" width="928" height="169" rx="3" fill="url(#mat-glass)" stroke="#080f10"/><rect x="16.5" y="105.5" width="927" height="168" rx="3" fill="url(#mat-pixels)"/><path d="M19 106H941" stroke="#03090b" stroke-width="2"/><path d="M17 108V271" stroke="#03090b" stroke-width="1.4"/><path d="M19 275.5H941" stroke="#81908b" stroke-opacity=".32" stroke-width=".7"/><rect x="18" y="107" width="924" height="165" rx="2" fill="url(#mat-reflection)"/>
+<text x="27" y="125" font-size="10" fill="#8d979a" text-anchor="start" font-weight="700">OFFSET</text>
+<text x="146" y="125" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">00</text>
+<text x="180" y="125" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">01</text>
+<text x="214" y="125" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">02</text>
+<text x="248" y="125" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">03</text>
+<text x="282" y="125" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">04</text>
+<text x="316" y="125" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">05</text>
+<text x="350" y="125" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">06</text>
+<text x="384" y="125" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">07</text>
+<text x="418" y="125" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">08</text>
+<text x="452" y="125" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">09</text>
+<text x="486" y="125" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">0A</text>
+<text x="520" y="125" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">0B</text>
+<text x="554" y="125" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">0C</text>
+<text x="588" y="125" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">0D</text>
+<text x="622" y="125" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">0E</text>
+<text x="656" y="125" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">0F</text>
+<text x="720" y="125" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">ASCII</text>
+<line x1="17" y1="132" x2="943" y2="132" stroke="#343a3d"/>
+<line x1="706" y1="107" x2="706" y2="270" stroke="#242c2f"/>
+<rect x="18" y="135" width="924" height="27" rx="0" fill="#171b1e"/>
+<rect class="step-highlight" x="18" y="135" width="924" height="27" fill="#e6ad59" style="animation-delay:0.0s"/>
+<text x="27" y="153" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">00000000</text>
+<text x="146" y="153" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">6C</text>
+<text x="180" y="153" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">6F</text>
+<text x="214" y="153" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">72</text>
+<text x="248" y="153" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">64</text>
+<text x="282" y="153" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">77</text>
+<text x="316" y="153" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">61</text>
+<text x="350" y="153" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">72</text>
+<text x="384" y="153" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">65</text>
+<text x="418" y="153" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">00</text>
+<text x="452" y="153" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">65</text>
+<text x="486" y="153" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">6D</text>
+<text x="520" y="153" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">62</text>
+<text x="554" y="153" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">65</text>
+<text x="588" y="153" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">64</text>
+<text x="622" y="153" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">64</text>
+<text x="656" y="153" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">65</text>
+<text x="720" y="153" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">lordware.embedde</text>
+<rect class="step-highlight" x="18" y="162" width="924" height="27" fill="#e6ad59" style="animation-delay:1.8s"/>
+<text x="27" y="180" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">00000010</text>
+<text x="146" y="180" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">64</text>
+<text x="180" y="180" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">20</text>
+<text x="214" y="180" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">73</text>
+<text x="248" y="180" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">79</text>
+<text x="282" y="180" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">73</text>
+<text x="316" y="180" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">74</text>
+<text x="350" y="180" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">65</text>
+<text x="384" y="180" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">6D</text>
+<text x="418" y="180" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">73</text>
+<text x="452" y="180" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">00</text>
+<text x="486" y="180" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">66</text>
+<text x="520" y="180" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">69</text>
+<text x="554" y="180" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">72</text>
+<text x="588" y="180" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">6D</text>
+<text x="622" y="180" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">77</text>
+<text x="656" y="180" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">61</text>
+<text x="720" y="180" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">d systems.firmwa</text>
+<rect x="18" y="189" width="924" height="27" rx="0" fill="#171b1e"/>
+<rect class="step-highlight" x="18" y="189" width="924" height="27" fill="#e6ad59" style="animation-delay:3.6s"/>
+<text x="27" y="207" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">00000020</text>
+<text x="146" y="207" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">72</text>
+<text x="180" y="207" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">65</text>
+<text x="214" y="207" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">00</text>
+<text x="248" y="207" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">43</text>
+<text x="282" y="207" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">00</text>
+<text x="316" y="207" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">43</text>
+<text x="350" y="207" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">2B</text>
+<text x="384" y="207" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">2B</text>
+<text x="418" y="207" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">00</text>
+<text x="452" y="207" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">43</text>
+<text x="486" y="207" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">41</text>
+<text x="520" y="207" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">4E</text>
+<text x="554" y="207" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">6F</text>
+<text x="588" y="207" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">70</text>
+<text x="622" y="207" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">65</text>
+<text x="656" y="207" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">6E</text>
+<text x="720" y="207" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">re.C.C++.CANopen</text>
+<rect class="step-highlight" x="18" y="216" width="924" height="27" fill="#e6ad59" style="animation-delay:5.4s"/>
+<text x="27" y="234" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">00000030</text>
+<text x="146" y="234" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">00</text>
+<text x="180" y="234" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">55</text>
+<text x="214" y="234" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">41</text>
+<text x="248" y="234" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">52</text>
+<text x="282" y="234" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">54</text>
+<text x="316" y="234" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">00</text>
+<text x="350" y="234" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">53</text>
+<text x="384" y="234" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">50</text>
+<text x="418" y="234" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">49</text>
+<text x="452" y="234" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">00</text>
+<text x="486" y="234" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">49</text>
+<text x="520" y="234" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">32</text>
+<text x="554" y="234" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">43</text>
+<text x="588" y="234" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">00</text>
+<text x="622" y="234" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">41</text>
+<text x="656" y="234" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">56</text>
+<text x="720" y="234" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">.UART.SPI.I2C.AV</text>
+<rect x="18" y="243" width="924" height="27" rx="0" fill="#171b1e"/>
+<rect class="step-highlight" x="18" y="243" width="924" height="27" fill="#e6ad59" style="animation-delay:7.2s"/>
+<text x="27" y="261" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">00000040</text>
+<text x="146" y="261" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">52</text>
+<text x="180" y="261" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">00</text>
+<text x="214" y="261" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">41</text>
+<text x="248" y="261" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">72</text>
+<text x="282" y="261" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">64</text>
+<text x="316" y="261" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">75</text>
+<text x="350" y="261" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">69</text>
+<text x="384" y="261" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">6E</text>
+<text x="418" y="261" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">6F</text>
+<text x="452" y="261" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">00</text>
+<text x="720" y="261" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">R.Arduino.</text>
+<text x="24" y="285" font-size="12" fill="#8d979a" text-anchor="start" font-weight="400">LENGTH  0074 bytes</text>
+<text x="337" y="285" font-size="12" fill="#e6ad59" text-anchor="start" font-weight="400">CRC32  48228BAE</text>
+<text x="933" y="285" font-size="12" fill="#8d979a" text-anchor="end" font-weight="400">00 = NUL  /  . = nonprintable</text>
+<line x1="24" y1="299" x2="934" y2="299" stroke="#242c2f"/>
+<text x="24" y="321" font-size="10" fill="#8d979a" text-anchor="start" font-weight="400">SELECTION</text>
+<text x="144" y="321" font-size="12" fill="#dfddd4" text-anchor="start" font-weight="400">0000–0007</text>
+<text x="337" y="321" font-size="12" fill="#e6ad59" text-anchor="start" font-weight="400">6C 6F 72 64 77 61 72 65</text>
+<text x="933" y="321" font-size="12" fill="#dfddd4" text-anchor="end" font-weight="400">"lordware"</text>
 </svg>

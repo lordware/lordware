@@ -1,105 +1,151 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 200" width="960" height="200" role="img" aria-label="CANopen live frame monitor">
-  <defs>
-    <style>
-      .c-bg    { fill: #1A1814; }
-      .c-subbg { fill: #221E18; }
-      .c-border{ fill: none; stroke: #3A352C; stroke-width: 1; }
-      .c-head  { font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 11px; fill: #A89968; font-weight: 700; }
-      .c-ink   { font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 11px; fill: #E8DCC4; }
-      .c-dim   { font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 11px; fill: #A89968; }
-      .c-id    { font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 11px; fill: #FFB83D; font-weight: 700; }
-      .c-type  { font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 11px; font-weight: 700; }
-      .c-ascii { font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 11px; fill: #4FD97F; }
-      .c-foot  { font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 11px; fill: #E8DCC4; }
-      .c-foot-dim { font-family: 'IBM Plex Mono', Menlo, Consolas, monospace; font-size: 11px; fill: #A89968; }
-    </style>
-    <clipPath id="c-clip">
-      <rect x="0" y="24" width="960" height="156"/>
-    </clipPath>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="340" viewBox="0 0 960 340" role="img" aria-labelledby="title desc">
+<title id="title">CANopen bus monitor — demo capture</title><desc id="desc">Simulated CANopen traffic for node 0x1A. Default COB-IDs, valid NMT start command, operational heartbeat and SDO statusword upload. Slow repeating frame sequence; no live hardware.</desc>
+<defs>
+<linearGradient id="mat-face" x1="0" y1="0" x2=".12" y2="1"><stop stop-color="#3c4448"/><stop offset=".025" stop-color="#272f33"/><stop offset=".3" stop-color="#242c30"/><stop offset=".82" stop-color="#1b2226"/><stop offset="1" stop-color="#252d31"/></linearGradient>
+<linearGradient id="mat-edge" x1="0" y1="0" x2=".35" y2="1"><stop stop-color="#9a9d97"/><stop offset=".035" stop-color="#586368"/><stop offset=".45" stop-color="#222c31"/><stop offset="1" stop-color="#080d10"/></linearGradient>
+<linearGradient id="mat-header" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#40494d"/><stop offset=".07" stop-color="#343d41"/><stop offset=".65" stop-color="#282f33"/><stop offset="1" stop-color="#20272b"/></linearGradient>
+<radialGradient id="mat-light" cx=".15" cy="0" r="1.1"><stop stop-color="#9ca6a3" stop-opacity=".07"/><stop offset=".6" stop-color="#9ca6a3" stop-opacity="0"/><stop offset="1" stop-color="#000609" stop-opacity=".14"/></radialGradient>
+<linearGradient id="mat-screw" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#c3c8c3"/><stop offset=".2" stop-color="#737f83"/><stop offset=".45" stop-color="#acb3af"/><stop offset=".7" stop-color="#48575e"/><stop offset="1" stop-color="#26363e"/></linearGradient>
+<linearGradient id="mat-bezel" x1="0" y1="0" x2=".05" y2="1"><stop stop-color="#05090b"/><stop offset=".14" stop-color="#111b20"/><stop offset=".86" stop-color="#19252a"/><stop offset="1" stop-color="#647074"/></linearGradient>
+<linearGradient id="mat-glass" x1="0" y1="0" x2=".12" y2="1"><stop stop-color="#111c1d"/><stop offset=".16" stop-color="#091314"/><stop offset=".7" stop-color="#0a1313"/><stop offset="1" stop-color="#121a17"/></linearGradient>
+<linearGradient id="mat-reflection" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#c4d3cd" stop-opacity=".085"/><stop offset=".3" stop-color="#c4d3cd" stop-opacity=".013"/><stop offset="1" stop-color="#c4d3cd" stop-opacity="0"/></linearGradient>
+<linearGradient id="mat-phosphor" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffe1a0"/><stop offset=".35" stop-color="#e9b666"/><stop offset="1" stop-color="#c48b3c"/></linearGradient>
+<linearGradient id="mat-amber-meter" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4cf8a"/><stop offset=".18" stop-color="#ecbc6f"/><stop offset=".62" stop-color="#d59d47"/><stop offset="1" stop-color="#98612d"/></linearGradient>
+<linearGradient id="mat-counter-drum" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#050a0c"/><stop offset=".22" stop-color="#263031"/><stop offset=".48" stop-color="#1c2627"/><stop offset=".51" stop-color="#111d20"/><stop offset=".77" stop-color="#1b282a"/><stop offset="1" stop-color="#060d10"/></linearGradient>
+<radialGradient id="mat-led"><stop stop-color="#fff2bb"/><stop offset=".22" stop-color="#f3ca76"/><stop offset=".63" stop-color="#d89c3a"/><stop offset="1" stop-color="#6e421e"/></radialGradient>
+<pattern id="mat-brush" width="73" height="6" patternUnits="userSpaceOnUse"><path d="M0 .5H73M9 2.5H42M49 4.5H71" fill="none" stroke="#dae0de" stroke-width=".3" opacity=".075"/><path d="M4 1.5H46M32 5.5H69" stroke="#030608" stroke-width=".4" opacity=".14"/></pattern>
+<pattern id="mat-pixels" width="3" height="3" patternUnits="userSpaceOnUse"><path d="M0 .5H3" stroke="#050809" stroke-width=".45" opacity=".2"/><circle cx="1.5" cy="1.5" r=".22" fill="#a8b7a8" opacity=".085"/></pattern>
+<pattern id="mat-grain" width="59" height="43" patternUnits="userSpaceOnUse"><circle cx="7" cy="11" r="0.16" fill="#040708" opacity="0.2"/><circle cx="24" cy="34" r="0.24" fill="#e2e4dd" opacity="0.09"/><circle cx="41" cy="14" r="0.32" fill="#e2e4dd" opacity="0.09"/><circle cx="58" cy="37" r="0.4" fill="#040708" opacity="0.2"/><circle cx="16" cy="17" r="0.16" fill="#e2e4dd" opacity="0.09"/><circle cx="33" cy="40" r="0.24" fill="#e2e4dd" opacity="0.09"/><circle cx="50" cy="20" r="0.32" fill="#040708" opacity="0.2"/><circle cx="8" cy="0" r="0.4" fill="#e2e4dd" opacity="0.09"/><circle cx="25" cy="23" r="0.16" fill="#e2e4dd" opacity="0.09"/><circle cx="42" cy="3" r="0.24" fill="#040708" opacity="0.2"/><circle cx="0" cy="26" r="0.32" fill="#e2e4dd" opacity="0.09"/><circle cx="17" cy="6" r="0.4" fill="#e2e4dd" opacity="0.09"/><circle cx="34" cy="29" r="0.16" fill="#040708" opacity="0.2"/><circle cx="51" cy="9" r="0.24" fill="#e2e4dd" opacity="0.09"/><circle cx="9" cy="32" r="0.32" fill="#e2e4dd" opacity="0.09"/><circle cx="26" cy="12" r="0.4" fill="#040708" opacity="0.2"/><circle cx="43" cy="35" r="0.16" fill="#e2e4dd" opacity="0.09"/><circle cx="1" cy="15" r="0.24" fill="#e2e4dd" opacity="0.09"/><circle cx="18" cy="38" r="0.32" fill="#040708" opacity="0.2"/><circle cx="35" cy="18" r="0.4" fill="#e2e4dd" opacity="0.09"/><circle cx="52" cy="41" r="0.16" fill="#e2e4dd" opacity="0.09"/><circle cx="10" cy="21" r="0.24" fill="#040708" opacity="0.2"/><circle cx="27" cy="1" r="0.32" fill="#e2e4dd" opacity="0.09"/><circle cx="44" cy="24" r="0.4" fill="#e2e4dd" opacity="0.09"/><circle cx="2" cy="4" r="0.16" fill="#040708" opacity="0.2"/><circle cx="19" cy="27" r="0.24" fill="#e2e4dd" opacity="0.09"/><circle cx="36" cy="7" r="0.32" fill="#e2e4dd" opacity="0.09"/><circle cx="53" cy="30" r="0.4" fill="#040708" opacity="0.2"/><circle cx="11" cy="10" r="0.16" fill="#e2e4dd" opacity="0.09"/><circle cx="28" cy="33" r="0.24" fill="#e2e4dd" opacity="0.09"/><circle cx="45" cy="13" r="0.32" fill="#040708" opacity="0.2"/><circle cx="3" cy="36" r="0.4" fill="#e2e4dd" opacity="0.09"/><circle cx="20" cy="16" r="0.16" fill="#e2e4dd" opacity="0.09"/><circle cx="37" cy="39" r="0.24" fill="#040708" opacity="0.2"/><circle cx="54" cy="19" r="0.32" fill="#e2e4dd" opacity="0.09"/><circle cx="12" cy="42" r="0.4" fill="#e2e4dd" opacity="0.09"/><circle cx="29" cy="22" r="0.16" fill="#040708" opacity="0.2"/><circle cx="46" cy="2" r="0.24" fill="#e2e4dd" opacity="0.09"/><circle cx="4" cy="25" r="0.32" fill="#e2e4dd" opacity="0.09"/><circle cx="21" cy="5" r="0.4" fill="#040708" opacity="0.2"/><circle cx="38" cy="28" r="0.16" fill="#e2e4dd" opacity="0.09"/><circle cx="55" cy="8" r="0.24" fill="#e2e4dd" opacity="0.09"/><circle cx="13" cy="31" r="0.32" fill="#040708" opacity="0.2"/><circle cx="30" cy="11" r="0.4" fill="#e2e4dd" opacity="0.09"/><circle cx="47" cy="34" r="0.16" fill="#e2e4dd" opacity="0.09"/><circle cx="5" cy="14" r="0.24" fill="#040708" opacity="0.2"/><circle cx="22" cy="37" r="0.32" fill="#e2e4dd" opacity="0.09"/><circle cx="39" cy="17" r="0.4" fill="#e2e4dd" opacity="0.09"/></pattern>
+<filter id="mat-small-bloom" x="-35%" y="-45%" width="170%" height="190%" color-interpolation-filters="sRGB"><feGaussianBlur stdDeviation=".75"/></filter>
 
-  <rect class="c-bg" width="960" height="200"/>
-  <rect class="c-border" x="0.5" y="0.5" width="959" height="199"/>
-
-  <!-- header row -->
-  <rect class="c-subbg" x="0" y="0" width="960" height="24"/>
-  <line x1="0" y1="24" x2="960" y2="24" stroke="#3A352C" stroke-width="1"/>
-  <text class="c-head" x="12"   y="16">#</text>
-  <text class="c-head" x="44"    y="16">timestamp</text>
-  <text class="c-head" x="150"    y="16">id</text>
-  <text class="c-head" x="210"  y="16">type</text>
-  <text class="c-head" x="290"   y="16">len</text>
-  <text class="c-head" x="326"  y="16">data</text>
-  <text class="c-head" x="690" y="16">ascii</text>
-  <text class="c-head" x="820"  y="16">node</text>
-
-  <!-- scrolling rows -->
-  <g clip-path="url(#c-clip)">
-    <g transform="translate(0 24)">
-      <animateTransform attributeName="transform" type="translate" from="0 24" to="0 -288" dur="22s" repeatCount="indefinite"/>
-      <g>
-      <text x="12"  y="13" class="c-dim">001</text><text x="44"   y="13" class="c-ink">05:30:58.986</text><text x="150"   y="13" class="c-id">0x201</text><text x="210" y="13" fill="#4FC3FF" class="c-type">PDO1-Rx</text><text x="290"  y="13" class="c-dim">6</text><text x="326" y="13" class="c-ink">5A EE DE A1 A2 15</text><text x="690" y="13" class="c-ascii">Z·····</text><text x="820" y="13" class="c-dim">0x02</text>
-      <rect x="0" y="16" width="960" height="13" fill="#2A251E"/><text x="12"  y="26" class="c-dim">002</text><text x="44"   y="26" class="c-ink">05:30:59.015</text><text x="150"   y="26" class="c-id">0x080</text><text x="210" y="26" fill="#4FC3FF" class="c-type">SYNC</text><text x="290"  y="26" class="c-dim">5</text><text x="326" y="26" class="c-ink">FC 48 34 34 CE</text><text x="690" y="26" class="c-ascii">·H44·</text><text x="820" y="26" class="c-dim">0x1A</text>
-      <text x="12"  y="39" class="c-dim">003</text><text x="44"   y="39" class="c-ink">05:30:59.051</text><text x="150"   y="39" class="c-id">0x581</text><text x="210" y="39" fill="#FFB83D" class="c-type">SDO-Tx</text><text x="290"  y="39" class="c-dim">8</text><text x="326" y="39" class="c-ink">20 79 21 81 DE 22 7F 7B</text><text x="690" y="39" class="c-ascii"> y!··"·{</text><text x="820" y="39" class="c-dim">0x1A</text>
-      <rect x="0" y="42" width="960" height="13" fill="#2A251E"/><text x="12"  y="52" class="c-dim">004</text><text x="44"   y="52" class="c-ink">05:30:59.146</text><text x="150"   y="52" class="c-id">0x000</text><text x="210" y="52" fill="#B77FFF" class="c-type">NMT</text><text x="290"  y="52" class="c-dim">7</text><text x="326" y="52" class="c-ink">49 7E 2C 51 F5 EB 05</text><text x="690" y="52" class="c-ascii">I~,Q···</text><text x="820" y="52" class="c-dim">0x1A</text>
-      <text x="12"  y="65" class="c-dim">005</text><text x="44"   y="65" class="c-ink">05:30:59.215</text><text x="150"   y="65" class="c-id">0x181</text><text x="210" y="65" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="65" class="c-dim">8</text><text x="326" y="65" class="c-ink">68 65 6C 6C 6F 20 66 72</text><text x="690" y="65" class="c-ascii">hello fr</text><text x="820" y="65" class="c-dim">0x1A</text>
-      <rect x="0" y="68" width="960" height="13" fill="#2A251E"/><text x="12"  y="78" class="c-dim">006</text><text x="44"   y="78" class="c-ink">05:30:59.290</text><text x="150"   y="78" class="c-id">0x181</text><text x="210" y="78" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="78" class="c-dim">8</text><text x="326" y="78" class="c-ink">6F 6D 20 6C 6F 72 64 77</text><text x="690" y="78" class="c-ascii">om lordw</text><text x="820" y="78" class="c-dim">0x1A</text>
-      <text x="12"  y="91" class="c-dim">007</text><text x="44"   y="91" class="c-ink">05:30:59.309</text><text x="150"   y="91" class="c-id">0x181</text><text x="210" y="91" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="91" class="c-dim">8</text><text x="326" y="91" class="c-ink">61 72 65 2E 64 65 20 3A</text><text x="690" y="91" class="c-ascii">are.de :</text><text x="820" y="91" class="c-dim">0x1A</text>
-      <rect x="0" y="94" width="960" height="13" fill="#2A251E"/><text x="12"  y="104" class="c-dim">008</text><text x="44"   y="104" class="c-ink">05:30:59.334</text><text x="150"   y="104" class="c-id">0x181</text><text x="210" y="104" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="104" class="c-dim">1</text><text x="326" y="104" class="c-ink">29</text><text x="690" y="104" class="c-ascii">)</text><text x="820" y="104" class="c-dim">0x02</text>
-      <text x="12"  y="117" class="c-dim">009</text><text x="44"   y="117" class="c-ink">05:30:59.427</text><text x="150"   y="117" class="c-id">0x080</text><text x="210" y="117" fill="#4FC3FF" class="c-type">SYNC</text><text x="290"  y="117" class="c-dim">1</text><text x="326" y="117" class="c-ink">7E</text><text x="690" y="117" class="c-ascii">~</text><text x="820" y="117" class="c-dim">0x02</text>
-      <rect x="0" y="120" width="960" height="13" fill="#2A251E"/><text x="12"  y="130" class="c-dim">010</text><text x="44"   y="130" class="c-ink">05:30:59.444</text><text x="150"   y="130" class="c-id">0x000</text><text x="210" y="130" fill="#B77FFF" class="c-type">NMT</text><text x="290"  y="130" class="c-dim">3</text><text x="326" y="130" class="c-ink">3D 60 8A</text><text x="690" y="130" class="c-ascii">=`·</text><text x="820" y="130" class="c-dim">0x02</text>
-      <text x="12"  y="143" class="c-dim">011</text><text x="44"   y="143" class="c-ink">05:30:59.505</text><text x="150"   y="143" class="c-id">0x181</text><text x="210" y="143" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="143" class="c-dim">3</text><text x="326" y="143" class="c-ink">B5 5B 79</text><text x="690" y="143" class="c-ascii">·[y</text><text x="820" y="143" class="c-dim">0x1A</text>
-      <rect x="0" y="146" width="960" height="13" fill="#2A251E"/><text x="12"  y="156" class="c-dim">012</text><text x="44"   y="156" class="c-ink">05:30:59.525</text><text x="150"   y="156" class="c-id">0x301</text><text x="210" y="156" fill="#4FC3FF" class="c-type">PDO2-Rx</text><text x="290"  y="156" class="c-dim">4</text><text x="326" y="156" class="c-ink">9A A6 54 EC</text><text x="690" y="156" class="c-ascii">··T·</text><text x="820" y="156" class="c-dim">0x11</text>
-      <text x="12"  y="169" class="c-dim">013</text><text x="44"   y="169" class="c-ink">05:30:59.612</text><text x="150"   y="169" class="c-id">0x281</text><text x="210" y="169" fill="#4FD97F" class="c-type">PDO2-Tx</text><text x="290"  y="169" class="c-dim">3</text><text x="326" y="169" class="c-ink">B3 DF 52</text><text x="690" y="169" class="c-ascii">··R</text><text x="820" y="169" class="c-dim">0x05</text>
-      <rect x="0" y="172" width="960" height="13" fill="#2A251E"/><text x="12"  y="182" class="c-dim">014</text><text x="44"   y="182" class="c-ink">05:30:59.686</text><text x="150"   y="182" class="c-id">0x381</text><text x="210" y="182" fill="#4FD97F" class="c-type">PDO3-Tx</text><text x="290"  y="182" class="c-dim">2</text><text x="326" y="182" class="c-ink">E5 2C</text><text x="690" y="182" class="c-ascii">·,</text><text x="820" y="182" class="c-dim">0x05</text>
-      <text x="12"  y="195" class="c-dim">015</text><text x="44"   y="195" class="c-ink">05:30:59.732</text><text x="150"   y="195" class="c-id">0x080</text><text x="210" y="195" fill="#4FC3FF" class="c-type">SYNC</text><text x="290"  y="195" class="c-dim">3</text><text x="326" y="195" class="c-ink">0B 9B 05</text><text x="690" y="195" class="c-ascii">···</text><text x="820" y="195" class="c-dim">0x02</text>
-      <rect x="0" y="198" width="960" height="13" fill="#2A251E"/><text x="12"  y="208" class="c-dim">016</text><text x="44"   y="208" class="c-ink">05:30:59.796</text><text x="150"   y="208" class="c-id">0x080</text><text x="210" y="208" fill="#4FC3FF" class="c-type">SYNC</text><text x="290"  y="208" class="c-dim">6</text><text x="326" y="208" class="c-ink">F2 33 A1 B8 F2 6C</text><text x="690" y="208" class="c-ascii">·3···l</text><text x="820" y="208" class="c-dim">0x1A</text>
-      <text x="12"  y="221" class="c-dim">017</text><text x="44"   y="221" class="c-ink">05:30:59.840</text><text x="150"   y="221" class="c-id">0x381</text><text x="210" y="221" fill="#4FD97F" class="c-type">PDO3-Tx</text><text x="290"  y="221" class="c-dim">4</text><text x="326" y="221" class="c-ink">3B D5 6F 07</text><text x="690" y="221" class="c-ascii">;·o·</text><text x="820" y="221" class="c-dim">0x11</text>
-      <rect x="0" y="224" width="960" height="13" fill="#2A251E"/><text x="12"  y="234" class="c-dim">018</text><text x="44"   y="234" class="c-ink">05:30:59.930</text><text x="150"   y="234" class="c-id">0x601</text><text x="210" y="234" fill="#FFB83D" class="c-type">SDO-Rx</text><text x="290"  y="234" class="c-dim">5</text><text x="326" y="234" class="c-ink">48 3B E4 0F E4</text><text x="690" y="234" class="c-ascii">H;···</text><text x="820" y="234" class="c-dim">0x1A</text>
-      <text x="12"  y="247" class="c-dim">019</text><text x="44"   y="247" class="c-ink">05:31:00.010</text><text x="150"   y="247" class="c-id">0x581</text><text x="210" y="247" fill="#FFB83D" class="c-type">SDO-Tx</text><text x="290"  y="247" class="c-dim">5</text><text x="326" y="247" class="c-ink">9F 99 09 0D F8</text><text x="690" y="247" class="c-ascii">·····</text><text x="820" y="247" class="c-dim">0x1A</text>
-      <rect x="0" y="250" width="960" height="13" fill="#2A251E"/><text x="12"  y="260" class="c-dim">020</text><text x="44"   y="260" class="c-ink">05:31:00.092</text><text x="150"   y="260" class="c-id">0x601</text><text x="210" y="260" fill="#FFB83D" class="c-type">SDO-Rx</text><text x="290"  y="260" class="c-dim">2</text><text x="326" y="260" class="c-ink">A6 39</text><text x="690" y="260" class="c-ascii">·9</text><text x="820" y="260" class="c-dim">0x02</text>
-      <text x="12"  y="273" class="c-dim">021</text><text x="44"   y="273" class="c-ink">05:31:00.155</text><text x="150"   y="273" class="c-id">0x381</text><text x="210" y="273" fill="#4FD97F" class="c-type">PDO3-Tx</text><text x="290"  y="273" class="c-dim">8</text><text x="326" y="273" class="c-ink">44 4C 6A 7D E9 4C 56 44</text><text x="690" y="273" class="c-ascii">DLj}·LVD</text><text x="820" y="273" class="c-dim">0x02</text>
-      <rect x="0" y="276" width="960" height="13" fill="#2A251E"/><text x="12"  y="286" class="c-dim">022</text><text x="44"   y="286" class="c-ink">05:31:00.244</text><text x="150"   y="286" class="c-id">0x181</text><text x="210" y="286" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="286" class="c-dim">1</text><text x="326" y="286" class="c-ink">F4</text><text x="690" y="286" class="c-ascii">·</text><text x="820" y="286" class="c-dim">0x11</text>
-      <text x="12"  y="299" class="c-dim">023</text><text x="44"   y="299" class="c-ink">05:31:00.273</text><text x="150"   y="299" class="c-id">0x080</text><text x="210" y="299" fill="#4FC3FF" class="c-type">SYNC</text><text x="290"  y="299" class="c-dim">1</text><text x="326" y="299" class="c-ink">ED</text><text x="690" y="299" class="c-ascii">·</text><text x="820" y="299" class="c-dim">0x02</text>
-      <rect x="0" y="302" width="960" height="13" fill="#2A251E"/><text x="12"  y="312" class="c-dim">024</text><text x="44"   y="312" class="c-ink">05:31:00.336</text><text x="150"   y="312" class="c-id">0x181</text><text x="210" y="312" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="312" class="c-dim">1</text><text x="326" y="312" class="c-ink">E1</text><text x="690" y="312" class="c-ascii">·</text><text x="820" y="312" class="c-dim">0x02</text>
-      </g>
-      <g transform="translate(0 312)">
-      <text x="12"  y="13" class="c-dim">001</text><text x="44"   y="13" class="c-ink">05:30:58.986</text><text x="150"   y="13" class="c-id">0x201</text><text x="210" y="13" fill="#4FC3FF" class="c-type">PDO1-Rx</text><text x="290"  y="13" class="c-dim">6</text><text x="326" y="13" class="c-ink">5A EE DE A1 A2 15</text><text x="690" y="13" class="c-ascii">Z·····</text><text x="820" y="13" class="c-dim">0x02</text>
-      <rect x="0" y="16" width="960" height="13" fill="#2A251E"/><text x="12"  y="26" class="c-dim">002</text><text x="44"   y="26" class="c-ink">05:30:59.015</text><text x="150"   y="26" class="c-id">0x080</text><text x="210" y="26" fill="#4FC3FF" class="c-type">SYNC</text><text x="290"  y="26" class="c-dim">5</text><text x="326" y="26" class="c-ink">FC 48 34 34 CE</text><text x="690" y="26" class="c-ascii">·H44·</text><text x="820" y="26" class="c-dim">0x1A</text>
-      <text x="12"  y="39" class="c-dim">003</text><text x="44"   y="39" class="c-ink">05:30:59.051</text><text x="150"   y="39" class="c-id">0x581</text><text x="210" y="39" fill="#FFB83D" class="c-type">SDO-Tx</text><text x="290"  y="39" class="c-dim">8</text><text x="326" y="39" class="c-ink">20 79 21 81 DE 22 7F 7B</text><text x="690" y="39" class="c-ascii"> y!··"·{</text><text x="820" y="39" class="c-dim">0x1A</text>
-      <rect x="0" y="42" width="960" height="13" fill="#2A251E"/><text x="12"  y="52" class="c-dim">004</text><text x="44"   y="52" class="c-ink">05:30:59.146</text><text x="150"   y="52" class="c-id">0x000</text><text x="210" y="52" fill="#B77FFF" class="c-type">NMT</text><text x="290"  y="52" class="c-dim">7</text><text x="326" y="52" class="c-ink">49 7E 2C 51 F5 EB 05</text><text x="690" y="52" class="c-ascii">I~,Q···</text><text x="820" y="52" class="c-dim">0x1A</text>
-      <text x="12"  y="65" class="c-dim">005</text><text x="44"   y="65" class="c-ink">05:30:59.215</text><text x="150"   y="65" class="c-id">0x181</text><text x="210" y="65" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="65" class="c-dim">8</text><text x="326" y="65" class="c-ink">68 65 6C 6C 6F 20 66 72</text><text x="690" y="65" class="c-ascii">hello fr</text><text x="820" y="65" class="c-dim">0x1A</text>
-      <rect x="0" y="68" width="960" height="13" fill="#2A251E"/><text x="12"  y="78" class="c-dim">006</text><text x="44"   y="78" class="c-ink">05:30:59.290</text><text x="150"   y="78" class="c-id">0x181</text><text x="210" y="78" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="78" class="c-dim">8</text><text x="326" y="78" class="c-ink">6F 6D 20 6C 6F 72 64 77</text><text x="690" y="78" class="c-ascii">om lordw</text><text x="820" y="78" class="c-dim">0x1A</text>
-      <text x="12"  y="91" class="c-dim">007</text><text x="44"   y="91" class="c-ink">05:30:59.309</text><text x="150"   y="91" class="c-id">0x181</text><text x="210" y="91" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="91" class="c-dim">8</text><text x="326" y="91" class="c-ink">61 72 65 2E 64 65 20 3A</text><text x="690" y="91" class="c-ascii">are.de :</text><text x="820" y="91" class="c-dim">0x1A</text>
-      <rect x="0" y="94" width="960" height="13" fill="#2A251E"/><text x="12"  y="104" class="c-dim">008</text><text x="44"   y="104" class="c-ink">05:30:59.334</text><text x="150"   y="104" class="c-id">0x181</text><text x="210" y="104" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="104" class="c-dim">1</text><text x="326" y="104" class="c-ink">29</text><text x="690" y="104" class="c-ascii">)</text><text x="820" y="104" class="c-dim">0x02</text>
-      <text x="12"  y="117" class="c-dim">009</text><text x="44"   y="117" class="c-ink">05:30:59.427</text><text x="150"   y="117" class="c-id">0x080</text><text x="210" y="117" fill="#4FC3FF" class="c-type">SYNC</text><text x="290"  y="117" class="c-dim">1</text><text x="326" y="117" class="c-ink">7E</text><text x="690" y="117" class="c-ascii">~</text><text x="820" y="117" class="c-dim">0x02</text>
-      <rect x="0" y="120" width="960" height="13" fill="#2A251E"/><text x="12"  y="130" class="c-dim">010</text><text x="44"   y="130" class="c-ink">05:30:59.444</text><text x="150"   y="130" class="c-id">0x000</text><text x="210" y="130" fill="#B77FFF" class="c-type">NMT</text><text x="290"  y="130" class="c-dim">3</text><text x="326" y="130" class="c-ink">3D 60 8A</text><text x="690" y="130" class="c-ascii">=`·</text><text x="820" y="130" class="c-dim">0x02</text>
-      <text x="12"  y="143" class="c-dim">011</text><text x="44"   y="143" class="c-ink">05:30:59.505</text><text x="150"   y="143" class="c-id">0x181</text><text x="210" y="143" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="143" class="c-dim">3</text><text x="326" y="143" class="c-ink">B5 5B 79</text><text x="690" y="143" class="c-ascii">·[y</text><text x="820" y="143" class="c-dim">0x1A</text>
-      <rect x="0" y="146" width="960" height="13" fill="#2A251E"/><text x="12"  y="156" class="c-dim">012</text><text x="44"   y="156" class="c-ink">05:30:59.525</text><text x="150"   y="156" class="c-id">0x301</text><text x="210" y="156" fill="#4FC3FF" class="c-type">PDO2-Rx</text><text x="290"  y="156" class="c-dim">4</text><text x="326" y="156" class="c-ink">9A A6 54 EC</text><text x="690" y="156" class="c-ascii">··T·</text><text x="820" y="156" class="c-dim">0x11</text>
-      <text x="12"  y="169" class="c-dim">013</text><text x="44"   y="169" class="c-ink">05:30:59.612</text><text x="150"   y="169" class="c-id">0x281</text><text x="210" y="169" fill="#4FD97F" class="c-type">PDO2-Tx</text><text x="290"  y="169" class="c-dim">3</text><text x="326" y="169" class="c-ink">B3 DF 52</text><text x="690" y="169" class="c-ascii">··R</text><text x="820" y="169" class="c-dim">0x05</text>
-      <rect x="0" y="172" width="960" height="13" fill="#2A251E"/><text x="12"  y="182" class="c-dim">014</text><text x="44"   y="182" class="c-ink">05:30:59.686</text><text x="150"   y="182" class="c-id">0x381</text><text x="210" y="182" fill="#4FD97F" class="c-type">PDO3-Tx</text><text x="290"  y="182" class="c-dim">2</text><text x="326" y="182" class="c-ink">E5 2C</text><text x="690" y="182" class="c-ascii">·,</text><text x="820" y="182" class="c-dim">0x05</text>
-      <text x="12"  y="195" class="c-dim">015</text><text x="44"   y="195" class="c-ink">05:30:59.732</text><text x="150"   y="195" class="c-id">0x080</text><text x="210" y="195" fill="#4FC3FF" class="c-type">SYNC</text><text x="290"  y="195" class="c-dim">3</text><text x="326" y="195" class="c-ink">0B 9B 05</text><text x="690" y="195" class="c-ascii">···</text><text x="820" y="195" class="c-dim">0x02</text>
-      <rect x="0" y="198" width="960" height="13" fill="#2A251E"/><text x="12"  y="208" class="c-dim">016</text><text x="44"   y="208" class="c-ink">05:30:59.796</text><text x="150"   y="208" class="c-id">0x080</text><text x="210" y="208" fill="#4FC3FF" class="c-type">SYNC</text><text x="290"  y="208" class="c-dim">6</text><text x="326" y="208" class="c-ink">F2 33 A1 B8 F2 6C</text><text x="690" y="208" class="c-ascii">·3···l</text><text x="820" y="208" class="c-dim">0x1A</text>
-      <text x="12"  y="221" class="c-dim">017</text><text x="44"   y="221" class="c-ink">05:30:59.840</text><text x="150"   y="221" class="c-id">0x381</text><text x="210" y="221" fill="#4FD97F" class="c-type">PDO3-Tx</text><text x="290"  y="221" class="c-dim">4</text><text x="326" y="221" class="c-ink">3B D5 6F 07</text><text x="690" y="221" class="c-ascii">;·o·</text><text x="820" y="221" class="c-dim">0x11</text>
-      <rect x="0" y="224" width="960" height="13" fill="#2A251E"/><text x="12"  y="234" class="c-dim">018</text><text x="44"   y="234" class="c-ink">05:30:59.930</text><text x="150"   y="234" class="c-id">0x601</text><text x="210" y="234" fill="#FFB83D" class="c-type">SDO-Rx</text><text x="290"  y="234" class="c-dim">5</text><text x="326" y="234" class="c-ink">48 3B E4 0F E4</text><text x="690" y="234" class="c-ascii">H;···</text><text x="820" y="234" class="c-dim">0x1A</text>
-      <text x="12"  y="247" class="c-dim">019</text><text x="44"   y="247" class="c-ink">05:31:00.010</text><text x="150"   y="247" class="c-id">0x581</text><text x="210" y="247" fill="#FFB83D" class="c-type">SDO-Tx</text><text x="290"  y="247" class="c-dim">5</text><text x="326" y="247" class="c-ink">9F 99 09 0D F8</text><text x="690" y="247" class="c-ascii">·····</text><text x="820" y="247" class="c-dim">0x1A</text>
-      <rect x="0" y="250" width="960" height="13" fill="#2A251E"/><text x="12"  y="260" class="c-dim">020</text><text x="44"   y="260" class="c-ink">05:31:00.092</text><text x="150"   y="260" class="c-id">0x601</text><text x="210" y="260" fill="#FFB83D" class="c-type">SDO-Rx</text><text x="290"  y="260" class="c-dim">2</text><text x="326" y="260" class="c-ink">A6 39</text><text x="690" y="260" class="c-ascii">·9</text><text x="820" y="260" class="c-dim">0x02</text>
-      <text x="12"  y="273" class="c-dim">021</text><text x="44"   y="273" class="c-ink">05:31:00.155</text><text x="150"   y="273" class="c-id">0x381</text><text x="210" y="273" fill="#4FD97F" class="c-type">PDO3-Tx</text><text x="290"  y="273" class="c-dim">8</text><text x="326" y="273" class="c-ink">44 4C 6A 7D E9 4C 56 44</text><text x="690" y="273" class="c-ascii">DLj}·LVD</text><text x="820" y="273" class="c-dim">0x02</text>
-      <rect x="0" y="276" width="960" height="13" fill="#2A251E"/><text x="12"  y="286" class="c-dim">022</text><text x="44"   y="286" class="c-ink">05:31:00.244</text><text x="150"   y="286" class="c-id">0x181</text><text x="210" y="286" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="286" class="c-dim">1</text><text x="326" y="286" class="c-ink">F4</text><text x="690" y="286" class="c-ascii">·</text><text x="820" y="286" class="c-dim">0x11</text>
-      <text x="12"  y="299" class="c-dim">023</text><text x="44"   y="299" class="c-ink">05:31:00.273</text><text x="150"   y="299" class="c-id">0x080</text><text x="210" y="299" fill="#4FC3FF" class="c-type">SYNC</text><text x="290"  y="299" class="c-dim">1</text><text x="326" y="299" class="c-ink">ED</text><text x="690" y="299" class="c-ascii">·</text><text x="820" y="299" class="c-dim">0x02</text>
-      <rect x="0" y="302" width="960" height="13" fill="#2A251E"/><text x="12"  y="312" class="c-dim">024</text><text x="44"   y="312" class="c-ink">05:31:00.336</text><text x="150"   y="312" class="c-id">0x181</text><text x="210" y="312" fill="#4FD97F" class="c-type">PDO1-Tx</text><text x="290"  y="312" class="c-dim">1</text><text x="326" y="312" class="c-ink">E1</text><text x="690" y="312" class="c-ascii">·</text><text x="820" y="312" class="c-dim">0x02</text>
-      </g>
-    </g>
-  </g>
-
-  <!-- footer -->
-  <line x1="0" y1="180" x2="960" y2="180" stroke="#3A352C" stroke-width="1"/>
-  <rect class="c-subbg" x="0" y="180" width="960" height="20"/>
-  <text class="c-foot-dim" x="12" y="194">CAN 2.0B · 500 kb/s · load 18% · err 0/0 · node 0x1A @ <tspan fill="#4FD97F">OPERATIONAL</tspan> · LIVE</text>
-  <circle cx="870" cy="190" r="3" fill="#FF5C3A">
-    <animate attributeName="r" values="3;5;3" dur="1s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="1;0.4;1" dur="1s" repeatCount="indefinite"/>
-  </circle>
-  <text class="c-foot" x="882" y="194">10ms</text>
-  <text class="c-foot-dim" x="920" y="194">HB</text>
+<style>text{font-family:Consolas,'Liberation Mono',monospace}.scan{animation:scan 8s linear infinite}@keyframes scan{0%,100%{opacity:.12}50%{opacity:.65}}.frames{animation:frames 32s linear infinite}@keyframes frames{to{transform:translateY(-200px)}}@media(prefers-reduced-motion:reduce){.frames,.scan,.step-highlight{animation:none!important}}</style></defs>
+<rect x="1" y="3" width="958" height="336" rx="6" fill="#05090c"/><rect x=".5" y=".5" width="959" height="338" rx="6" fill="url(#mat-face)" stroke="#070d11"/><rect x="1.5" y="1.5" width="957" height="336" rx="5" fill="none" stroke="url(#mat-edge)"/><rect x="3" y="3" width="954" height="332" rx="4" fill="url(#mat-light)"/><rect x="3" y="3" width="954" height="332" rx="4" fill="url(#mat-brush)"/><rect x="3" y="3" width="954" height="332" rx="4" fill="url(#mat-grain)"/><rect x="4" y="4" width="952" height="30" rx="3" fill="url(#mat-header)"/><path d="M6 35.5H954" stroke="#0d1418"/><path d="M6 36.5H954" stroke="#60696a" stroke-opacity=".32"/><path d="M8 336.5H952" stroke="#68736f" stroke-opacity=".23"/><g transform="translate(11 20)"><circle cy=".65" r="4.3" fill="#060a0d" opacity=".9"/><circle r="3.45" fill="#111a1f" stroke="#4d585d" stroke-width=".45"/><circle r="3" fill="url(#mat-screw)"/><circle r="2.2" fill="none" stroke="#d3d5c9" stroke-opacity=".23" stroke-width=".35"/><polygon points="0.000,-1.380 0.465,-0.805 1.195,-0.690 0.930,0.000 1.195,0.690 0.465,0.805 0.000,1.380 -0.465,0.805 -1.195,0.690 -0.930,0.000 -1.195,-0.690 -0.465,-0.805" fill="#0d171d" stroke="#1b2b33" stroke-width=".5"/><path d="M-1.9500000000000002 -1.7399999999999998Q0 -3.12 1.7999999999999998 -2.04" fill="none" stroke="#f2f0dd" stroke-opacity=".5" stroke-width=".45"/></g><g transform="translate(949 20)"><circle cy=".65" r="4.3" fill="#060a0d" opacity=".9"/><circle r="3.45" fill="#111a1f" stroke="#4d585d" stroke-width=".45"/><circle r="3" fill="url(#mat-screw)"/><circle r="2.2" fill="none" stroke="#d3d5c9" stroke-opacity=".23" stroke-width=".35"/><polygon points="0.000,-1.380 0.465,-0.805 1.195,-0.690 0.930,0.000 1.195,0.690 0.465,0.805 0.000,1.380 -0.465,0.805 -1.195,0.690 -0.930,0.000 -1.195,-0.690 -0.465,-0.805" fill="#0d171d" stroke="#1b2b33" stroke-width=".5"/><path d="M-1.9500000000000002 -1.7399999999999998Q0 -3.12 1.7999999999999998 -2.04" fill="none" stroke="#f2f0dd" stroke-opacity=".5" stroke-width=".45"/></g>
+<text x="24" y="24" font-size="12" fill="#8d979a" text-anchor="start" font-weight="700">03 / FIELDBUS ANALYZER</text>
+<text x="936" y="24" font-size="11" fill="#e6ad59" text-anchor="end" font-weight="400">DEMO CAPTURE</text>
+<text x="24" y="67" font-size="20" fill="#dfddd4" text-anchor="start" font-weight="700">CANopen / bus monitor</text>
+<text x="24" y="88" font-size="12" fill="#8d979a" text-anchor="start" font-weight="400">CAN 2.0A  /  500 kbit/s  /  NODE 0x1A</text>
+<rect x="13" y="101" width="934" height="188" rx="5" fill="#080f13" stroke="#34454d" stroke-width=".6"/><rect x="14" y="102" width="932" height="186" rx="4" fill="url(#mat-bezel)"/><rect x="16" y="104" width="928" height="182" rx="3" fill="url(#mat-glass)" stroke="#080f10"/><rect x="16.5" y="104.5" width="927" height="181" rx="3" fill="url(#mat-pixels)"/><path d="M19 105H941" stroke="#03090b" stroke-width="2"/><path d="M17 107V283" stroke="#03090b" stroke-width="1.4"/><path d="M19 287.5H941" stroke="#81908b" stroke-opacity=".32" stroke-width=".7"/><rect x="18" y="106" width="924" height="178" rx="2" fill="url(#mat-reflection)"/>
+<rect x="731" y="52" width="204" height="35" rx="2" fill="#111416" stroke="#343a3d"/>
+<text x="743" y="74" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">BUS STATE</text>
+<text x="923" y="74" font-size="12" fill="#e6ad59" text-anchor="end" font-weight="400">OPERATIONAL</text>
+<text x="28" y="123" font-size="11" fill="#8d979a" text-anchor="start" font-weight="700">TIME [s]</text>
+<text x="142" y="123" font-size="11" fill="#8d979a" text-anchor="start" font-weight="700">COB-ID</text>
+<text x="220" y="123" font-size="11" fill="#8d979a" text-anchor="start" font-weight="700">SERVICE</text>
+<text x="359" y="123" font-size="11" fill="#8d979a" text-anchor="start" font-weight="700">DLC</text>
+<text x="413" y="123" font-size="11" fill="#8d979a" text-anchor="start" font-weight="700">DATA [HEX]</text>
+<text x="658" y="123" font-size="11" fill="#8d979a" text-anchor="start" font-weight="700">INTERPRETATION</text>
+<line x1="17" y1="130" x2="943" y2="130" stroke="#343a3d"/>
+<defs><clipPath id="frames-clip"><rect x="17" y="131" width="926" height="150"/></clipPath></defs>
+<g clip-path="url(#frames-clip)">
+<g transform="translate(0 131)"><g class="frames">
+<rect x="17" y="0" width="926" height="25" rx="0" fill="#171b1e"/>
+<text x="28" y="18" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">000.000</text>
+<text x="142" y="18" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">0x000</text>
+<text x="220" y="18" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">NMT</text>
+<text x="359" y="18" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">2</text>
+<text x="413" y="18" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">01 1A</text>
+<text x="658" y="18" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">start node 0x1A</text>
+<text x="28" y="43" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">000.004</text>
+<text x="142" y="43" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">0x71A</text>
+<text x="220" y="43" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">HEARTBEAT</text>
+<text x="359" y="43" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">1</text>
+<text x="413" y="43" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">05</text>
+<text x="658" y="43" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">operational</text>
+<rect x="17" y="50" width="926" height="25" rx="0" fill="#171b1e"/>
+<text x="28" y="68" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">000.010</text>
+<text x="142" y="68" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">0x080</text>
+<text x="220" y="68" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">SYNC</text>
+<text x="359" y="68" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">0</text>
+<text x="413" y="68" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">—</text>
+<text x="658" y="68" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">cycle marker</text>
+<text x="28" y="93" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">000.011</text>
+<text x="142" y="93" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">0x19A</text>
+<text x="220" y="93" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">TPDO1</text>
+<text x="359" y="93" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">6</text>
+<text x="413" y="93" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">27 00 00 00 00 00</text>
+<text x="658" y="93" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">node -&gt; master</text>
+<rect x="17" y="100" width="926" height="25" rx="0" fill="#171b1e"/>
+<text x="28" y="118" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">000.012</text>
+<text x="142" y="118" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">0x21A</text>
+<text x="220" y="118" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">RPDO1</text>
+<text x="359" y="118" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">6</text>
+<text x="413" y="118" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">0F 00 00 00 00 00</text>
+<text x="658" y="118" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">master -&gt; node</text>
+<text x="28" y="143" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">000.020</text>
+<text x="142" y="143" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">0x61A</text>
+<text x="220" y="143" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">SDO REQ</text>
+<text x="359" y="143" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">8</text>
+<text x="413" y="143" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">40 41 60 00 00 00 00 00</text>
+<text x="658" y="143" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">read 6041:00</text>
+<rect x="17" y="150" width="926" height="25" rx="0" fill="#171b1e"/>
+<text x="28" y="168" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">000.021</text>
+<text x="142" y="168" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">0x59A</text>
+<text x="220" y="168" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">SDO RES</text>
+<text x="359" y="168" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">8</text>
+<text x="413" y="168" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">4B 41 60 00 27 00 00 00</text>
+<text x="658" y="168" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">statusword 0x0027</text>
+<text x="28" y="193" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">001.004</text>
+<text x="142" y="193" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">0x71A</text>
+<text x="220" y="193" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">HEARTBEAT</text>
+<text x="359" y="193" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">1</text>
+<text x="413" y="193" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">05</text>
+<text x="658" y="193" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">operational</text>
+<rect x="17" y="200" width="926" height="25" rx="0" fill="#171b1e"/>
+<text x="28" y="218" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">000.000</text>
+<text x="142" y="218" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">0x000</text>
+<text x="220" y="218" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">NMT</text>
+<text x="359" y="218" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">2</text>
+<text x="413" y="218" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">01 1A</text>
+<text x="658" y="218" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">start node 0x1A</text>
+<text x="28" y="243" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">000.004</text>
+<text x="142" y="243" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">0x71A</text>
+<text x="220" y="243" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">HEARTBEAT</text>
+<text x="359" y="243" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">1</text>
+<text x="413" y="243" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">05</text>
+<text x="658" y="243" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">operational</text>
+<rect x="17" y="250" width="926" height="25" rx="0" fill="#171b1e"/>
+<text x="28" y="268" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">000.010</text>
+<text x="142" y="268" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">0x080</text>
+<text x="220" y="268" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">SYNC</text>
+<text x="359" y="268" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">0</text>
+<text x="413" y="268" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">—</text>
+<text x="658" y="268" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">cycle marker</text>
+<text x="28" y="293" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">000.011</text>
+<text x="142" y="293" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">0x19A</text>
+<text x="220" y="293" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">TPDO1</text>
+<text x="359" y="293" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">6</text>
+<text x="413" y="293" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">27 00 00 00 00 00</text>
+<text x="658" y="293" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">node -&gt; master</text>
+<rect x="17" y="300" width="926" height="25" rx="0" fill="#171b1e"/>
+<text x="28" y="318" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">000.012</text>
+<text x="142" y="318" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">0x21A</text>
+<text x="220" y="318" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">RPDO1</text>
+<text x="359" y="318" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">6</text>
+<text x="413" y="318" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">0F 00 00 00 00 00</text>
+<text x="658" y="318" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">master -&gt; node</text>
+<text x="28" y="343" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">000.020</text>
+<text x="142" y="343" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">0x61A</text>
+<text x="220" y="343" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">SDO REQ</text>
+<text x="359" y="343" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">8</text>
+<text x="413" y="343" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">40 41 60 00 00 00 00 00</text>
+<text x="658" y="343" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">read 6041:00</text>
+<rect x="17" y="350" width="926" height="25" rx="0" fill="#171b1e"/>
+<text x="28" y="368" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">000.021</text>
+<text x="142" y="368" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">0x59A</text>
+<text x="220" y="368" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">SDO RES</text>
+<text x="359" y="368" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">8</text>
+<text x="413" y="368" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">4B 41 60 00 27 00 00 00</text>
+<text x="658" y="368" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">statusword 0x0027</text>
+<text x="28" y="393" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">001.004</text>
+<text x="142" y="393" font-size="13" fill="#e6ad59" text-anchor="start" font-weight="400">0x71A</text>
+<text x="220" y="393" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">HEARTBEAT</text>
+<text x="359" y="393" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">1</text>
+<text x="413" y="393" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">05</text>
+<text x="658" y="393" font-size="13" fill="#8d979a" text-anchor="start" font-weight="400">operational</text>
+</g></g></g>
+<text x="24" y="307" font-size="11" fill="#8d979a" text-anchor="start" font-weight="700">SDO DECODE</text>
+<text x="133" y="307" font-size="14" fill="#e6ad59" text-anchor="start" font-weight="700">6041:00 → 0x0027</text>
+<text x="339" y="307" font-size="13" fill="#dfddd4" text-anchor="start" font-weight="400">CiA 402 · operation enabled</text>
+<text x="24" y="328" font-size="10" fill="#8d979a" text-anchor="start" font-weight="400">DEFAULT COB-ID SET</text>
+<text x="196" y="328" font-size="11" fill="#8d979a" text-anchor="start" font-weight="400">NMT 000  /  SYNC 080  /  TPDO1 180+N  /  RPDO1 200+N  /  SDO 600+N ⇄ 580+N</text>
 </svg>
