@@ -9,8 +9,8 @@
 <p>
   <a href="https://github.com/lordware">
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/lordware/lordware/main/assets/profile-stats-mobile.svg?v=f05f842f9d2ac862" />
-    <img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/stats.svg?v=58b1ee46420797cf" alt="GitHub statistics snapshot: stars, repositories, followers, commits and streak." width="960" />
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/lordware/lordware/main/assets/profile-stats-mobile.svg?v=5ef60ceb049285d7" />
+    <img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/stats.svg?v=48dc862aa6c60270" alt="GitHub statistics snapshot: stars, repositories, followers, commits and streak." width="960" />
   </picture>
   </a>
 </p>
@@ -53,32 +53,32 @@
 <p>
   <a href="https://github.com/lordware?tab=repositories">
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/lordware/lordware/main/assets/profile-repos-mobile.svg?v=b971ba4d45ef8ef4" />
-    <img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/repos.svg?v=58ee7a3c454df765" alt="Repository monitor: public source repositories." width="960" />
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/lordware/lordware/main/assets/profile-repos-mobile.svg?v=e4f89ae3dc9f3278" />
+    <img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/repos.svg?v=02844c97fce14730" alt="Repository monitor: public source repositories." width="960" />
   </picture>
   </a>
 </p>
 
 <p>
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/lordware/lordware/main/assets/profile-lang-mobile.svg?v=76cfcc4a57d3a689" />
-    <img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/lang.svg?v=725da9743b814aa7" alt="Language memory map from public repository byte counts." width="960" />
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/lordware/lordware/main/assets/profile-lang-mobile.svg?v=34d247b633344497" />
+    <img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/lang.svg?v=f8947f425c8448e9" alt="Language memory map from public repository byte counts." width="960" />
   </picture>
 </p>
 
 <p>
   <a href="https://github.com/lordware?tab=overview">
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/lordware/lordware/main/assets/profile-syslog-mobile.svg?v=89e20dd1e9a1f93e" />
-    <img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/syslog.svg?v=ef1f58928434ea24" alt="Event log from public GitHub activity." width="960" />
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/lordware/lordware/main/assets/profile-syslog-mobile.svg?v=212dec0efcbe3dae" />
+    <img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/syslog.svg?v=4ae7de56c9755c1e" alt="Event log from public GitHub activity." width="960" />
   </picture>
   </a>
 </p>
 
 <p>
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/lordware/lordware/main/assets/profile-activity-mobile.svg?v=2853648bccdddead" />
-    <img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/activity.svg?v=3c94385aee9e4178" alt="Contribution activity and amber snake animation." width="960" />
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/lordware/lordware/main/assets/profile-activity-mobile.svg?v=8d46a0d0cec33147" />
+    <img src="https://raw.githubusercontent.com/lordware/lordware/main/assets/activity.svg?v=349376022508e5cb" alt="Contribution activity and amber snake animation." width="960" />
   </picture>
 </p>
 
